@@ -5,11 +5,12 @@ import ConfigParser
 import ast
 import getopt,sys
 import threading
-from NetworkOutage.NetworkOutage import networkOutage
+from NetworkOutage.NetworkOutage import networkOutage, networkOutage2
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
-from NetworkPerformance.NetworkPerformance import networkPerformance
+from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2
 from SaveToMongoDB import saveToMongoDB
 from StreamingResults import getStreamResults
+import profile
 
 
 
@@ -73,8 +74,6 @@ def main(argv):
         end_time = calendar.timegm(time_tuple)
 
         now = int(time.time())
-        #saveToMongoDB(start_time, now)
-       # streamThread.start()
 
         WINDOW = 60*3
         now = int(time.time())
@@ -90,8 +89,8 @@ def main(argv):
             saveToMongoDB(start_time,end_time)
 
             # Compute the results and store them in them DB for the web front-end to retrieve
-            networkOutage(end_time - WINDOW*10, end_time)
-            networkPerformance(end_time-WINDOW*10, end_time)
+            networkOutage2(end_time - WINDOW*10, end_time)
+            networkPerformance2(end_time-WINDOW*10, end_time)
             networkInterconnects(end_time - WINDOW*10, end_time)
 
             start_time = end_time # move the window forward

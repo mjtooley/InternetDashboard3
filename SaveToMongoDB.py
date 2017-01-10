@@ -137,12 +137,10 @@ except:
 
 def saveToMongoDB(start_time, stop_time):
     print "Starting SaveToMongoDB"
-    # Connect to the database using pymongo. No arguments to MongoClient() connects to the localhost at port 27017.
-    # Else, connect to the database at the specified IP address and port number
 
     # Counter for number of threads
     number_of_threads = 0
-    threads = {}
+    threads = []
     # Create a list of ASNs from which the measurement originates
 
     list_of_source_asns = getAsnList()
@@ -154,12 +152,18 @@ def saveToMongoDB(start_time, stop_time):
     for asn in list_of_source_asns:
         thread_name = "MongoDB " + str(asn)
         # Start a thread for each asn
-        #threads[number_of_threads] = myThread(asn, start_time, stop_time, thread_name, target_asn)
-        #threads[number_of_threads].start()
-        getASNResults(asn,start_time,stop_time, target_asn)
+        thread = myThread(asn, start_time, stop_time, thread_name, target_asn)
+        thread.start()
+        threads.append(thread)
+        # getASNResults(asn,start_time,stop_time, target_asn) # Single Threaded version
         # Increment counter
         number_of_threads += 1
-    # print "Started " + str(number_of_threads) + " threads."
+
+    # Wait for all threads to finish
+    for t in threads:
+        t.join()
+    print "All threads finished, exiting saveToMongoDB."
+    print "-------------------------------------------\n \n"
 
 def main():
     saveToMongoDB(1451606400, 1451606760)

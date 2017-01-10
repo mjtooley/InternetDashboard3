@@ -27,8 +27,8 @@ class myThread(threading.Thread):
 
     def run(self):
         # print "Starting", self.thread_name
-        outages(self.start_time, self.stop_time, self.source_asn)
-        # print "NetworkOutage Exiting", self.thread_name
+        outagesThread(self.start_time, self.stop_time, self.source_asn)
+        print "NetworkOutage Exiting:", self.source_asn
 
 
 def outages(start, end, list_of_source_asns):
@@ -82,29 +82,67 @@ def networkOutage(start, end):
     outages(start, end, list_of_source_asns)
 
 # Threaded version
-def networkOutage2(start, end_final):
+def outagesThread(start, end,asn):
+    date_and_time = str(datetime.utcfromtimestamp(start)).replace(" ", "_")
+    probe_dictionary = {}
+    probe_dictionary["Probes"] = []
+    probe_dictionary["AS_List"] = []
+
+    print "-->NetworkOutage:", asn
+    current_result = 1
+    measurements = Get()
+    current_measurement = measurements.getMeasurements(asn, start, end)
+    # if current_measurement[1] == 0:
+    #     return
+    while current_result < current_measurement[1]:
+        current_result += 1
+        for this_result in current_measurement[0]:
+            try:
+                ip_address = this_result["from"]
+                # client = IPWhois(ip_address)
+            except Exception as e:
+                print e
+                current_result += 1
+                continue
+            result_info = Resolve(this_result)
+            resolved_measurement = result_info.resolveMeasurements()
+            if resolved_measurement == None:
+                continue
+            to_json = Creating(probe_dictionary, resolved_measurement)
+            to_json.checkNetworkName(probe_dictionary)
+
+            final_results = to_json.creatingJson()
+            final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
+
+            current_result += 1
+            sys.stdout.write('.')
+
+    to_save = Save()
+    to_save.saveMeasurements(probe_dictionary)
+
+    measurements.closeConnection()
+    to_save.closeConnection()
+    print "\n"
+
+
+def networkOutage2(start, end):
 
     list_of_source_asns = getAsnList()
-    end = 0
-
-    interval = 300
-
-    # date_and_time = str(datetime.utcfromtimestamp(start)).replace(" ", "_")
-
-    packet_dictionary = {}
-
+    threads =[]
     number_of_threads = 0
 
-    threads ={}
-
-    while end < (end_final - 1):
-        end = start + interval
+    for asn in list_of_source_asns:
         thread_name = "NetworkOutage " + str(number_of_threads + 1)
-        threads[number_of_threads] = myThread(start, end, list_of_source_asns, thread_name)
-        threads[number_of_threads].start()
-        number_of_threads += 1
+        thread = myThread(start, end, asn, thread_name)
+        thread.start()
+        threads.append(thread)
+        number_of_threads = number_of_threads + 1
         start = end + 1
-    print "NetworkOutage Started %s threads" % str(number_of_threads)
+
+    # Wait for all the threads to finish
+    for t in threads:
+        t.join()
+    print "All threads finished, Exiting NetworkOutage2"
 
 def networkOutageUpdate(measurementResult):
     date_and_time = str(datetime.utcfromtimestamp(time.time())).replace(" ", "_")

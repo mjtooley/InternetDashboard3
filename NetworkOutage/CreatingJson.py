@@ -1,5 +1,6 @@
 import json
 import geocoder
+import geoip2.database
 
 class Creating(object):
     """

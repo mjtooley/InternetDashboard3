@@ -25,8 +25,8 @@ class myThread(threading.Thread):
 
     def run(self):
         #print "Starting " + self.thread_name
-        performance(self.start_time, self.stop_time, self.source_asns)
-        #print "Exiting " + self.thread_name
+        performance_thread(self.start_time, self.stop_time, self.source_asns)
+        print "Exiting Peformance thread: " + self.source_asns
 
 def getNetworkName(name_number):
     for hop in name_number:
@@ -138,32 +138,72 @@ def networkPerformance(start, end):
 
 
 # threaded version
-def networkPerformance2(start, end_final):
-    # Create a list of ASNs from which that measurement originates
+def performance_thread(start, end, asn):
+    # Format the date and time for the filename
+    date_and_time = str(datetime.utcfromtimestamp(start)).replace(" ", "_")
+
+    # To create and store the final json file
+    single_result = []
+
+    network_dictionary = {}
+    network_dictionary["Networks"] = [{}]
+    # network_dictionary["Networks"][-1]["Name"] = "Charter"
+    network_dictionary["Networks"][-1]["Aggregate_Routes"] = []
+
+    print "Processing NetworkPerformance:"
+
+    # current_result = 1
+    print "--> Perfomance for ASN", asn
+    measurements = Get()
+    current_measurements = measurements.getMeasurements(asn, start, end)
+
+    counter = 0
+
+    for current_result in current_measurements[0]:
+        try:
+            # print current_result["result"][-1]["hop"]
+            if (current_result["result"][-1]["hop"] != 255) or ("error" in current_result["result"][-1]):
+                counter += 1
+
+                ip_path = Find(current_result)
+                path = ip_path.findIPPath()
+                as_info = Resolve(path[0], asn)
+                name_number = as_info.resolveMeasurements()
+                single_result.append(name_number)
+                to_json = Creating(network_dictionary, name_number, path[1], path[2])
+                network_dictionary = to_json.creating()
+
+                network_dictionary["Date"] = "%s" % (date_and_time.replace(":", "-"))
+                network_dictionary["Networks"][-1]["Name"] = getNetworkName(name_number)
+
+        except Exception:
+            exc_info = sys.exc_info()
+            print "Exception in NetworkPerformance:", exc_info
+            traceback.print_exc()
+
+    final_network_dictionary = switchNames(network_dictionary)
+    to_save = Save()
+    to_save.saveMeasurements(final_network_dictionary)
+    measurements.closeConnection()
+    to_save.closeConnection()
+
+def networkPerformance2(start, end):
+
     list_of_source_asns = getAsnList()
-
-    # Start time of the time window and overall interval
-    # start = starting_time # 1451606456 # 1475993009, 1475993043
-
-    # End time of the time window. Start time + 6 mins
-    end = 0
-
-    # End time of the overall interval
-    # end_final = stopping_time # 1451606760 # 1475993020
-
-    # To shift the time window ahead by 6 minutes
-    interval = 99
-
+    threads =[]
     number_of_threads = 0
 
-    threads = {}
-
-    while end < (end_final - 1):
-        # Create a 6 minute interval
-        end = start + interval
-        thread_name = "Performance " + str(number_of_threads + 1)
-        threads[number_of_threads] = myThread(start, end, list_of_source_asns, thread_name)
-        threads[number_of_threads].start()
-        number_of_threads += 1
+    for asn in list_of_source_asns:
+        thread_name = "NetworkPerformance " + str(number_of_threads + 1)
+        thread = myThread(start, end, asn, thread_name)
+        thread.start()
+        threads.append(thread)
+        number_of_threads = number_of_threads + 1
         start = end + 1
-    print "Started " + str(number_of_threads) + " threads."
+
+    # Wait for all the threads to finish
+    for t in threads:
+        t.join()
+    print "All threads finished, Exiting NetworkPerformance2"
+    print "-------------------------------------------------"
+    print("")
