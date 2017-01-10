@@ -91,7 +91,7 @@ def main(argv):
 
             # Compute the results and store them in them DB for the web front-end to retrieve
             networkOutage(end_time - WINDOW*10, end_time)
-            networkPerformance(end_time-WINDOW*10, end_time)
+            #networkPerformance(end_time-WINDOW*10, end_time)
             networkInterconnects(end_time - WINDOW*10, end_time)
 
             start_time = end_time # move the window forward
