@@ -1,0 +1,108 @@
+{
+    "Networks": [
+        {
+            "Aggregate_Routes": [
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "Time Warner Cable Internet LLC",
+                            "lat": 41.7044,
+                            "lng": -80.7318
+                        },
+                        {
+                            "Name": "L-ROOT",
+                            "lat": 33.9803,
+                            "lng": -118.4517
+                        }
+                    ],
+                    "Destination": "L-ROOT",
+                    "Final_RTT": 33.694,
+                    "ISP_RTT": 40.794,
+                    "Traceroutes": [
+                        [
+                            [
+                                40.794,
+                                33.694
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 41.328,
+                                "lat": 41.7044,
+                                "lng": -80.7318
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 10.785,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 14.164,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 18.087,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 21.584,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 30.051,
+                                "lat": 39.6478,
+                                "lng": -104.9878
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 30.068,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Level 3 Communications, Inc.",
+                                "RTT": 40.794,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Level 3 Communications, Inc.",
+                                "RTT": 32.893,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Level 3 Communications, Inc.",
+                                "RTT": 33.779,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Level 3 Communications, Inc.",
+                                "RTT": 48.074,
+                                "lat": 38.8951,
+                                "lng": -77.0364
+                            },
+                            {
+                                "Name": "L-ROOT",
+                                "RTT": 33.694,
+                                "lat": 33.9803,
+                                "lng": -118.4517
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "Name": "Charter"
+        }
+    ]
+}

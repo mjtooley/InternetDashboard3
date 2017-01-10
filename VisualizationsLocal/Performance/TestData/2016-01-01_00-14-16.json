@@ -1,0 +1,758 @@
+{
+    "Networks": [
+        {
+            "Aggregate_Routes": [
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "RR-NYSREGION-ASN-01",
+                            "lat": 43.7295,
+                            "lng": -70.242
+                        },
+                        {
+                            "Name": "LOS-NETTOS-AS",
+                            "lat": 34.0453,
+                            "lng": -118.2413
+                        }
+                    ],
+                    "Destination": "LOS-NETTOS-AS",
+                    "Final_RTT": 104.939,
+                    "ISP_RTT": 32.5615,
+                    "Traceroutes": [
+                        [
+                            [
+                                36.061,
+                                105.684
+                            ],
+                            [
+                                29.062,
+                                104.194
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "RR-NYSREGION-ASN-01",
+                                "RTT": 21.09,
+                                "lat": 43.7295,
+                                "lng": -70.242
+                            },
+                            {
+                                "Name": "RR-NYSREGION-ASN-01",
+                                "RTT": 36.061,
+                                "lat": 43.1587,
+                                "lng": -76.3327
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 59.105,
+                                "lat": 39.76,
+                                "lng": -98.5
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 47.899,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 71.112,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 118.899,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 108.179,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 111.522,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 105.684,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "RR-NYSREGION-ASN-01",
+                                "RTT": 10.496,
+                                "lat": 43.0987,
+                                "lng": -77.4419
+                            },
+                            {
+                                "Name": "RR-NYSREGION-ASN-01",
+                                "RTT": 13.378,
+                                "lat": 42.9732,
+                                "lng": -76.2258
+                            },
+                            {
+                                "Name": "RR-NYSREGION-ASN-01",
+                                "RTT": 29.062,
+                                "lat": 43.1587,
+                                "lng": -76.3327
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 32.788,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 40.446,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 83.208,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 92.46,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "HURRICANE",
+                                "RTT": 104.413,
+                                "lat": 37.5155,
+                                "lng": -121.8962
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 104.194,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "RR-NYSREGION-ASN-01",
+                            "lat": 43.1518,
+                            "lng": -77.5852
+                        },
+                        {
+                            "Name": "ISC-AS-1280",
+                            "lat": 37.4914,
+                            "lng": -122.211
+                        }
+                    ],
+                    "Destination": "ISC-AS-1280",
+                    "Final_RTT": 96.00266666666666,
+                    "ISP_RTT": 26.16,
+                    "Traceroutes": [
+                        [
+                            [
+                                13.357,
+                                78.13
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "RR-NYSREGION-ASN-01",
+                                "RTT": 29.605,
+                                "lat": 43.1518,
+                                "lng": -77.5852
+                            },
+                            {
+                                "Name": "RR-NYSREGION-ASN-01",
+                                "RTT": 13.357,
+                                "lat": 43.1587,
+                                "lng": -76.3327
+                            },
+                            {
+                                "Name": "ISC-AS-1280",
+                                "RTT": 78.13,
+                                "lat": 37.4914,
+                                "lng": -122.211
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "Name": "Charter"
+        },
+        {
+            "Aggregate_Routes": [
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "COMCAST-7922",
+                            "lat": 37.8716,
+                            "lng": -122.2728
+                        },
+                        {
+                            "Name": "LOS-NETTOS-AS",
+                            "lat": 34.0453,
+                            "lng": -118.2413
+                        }
+                    ],
+                    "Destination": "LOS-NETTOS-AS",
+                    "Final_RTT": 20.6278,
+                    "ISP_RTT": 10.8906,
+                    "Traceroutes": [
+                        [
+                            [
+                                9.088,
+                                18.921
+                            ],
+                            [
+                                10.006,
+                                18.896
+                            ],
+                            [
+                                13.995,
+                                20.107
+                            ],
+                            [
+                                9.501,
+                                21.584
+                            ],
+                            [
+                                11.863,
+                                23.631
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "COMCAST-7922",
+                                "RTT": 9.088,
+                                "lat": 37.8716,
+                                "lng": -122.2728
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 13.099,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 12.967,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 19.382,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 19.717,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 19.312,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 18.921,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "COMCAST-7922",
+                                "RTT": 10.006,
+                                "lat": 37.7697,
+                                "lng": -122.3933
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 12.199,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 11.562,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 19.996,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 18.699,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 22.273,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 18.896,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "COMCAST-7922",
+                                "RTT": 13.995,
+                                "lat": 37.2722,
+                                "lng": -121.8436
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 16.069,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 16.442,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 21.615,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 24.205,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 20.648,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 20.107,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "COMCAST-7922",
+                                "RTT": 9.501,
+                                "lat": 37.3501,
+                                "lng": -121.9854
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 15.042,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 13.401,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 22.112,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 20.952,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 21.047,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 21.584,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "COMCAST-7922",
+                                "RTT": 11.863,
+                                "lat": 37.6624,
+                                "lng": -121.8747
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 13.647,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 13.547,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 24.245,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 25.213,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 24.569,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 23.631,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "Name": "Comcast"
+        },
+        {
+            "Aggregate_Routes": [],
+            "Name": "Comcast"
+        },
+        {
+            "Aggregate_Routes": [
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "UUNET",
+                            "lat": 42.6112,
+                            "lng": -71.5745
+                        },
+                        {
+                            "Name": "LOS-NETTOS-AS",
+                            "lat": 34.0453,
+                            "lng": -118.2413
+                        }
+                    ],
+                    "Destination": "LOS-NETTOS-AS",
+                    "Final_RTT": 79.375,
+                    "ISP_RTT": 5.484249999999999,
+                    "Traceroutes": [
+                        [
+                            [
+                                7.435,
+                                89.743
+                            ],
+                            [
+                                7.45,
+                                79.529
+                            ],
+                            [
+                                2.335,
+                                73.464
+                            ],
+                            [
+                                4.717,
+                                74.764
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "UUNET",
+                                "RTT": 7.435,
+                                "lat": 42.6112,
+                                "lng": -71.5745
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 17.451,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 24.237,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 85.06,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 89.701,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 89.755,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 89.743,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "UUNET",
+                                "RTT": 7.45,
+                                "lat": 40.0951,
+                                "lng": -75.6169
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 14.75,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 12.512,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 79.982,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 84.712,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 79.954,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 79.529,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "UUNET",
+                                "RTT": 2.335,
+                                "lat": 38.9348,
+                                "lng": -77.2672
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 3.858,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 3.491,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 73.443,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 74.751,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 75.941,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 73.464,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "UUNET",
+                                "RTT": 4.717,
+                                "lat": 39.1372,
+                                "lng": -77.1833
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 7.244,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 7.194,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 72.124,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 77.177,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "NTT-COMMUNICATIONS-2914",
+                                "RTT": 79.748,
+                                "lat": 39.6237,
+                                "lng": -104.8738
+                            },
+                            {
+                                "Name": "LOS-NETTOS-AS",
+                                "RTT": 74.764,
+                                "lat": 34.0453,
+                                "lng": -118.2413
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "UUNET",
+                            "lat": 38.86,
+                            "lng": -77.0987
+                        },
+                        {
+                            "Name": "WOODYNET-2",
+                            "lat": 37.8784,
+                            "lng": -122.2603
+                        }
+                    ],
+                    "Destination": "WOODYNET-2",
+                    "Final_RTT": 50.36942857142857,
+                    "ISP_RTT": 4.718571428571429,
+                    "Traceroutes": [
+                        [
+                            [
+                                7.422,
+                                13.701
+                            ],
+                            [
+                                2.073,
+                                11.267
+                            ],
+                            [
+                                1.598,
+                                10.118
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "UUNET",
+                                "RTT": 7.422,
+                                "lat": 38.86,
+                                "lng": -77.0987
+                            },
+                            {
+                                "Name": "WOODYNET-2",
+                                "RTT": 13.701,
+                                "lat": 37.8784,
+                                "lng": -122.2603
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "UUNET",
+                                "RTT": 2.073,
+                                "lat": 40.696,
+                                "lng": -74.2287
+                            },
+                            {
+                                "Name": "WOODYNET-2",
+                                "RTT": 11.267,
+                                "lat": 37.8784,
+                                "lng": -122.2603
+                            }
+                        ],
+                        [
+                            {
+                                "Name": "UUNET",
+                                "RTT": 1.598,
+                                "lat": 39.7773,
+                                "lng": -75.7713
+                            },
+                            {
+                                "Name": "WOODYNET-2",
+                                "RTT": 10.118,
+                                "lat": 37.8784,
+                                "lng": -122.2603
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "Name": "Verizon"
+        }
+    ]
+}

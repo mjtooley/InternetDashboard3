@@ -1,0 +1,990 @@
+{
+    "Backbone_AS_List": [
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257"
+        },
+        {
+            "AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "AS_Number": "4134"
+        }
+    ],
+    "Date": "2016-06-12_19-30-00",
+    "Links": [
+        {
+            "RTT": "17.51",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "Target_AS_Number": "7342",
+            "source": 0,
+            "target": 1
+        },
+        {
+            "RTT": "2.18",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "CSUNET-NW - California State University, Office of the Chancellor, US",
+            "Target_AS_Number": "2152",
+            "source": 0,
+            "target": 2
+        },
+        {
+            "RTT": "2.91",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 0,
+            "target": 3
+        },
+        {
+            "RTT": "1.0",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "MAX-GIGAPOP - University of Maryland, US",
+            "Target_AS_Number": "10886",
+            "source": 0,
+            "target": 4
+        },
+        {
+            "RTT": "36.98",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "3557",
+            "source": 0,
+            "target": 5
+        },
+        {
+            "RTT": "71.11",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "Target_AS_Number": "668",
+            "source": 0,
+            "target": 6
+        },
+        {
+            "RTT": "1.91",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "Target_AS_Number": "29216",
+            "source": 0,
+            "target": 7
+        },
+        {
+            "RTT": "8.1",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 0,
+            "target": 8
+        },
+        {
+            "RTT": "4.05",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 0,
+            "target": 9
+        },
+        {
+            "RTT": "18.27",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 0,
+            "target": 10
+        },
+        {
+            "RTT": "1.04",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "CW Vodafone Ltd, GB",
+            "Target_AS_Number": "1273",
+            "source": 0,
+            "target": 11
+        },
+        {
+            "RTT": "0.57",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "TELIANET , SE",
+            "Target_AS_Number": "1299",
+            "source": 0,
+            "target": 12
+        },
+        {
+            "RTT": "6.14",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "Target_AS_Number": "6939",
+            "source": 0,
+            "target": 13
+        },
+        {
+            "RTT": "3.3",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 0,
+            "target": 14
+        },
+        {
+            "RTT": "6.9",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 14,
+            "target": 15
+        },
+        {
+            "RTT": "8.63",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "BTN-ASN - Beyond The Network America, Inc., US",
+            "Target_AS_Number": "3491",
+            "source": 0,
+            "target": 16
+        },
+        {
+            "RTT": "18.58",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "Target_AS_Number": "6762",
+            "source": 0,
+            "target": 17
+        },
+        {
+            "RTT": "0.88",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Target_AS_Number": "2914",
+            "source": 0,
+            "target": 18
+        },
+        {
+            "RTT": "2.18",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 0,
+            "target": 19
+        },
+        {
+            "RTT": "0.89",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 0,
+            "target": 20
+        },
+        {
+            "RTT": "2.04",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Target_AS_Number": "4134",
+            "source": 0,
+            "target": 21
+        },
+        {
+            "RTT": "199.84",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CHINANET-IDC-BJ-AP IDC, China Telecommunications Corporation, CN",
+            "Target_AS_Number": "23724",
+            "source": 21,
+            "target": 22
+        },
+        {
+            "RTT": "16.74",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "OPENTRANSIT , FR",
+            "Target_AS_Number": "5511",
+            "source": 0,
+            "target": 23
+        },
+        {
+            "RTT": "53.72",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "UA-XAIM , UA",
+            "Target_AS_Number": "6723",
+            "source": 14,
+            "target": 24
+        },
+        {
+            "RTT": "2.49",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "UNUMGROUP-AS - Unum Group, US",
+            "Target_AS_Number": "29888",
+            "source": 0,
+            "target": 25
+        },
+        {
+            "RTT": "4.05",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "Target_AS_Number": "25152",
+            "source": 0,
+            "target": 26
+        },
+        {
+            "RTT": "1.11",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ONECLEVELAND - OneCleveland, US",
+            "Target_AS_Number": "19009",
+            "source": 0,
+            "target": 27
+        },
+        {
+            "RTT": "5.4",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "NET-ACCESS-CORP - Net Access Corporation, US",
+            "Target_AS_Number": "8001",
+            "source": 14,
+            "target": 28
+        },
+        {
+            "RTT": "2.62",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "BBIL-AP BHARTI Airtel Ltd., IN",
+            "Target_AS_Number": "9498",
+            "source": 0,
+            "target": 29
+        },
+        {
+            "RTT": "15.89",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "BARR-XPLR-ASN - Xplornet Communications Inc., CA",
+            "Target_AS_Number": "22995",
+            "source": 14,
+            "target": 30
+        },
+        {
+            "RTT": "5.68",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "PACNET Pacnet Global Ltd, HK",
+            "Target_AS_Number": "10026",
+            "source": 0,
+            "target": 31
+        },
+        {
+            "RTT": "17.78",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "LGDACOM LG DACOM Corporation, KR",
+            "Target_AS_Number": "3786",
+            "source": 0,
+            "target": 32
+        },
+        {
+            "RTT": "28.92",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "SINGTEL-AS-AP Singapore Telecommunications Ltd, SG",
+            "Target_AS_Number": "7473",
+            "source": 0,
+            "target": 33
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ORC-UK , GB",
+            "Target_AS_Number": "204183",
+            "source": 0,
+            "target": 34
+        },
+        {
+            "RTT": "8.23",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "TWTC - tw telecom holdings, inc., US",
+            "Target_AS_Number": "4323",
+            "source": 0,
+            "target": 35
+        },
+        {
+            "RTT": "3.87",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "Internap European Autonomous System, GB",
+            "Target_AS_Number": "15570",
+            "source": 14,
+            "target": 36
+        },
+        {
+            "RTT": "0.13",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "SURFNET-NL SURFnet, The Netherlands, NL",
+            "Target_AS_Number": "1103",
+            "source": 14,
+            "target": 37
+        },
+        {
+            "RTT": "0.31",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "SPRINTLINK - Sprint, US",
+            "Target_AS_Number": "1239",
+            "source": 0,
+            "target": 38
+        },
+        {
+            "RTT": "1.47",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "IIJ Internet Initiative Japan Inc., JP",
+            "Target_AS_Number": "2497",
+            "source": 0,
+            "target": 39
+        },
+        {
+            "RTT": "7.76",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "FLAG-AS Flag Telecom Global Internet AS, GB",
+            "Target_AS_Number": "15412",
+            "source": 0,
+            "target": 40
+        },
+        {
+            "RTT": "1.19",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "XO-AS15 - XO Communications, US",
+            "Target_AS_Number": "2828",
+            "source": 0,
+            "target": 41
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "RISE-IDAHO - JAB Wireless, INC., US",
+            "Target_AS_Number": "6594",
+            "source": 0,
+            "target": 42
+        },
+        {
+            "RTT": "1.17",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 0,
+            "target": 43
+        }
+    ],
+    "Nodes": [
+        {
+            "AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "209",
+            "Shared": false,
+            "Shared_By": [
+                "7342",
+                "2152",
+                "174",
+                "10886",
+                "3557",
+                "668",
+                "29216",
+                "6461",
+                "3356",
+                "2516",
+                "1273",
+                "1299",
+                "6939",
+                "3257",
+                "3491",
+                "6762",
+                "2914",
+                "7922",
+                "6453",
+                "4134",
+                "5511",
+                "29888",
+                "25152",
+                "19009",
+                "9498",
+                "10026",
+                "3786",
+                "7473",
+                "204183",
+                "4323",
+                "1239",
+                "2497",
+                "15412",
+                "2828",
+                "6594",
+                "7018"
+            ],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": 209,
+            "value": 36
+        },
+        {
+            "AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "AS_Number": "7342",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "CSUNET-NW - California State University, Office of the Chancellor, US",
+            "AS_Number": "2152",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "COGENT-174 - Cogent Communications, US",
+            "AS_Number": "174",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "MAX-GIGAPOP - University of Maryland, US",
+            "AS_Number": "10886",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "AS_Number": "3557",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "AS_Number": "668",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "AS_Number": "29216",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "AS_Number": "6461",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "AS_Number": "3356",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "KDDI KDDI CORPORATION, JP",
+            "AS_Number": "2516",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "CW Vodafone Ltd, GB",
+            "AS_Number": "1273",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "TELIANET , SE",
+            "AS_Number": "1299",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "AS_Number": "6939",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257",
+            "Shared": false,
+            "Shared_By": [
+                "209",
+                "24940",
+                "6723",
+                "8001",
+                "22995",
+                "15570",
+                "1103"
+            ],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 7
+        },
+        {
+            "AS_Name": "HETZNER-AS , DE",
+            "AS_Number": "24940",
+            "Shared": false,
+            "Shared_By": [
+                "3257"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "BTN-ASN - Beyond The Network America, Inc., US",
+            "AS_Number": "3491",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "AS_Number": "6762",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "AS_Number": "2914",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "AS_Number": "6453",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "AS_Number": "4134",
+            "Shared": false,
+            "Shared_By": [
+                "209",
+                "23724"
+            ],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 2
+        },
+        {
+            "AS_Name": "CHINANET-IDC-BJ-AP IDC, China Telecommunications Corporation, CN",
+            "AS_Number": "23724",
+            "Shared": false,
+            "Shared_By": [
+                "4134"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "OPENTRANSIT , FR",
+            "AS_Number": "5511",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "UA-XAIM , UA",
+            "AS_Number": "6723",
+            "Shared": false,
+            "Shared_By": [
+                "3257"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "UNUMGROUP-AS - Unum Group, US",
+            "AS_Number": "29888",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "AS_Number": "25152",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "ONECLEVELAND - OneCleveland, US",
+            "AS_Number": "19009",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "NET-ACCESS-CORP - Net Access Corporation, US",
+            "AS_Number": "8001",
+            "Shared": false,
+            "Shared_By": [
+                "3257"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "BBIL-AP BHARTI Airtel Ltd., IN",
+            "AS_Number": "9498",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "BARR-XPLR-ASN - Xplornet Communications Inc., CA",
+            "AS_Number": "22995",
+            "Shared": false,
+            "Shared_By": [
+                "3257"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "PACNET Pacnet Global Ltd, HK",
+            "AS_Number": "10026",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "LGDACOM LG DACOM Corporation, KR",
+            "AS_Number": "3786",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "SINGTEL-AS-AP Singapore Telecommunications Ltd, SG",
+            "AS_Number": "7473",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "ORC-UK , GB",
+            "AS_Number": "204183",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "TWTC - tw telecom holdings, inc., US",
+            "AS_Number": "4323",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "Internap European Autonomous System, GB",
+            "AS_Number": "15570",
+            "Shared": false,
+            "Shared_By": [
+                "3257"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "SURFNET-NL SURFnet, The Netherlands, NL",
+            "AS_Number": "1103",
+            "Shared": false,
+            "Shared_By": [
+                "3257"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "SPRINTLINK - Sprint, US",
+            "AS_Number": "1239",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "IIJ Internet Initiative Japan Inc., JP",
+            "AS_Number": "2497",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "FLAG-AS Flag Telecom Global Internet AS, GB",
+            "AS_Number": "15412",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "XO-AS15 - XO Communications, US",
+            "AS_Number": "2828",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "RISE-IDAHO - JAB Wireless, INC., US",
+            "AS_Number": "6594",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "AS_Number": "7018",
+            "Shared": false,
+            "Shared_By": [
+                "209"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-LIGHTCORE - CenturyTel Internet Holdings, Inc., US",
+            "AS_Number": "22561",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-LEGACY-LIGHTCORE - CenturyTel Internet Holdings, Inc., US",
+            "Source_AS_Number": 22561,
+            "value": 0
+        }
+    ],
+    "Source_List": [
+        {
+            "AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "209"
+        }
+    ]
+}

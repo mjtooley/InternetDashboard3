@@ -1,0 +1,2909 @@
+{
+    "Backbone_AS_List": [
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257"
+        },
+        {
+            "AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "AS_Number": "7843"
+        },
+        {
+            "AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "AS_Number": "4837"
+        },
+        {
+            "AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "AS_Number": "4134"
+        },
+        {
+            "AS_Name": "VOCUS-BACKBONE-AS Vocus Connect International Backbone, AU",
+            "AS_Number": "4826"
+        }
+    ],
+    "Links": [
+        {
+            "RTT": "0.56",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 5,
+            "target": 6
+        },
+        {
+            "RTT": "12.37",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Target_AS_Number": "2914",
+            "source": 5,
+            "target": 7
+        },
+        {
+            "RTT": "0.07",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 5,
+            "target": 8
+        },
+        {
+            "RTT": "0.05",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "WOODYNET-2 - WoodyNet, US",
+            "Target_AS_Number": "715",
+            "source": 5,
+            "target": 9
+        },
+        {
+            "RTT": "0.17",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "WOODYNET-1 - WoodyNet, US",
+            "Target_AS_Number": "42",
+            "source": 5,
+            "target": 10
+        },
+        {
+            "RTT": "0.99",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "3557",
+            "source": 5,
+            "target": 11
+        },
+        {
+            "RTT": "11.15",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Target_AS_Number": "209",
+            "source": 5,
+            "target": 12
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "Target_AS_Number": "668",
+            "source": 5,
+            "target": 13
+        },
+        {
+            "RTT": "3.55",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TWDX - TowardEX Technologies International, Inc., US",
+            "Target_AS_Number": "27552",
+            "source": 5,
+            "target": 14
+        },
+        {
+            "RTT": "0.43",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CW Vodafone Ltd, GB",
+            "Target_AS_Number": "1273",
+            "source": 5,
+            "target": 15
+        },
+        {
+            "RTT": "0.61",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "L-ROOT - ICANN, US",
+            "Target_AS_Number": "20144",
+            "source": 5,
+            "target": 16
+        },
+        {
+            "RTT": "0.09",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TELIANET , SE",
+            "Target_AS_Number": "1299",
+            "source": 5,
+            "target": 17
+        },
+        {
+            "RTT": "0.88",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "Target_AS_Number": "6939",
+            "source": 5,
+            "target": 18
+        },
+        {
+            "RTT": "1.27",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 5,
+            "target": 19
+        },
+        {
+            "RTT": "1.29",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "BTN-ASN - Beyond The Network America, Inc., US",
+            "Target_AS_Number": "3491",
+            "source": 5,
+            "target": 20
+        },
+        {
+            "RTT": "11.28",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 5,
+            "target": 21
+        },
+        {
+            "RTT": "0.2",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "Target_AS_Number": "6762",
+            "source": 5,
+            "target": 22
+        },
+        {
+            "RTT": "5.72",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 5,
+            "target": 23
+        },
+        {
+            "RTT": "1.83",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 5,
+            "target": 24
+        },
+        {
+            "RTT": "1.5",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "Target_AS_Number": "7500",
+            "source": 23,
+            "target": 25
+        },
+        {
+            "RTT": "8.72",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "NET-ACCESS-CORP - Net Access Corporation, US",
+            "Target_AS_Number": "8001",
+            "source": 23,
+            "target": 26
+        },
+        {
+            "RTT": "9.94",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 23,
+            "target": 27
+        },
+        {
+            "RTT": "7.12",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "XO-AS15 - XO Communications, US",
+            "Target_AS_Number": "2828",
+            "source": 5,
+            "target": 28
+        },
+        {
+            "RTT": "1.67",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 5,
+            "target": 29
+        },
+        {
+            "RTT": "3.31",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "SCRR-10796 - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "10796",
+            "source": 29,
+            "target": 30
+        },
+        {
+            "RTT": "0.88",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 5,
+            "target": 31
+        },
+        {
+            "RTT": "3.71",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Target_AS_Number": "4837",
+            "source": 5,
+            "target": 32
+        },
+        {
+            "RTT": "2.15",
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "Target_AS_Name": "CHINA169-BJ China Unicom Beijing Province Network, CN",
+            "Target_AS_Number": "4808",
+            "source": 32,
+            "target": 33
+        },
+        {
+            "RTT": "0.38",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+            "Target_AS_Number": "11164",
+            "source": 5,
+            "target": 34
+        },
+        {
+            "RTT": "5.38",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "DTAG Internet service provider operations, DE",
+            "Target_AS_Number": "3320",
+            "source": 5,
+            "target": 35
+        },
+        {
+            "RTT": "1.71",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Target_AS_Number": "701",
+            "source": 5,
+            "target": 36
+        },
+        {
+            "RTT": "3.5",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "HWNG , NL",
+            "Target_AS_Number": "12989",
+            "source": 5,
+            "target": 37
+        },
+        {
+            "RTT": "0.61",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ROGERS-CABLE - Rogers Cable Communications Inc., CA",
+            "Target_AS_Number": "812",
+            "source": 5,
+            "target": 38
+        },
+        {
+            "RTT": "85.29",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "AS-CHOOPA - Choopa, LLC, US",
+            "Target_AS_Number": "20473",
+            "source": 23,
+            "target": 39
+        },
+        {
+            "RTT": "22.88",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SINGTEL-AS-AP Singapore Telecommunications Ltd, SG",
+            "Target_AS_Number": "7473",
+            "source": 5,
+            "target": 40
+        },
+        {
+            "RTT": "16.81",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "Target_AS_Number": "25152",
+            "source": 5,
+            "target": 41
+        },
+        {
+            "RTT": "10.35",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "KIXS-AS-KR Korea Telecom, KR",
+            "Target_AS_Number": "4766",
+            "source": 5,
+            "target": 42
+        },
+        {
+            "RTT": "17.96",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "IAM-AS, MA",
+            "Target_AS_Number": "6713",
+            "source": 23,
+            "target": 43
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AMAZON-02 - Amazon.com, Inc., US",
+            "Target_AS_Number": "16509",
+            "source": 5,
+            "target": 44
+        },
+        {
+            "RTT": "1.03",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SPRINTLINK - Sprint, US",
+            "Target_AS_Number": "1239",
+            "source": 5,
+            "target": 45
+        },
+        {
+            "RTT": "555.05",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ASN-TELSTRA-GLOBAL Telstra Global, HK",
+            "Target_AS_Number": "4637",
+            "source": 5,
+            "target": 46
+        },
+        {
+            "RTT": "5.33",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "VOXILITY , RO",
+            "Target_AS_Number": "3223",
+            "source": 5,
+            "target": 47
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "Target_AS_Name": "CNNIC-KUANCOM-AP Beijing Kuancom Network Technology Co.,Ltd., CN",
+            "Target_AS_Number": "17969",
+            "source": 32,
+            "target": 48
+        },
+        {
+            "RTT": "3.33",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "VISP-LB-AS , LB",
+            "Target_AS_Number": "35197",
+            "source": 23,
+            "target": 49
+        },
+        {
+            "RTT": "6.05",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SHAW - Shaw Communications Inc., CA",
+            "Target_AS_Number": "6327",
+            "source": 5,
+            "target": 50
+        },
+        {
+            "RTT": "0.54",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "LGI-UPC formerly known as UPC Broadband Holding B.V., AT",
+            "Target_AS_Number": "6830",
+            "source": 5,
+            "target": 51
+        },
+        {
+            "RTT": "3.31",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+            "Target_AS_Number": "22773",
+            "source": 5,
+            "target": 52
+        },
+        {
+            "RTT": "79.59",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "FASTLY - Fastly, US",
+            "Target_AS_Number": "54113",
+            "source": 5,
+            "target": 53
+        },
+        {
+            "RTT": "3.43",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "COLUMBUS-NETWORKS - Columbus Networks USA, Inc., US",
+            "Target_AS_Number": "23520",
+            "source": 23,
+            "target": 54
+        },
+        {
+            "RTT": "5.8",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TELEFONICA Telefonica Wholesale Network, ES",
+            "Target_AS_Number": "12956",
+            "source": 5,
+            "target": 55
+        },
+        {
+            "RTT": "5.79",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Target_AS_Number": "4134",
+            "source": 5,
+            "target": 56
+        },
+        {
+            "RTT": "158.24",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CHINANET-IDC-SN China Telecom (Group), CN",
+            "Target_AS_Number": "4835",
+            "source": 56,
+            "target": 57
+        },
+        {
+            "RTT": "1.68",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ASN852 - TELUS Communications Inc., CA",
+            "Target_AS_Number": "852",
+            "source": 5,
+            "target": 58
+        },
+        {
+            "RTT": "3.41",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SERVERCENTRAL - Server Central Network, US",
+            "Target_AS_Number": "23352",
+            "source": 5,
+            "target": 59
+        },
+        {
+            "RTT": "0.41",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "FLAG-AS Flag Telecom Global Internet AS, GB",
+            "Target_AS_Number": "15412",
+            "source": 23,
+            "target": 60
+        },
+        {
+            "RTT": "58.34",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "Uninet S.A. de C.V., MX",
+            "Target_AS_Number": "8151",
+            "source": 23,
+            "target": 61
+        },
+        {
+            "RTT": "7.46",
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "Target_AS_Name": "CNCGROUP-SH China Unicom Shanghai network, CN",
+            "Target_AS_Number": "17621",
+            "source": 32,
+            "target": 62
+        },
+        {
+            "RTT": "0.7",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ASN-VINS - ViaWest , US",
+            "Target_AS_Number": "13649",
+            "source": 5,
+            "target": 63
+        },
+        {
+            "RTT": "4.99",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TDC TDC A/S, DK",
+            "Target_AS_Number": "3292",
+            "source": 5,
+            "target": 64
+        },
+        {
+            "RTT": "46.36",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "GAMING1 , BE",
+            "Target_AS_Number": "200869",
+            "source": 23,
+            "target": 65
+        },
+        {
+            "RTT": "1.52",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "HUGESERVER-NETWORKS - HugeServer Networks, LLC, US",
+            "Target_AS_Number": "25780",
+            "source": 23,
+            "target": 66
+        },
+        {
+            "RTT": "17.22",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AS-VOBIZ - vanoppen.biz LLC, US",
+            "Target_AS_Number": "11404",
+            "source": 5,
+            "target": 67
+        },
+        {
+            "RTT": "3.66",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "C2C-NET , NL",
+            "Target_AS_Number": "24753",
+            "source": 23,
+            "target": 68
+        },
+        {
+            "RTT": "16.79",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "BTEL-BG-AS , BG",
+            "Target_AS_Number": "44814",
+            "source": 23,
+            "target": 69
+        },
+        {
+            "RTT": "227.02",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CHINANET-SH-AP China Telecom (Group), CN",
+            "Target_AS_Number": "4812",
+            "source": 56,
+            "target": 70
+        },
+        {
+            "RTT": "18.36",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "KPN , NL",
+            "Target_AS_Number": "286",
+            "source": 5,
+            "target": 71
+        },
+        {
+            "RTT": "6.66",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "11351",
+            "source": 29,
+            "target": 72
+        },
+        {
+            "RTT": "5.87",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CYRUSONE - CyrusOne LLC, US",
+            "Target_AS_Number": "20013",
+            "source": 5,
+            "target": 73
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "Target_AS_Number": "29216",
+            "source": 5,
+            "target": 74
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "RIPE-NCC-AS , NL",
+            "Target_AS_Number": "3333",
+            "source": 5,
+            "target": 75
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "LINODE-AP Linode, LLC, SG",
+            "Target_AS_Number": "63949",
+            "source": 5,
+            "target": 76
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 5,
+            "target": 27
+        },
+        {
+            "RTT": "101.67",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "MOBILY-AS Etihad Etisalat Company (Mobily), SA",
+            "Target_AS_Number": "35819",
+            "source": 23,
+            "target": 77
+        },
+        {
+            "RTT": "249.64",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CHINATELECOM-GUANGDONG-IDC Guangdong, CN",
+            "Target_AS_Number": "58543",
+            "source": 56,
+            "target": 78
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CNIX-AP China Networks Inter-Exchange, CN",
+            "Target_AS_Number": "4847",
+            "source": 56,
+            "target": 79
+        },
+        {
+            "RTT": "27.24",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ACTTG - Accretive Networks, US",
+            "Target_AS_Number": "11608",
+            "source": 5,
+            "target": 80
+        },
+        {
+            "RTT": "1.55",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "EASYNET Easynet Global Services, GB",
+            "Target_AS_Number": "4589",
+            "source": 5,
+            "target": 81
+        },
+        {
+            "RTT": "4.52",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+            "Target_AS_Number": "33363",
+            "source": 29,
+            "target": 82
+        },
+        {
+            "RTT": "25.05",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "BBIL-AP BHARTI Airtel Ltd., IN",
+            "Target_AS_Number": "9498",
+            "source": 23,
+            "target": 83
+        },
+        {
+            "RTT": "97.24",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CHINANET-IDC-BJ-AP IDC, China Telecommunications Corporation, CN",
+            "Target_AS_Number": "23724",
+            "source": 56,
+            "target": 84
+        },
+        {
+            "RTT": "2.54",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CENTURYLINK-LEGACY-LIGHTCORE - CenturyTel Internet Holdings, Inc., US",
+            "Target_AS_Number": "22561",
+            "source": 5,
+            "target": 85
+        },
+        {
+            "RTT": "4.99",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "INTEGRATELECOM - Integra Telecom, Inc., US",
+            "Target_AS_Number": "7385",
+            "source": 5,
+            "target": 86
+        },
+        {
+            "RTT": "16.21",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CABLE-NET-1 - Cablevision Systems Corp., US",
+            "Target_AS_Number": "6128",
+            "source": 5,
+            "target": 87
+        },
+        {
+            "RTT": "15.82",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "VMWARE - VMware, Inc., US",
+            "Target_AS_Number": "55048",
+            "source": 5,
+            "target": 88
+        },
+        {
+            "RTT": "17.89",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "FUSE-NET - Cincinnati Bell Telephone, US",
+            "Target_AS_Number": "6181",
+            "source": 23,
+            "target": 89
+        },
+        {
+            "RTT": "216.73",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CHINANET-JS-AS-AP AS Number for CHINANET jiangsu province backbone, CN",
+            "Target_AS_Number": "23650",
+            "source": 56,
+            "target": 90
+        },
+        {
+            "RTT": "0.41",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "Target_AS_Number": "4565",
+            "source": 5,
+            "target": 91
+        },
+        {
+            "RTT": "3.07",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TWN - Trion Worlds, Inc., US",
+            "Target_AS_Number": "46235",
+            "source": 5,
+            "target": 92
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "BACOM - Bell Canada, CA",
+            "Target_AS_Number": "577",
+            "source": 5,
+            "target": 93
+        },
+        {
+            "RTT": "2.25",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "LIGHTBOUND-AS - IQuest Internet, US",
+            "Target_AS_Number": "7332",
+            "source": 5,
+            "target": 94
+        },
+        {
+            "RTT": "6.39",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "NOWATEL-AS , PL",
+            "Target_AS_Number": "60191",
+            "source": 23,
+            "target": 95
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AEBS-ASN - AE Business Solutions, US",
+            "Target_AS_Number": "40433",
+            "source": 5,
+            "target": 96
+        },
+        {
+            "RTT": "2.17",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "11427",
+            "source": 29,
+            "target": 97
+        },
+        {
+            "RTT": "2.03",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "TRANSTELCO-INC - Transtelco Inc, US",
+            "Target_AS_Number": "32098",
+            "source": 23,
+            "target": 98
+        },
+        {
+            "RTT": "19.55",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "MORATELINDONAP-AS-ID PT.Mora Telematika Indonesia, ID",
+            "Target_AS_Number": "23947",
+            "source": 23,
+            "target": 99
+        },
+        {
+            "RTT": "15.55",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SOFTLAYER - SoftLayer Technologies Inc., US",
+            "Target_AS_Number": "36351",
+            "source": 5,
+            "target": 100
+        },
+        {
+            "RTT": "63.59",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Target_AS_Number": "30036",
+            "source": 5,
+            "target": 101
+        },
+        {
+            "RTT": "3.14",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AOL-ATDN - AOL Transit Data Network, US",
+            "Target_AS_Number": "1668",
+            "source": 5,
+            "target": 102
+        },
+        {
+            "RTT": "0.62",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "WZCOM-US - WZ Communications Inc., US",
+            "Target_AS_Number": "40824",
+            "source": 5,
+            "target": 103
+        },
+        {
+            "RTT": "1.63",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+            "Target_AS_Number": "8075",
+            "source": 5,
+            "target": 104
+        },
+        {
+            "RTT": "17.73",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "WOLFENET - Wolfenet, US",
+            "Target_AS_Number": "4258",
+            "source": 5,
+            "target": 105
+        },
+        {
+            "RTT": "3.33",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "PEER1 - Peer 1 Network (USA) Inc., US",
+            "Target_AS_Number": "13768",
+            "source": 5,
+            "target": 106
+        },
+        {
+            "RTT": "79.26",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "GIGAINFRA Softbank BB Corp., JP",
+            "Target_AS_Number": "17676",
+            "source": 5,
+            "target": 107
+        },
+        {
+            "RTT": "0.52",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CONCORD-MA - Town of Concord MA, US",
+            "Target_AS_Number": "25808",
+            "source": 5,
+            "target": 108
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "COGENT-2149 - Cogent Communications, US",
+            "Target_AS_Number": "2149",
+            "source": 5,
+            "target": 109
+        },
+        {
+            "RTT": "7.69",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "INTERNAP-BLOCK-4 - Internap Network Services Corporation, US",
+            "Target_AS_Number": "14743",
+            "source": 23,
+            "target": 110
+        },
+        {
+            "RTT": "0.22",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "VOCUS-BACKBONE-AS Vocus Connect International Backbone, AU",
+            "Target_AS_Number": "4826",
+            "source": 23,
+            "target": 111
+        },
+        {
+            "RTT": "1.58",
+            "Source_AS_Name": "VOCUS-BACKBONE-AS Vocus Connect International Backbone, AU",
+            "Source_AS_Number": "4826",
+            "Target_AS_Name": "AMNET-AU-AP Amnet IT Services Pty Ltd, AU",
+            "Target_AS_Number": "9822",
+            "source": 111,
+            "target": 112
+        },
+        {
+            "RTT": "13.55",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "AS-COLOCROSSING - ColoCrossing, US",
+            "Target_AS_Number": "36352",
+            "source": 23,
+            "target": 113
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "GCI - GENERAL COMMUNICATION, INC., US",
+            "Target_AS_Number": "8047",
+            "source": 5,
+            "target": 114
+        },
+        {
+            "RTT": "1.76",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "ASN-QUADRANET-GLOBAL - QuadraNet, Inc, US",
+            "Target_AS_Number": "8100",
+            "source": 23,
+            "target": 115
+        },
+        {
+            "RTT": "1.62",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "YAHOO-GQ1 - Yahoo, US",
+            "Target_AS_Number": "36647",
+            "source": 5,
+            "target": 116
+        },
+        {
+            "RTT": "0.26",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "BT , GB",
+            "Target_AS_Number": "5400",
+            "source": 5,
+            "target": 117
+        },
+        {
+            "RTT": "11.11",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "SURFNET-NL SURFnet, The Netherlands, NL",
+            "Target_AS_Number": "1103",
+            "source": 23,
+            "target": 118
+        },
+        {
+            "RTT": "24.62",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CT-GUANGZHOU-IDC CHINANET Guangdong province network, CN",
+            "Target_AS_Number": "58466",
+            "source": 56,
+            "target": 119
+        },
+        {
+            "RTT": "255.95",
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "Target_AS_Name": "CNCGROUP-SZ China Unicom Shenzen network, CN",
+            "Target_AS_Number": "17623",
+            "source": 32,
+            "target": 120
+        },
+        {
+            "RTT": "42.85",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "BARR-XPLR-ASN - Xplornet Communications Inc., CA",
+            "Target_AS_Number": "22995",
+            "source": 23,
+            "target": 121
+        },
+        {
+            "RTT": "1.61",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CLOUDFLARENET - CloudFlare, Inc., US",
+            "Target_AS_Number": "13335",
+            "source": 5,
+            "target": 122
+        },
+        {
+            "RTT": "94.63",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "VERIXI , BE",
+            "Target_AS_Number": "49964",
+            "source": 23,
+            "target": 123
+        },
+        {
+            "RTT": "10.13",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CHINANET-IDC-GD China Telecom (Group), CN",
+            "Target_AS_Number": "4816",
+            "source": 56,
+            "target": 124
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3549",
+            "source": 5,
+            "target": 125
+        },
+        {
+            "RTT": "0.77",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "Target_AS_Number": "4565",
+            "source": 23,
+            "target": 91
+        },
+        {
+            "RTT": "132.05",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "IQPL-AS , PL",
+            "Target_AS_Number": "47544",
+            "source": 23,
+            "target": 126
+        },
+        {
+            "RTT": "186.26",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "CT-JIANGXI-IDC CHINANET Jiangx province IDC network, CN",
+            "Target_AS_Number": "134238",
+            "source": 56,
+            "target": 127
+        },
+        {
+            "RTT": "0.12",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AS-SSI - Netflix Streaming Services Inc., US",
+            "Target_AS_Number": "2906",
+            "source": 5,
+            "target": 128
+        },
+        {
+            "RTT": "5.11",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "ARTNET , PL",
+            "Target_AS_Number": "197155",
+            "source": 23,
+            "target": 129
+        },
+        {
+            "RTT": "1.45",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "MACLEAN-FOGG - Mac Lean-Fogg Company, US",
+            "Target_AS_Number": "26532",
+            "source": 5,
+            "target": 130
+        },
+        {
+            "RTT": "53.52",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "DATANOC - Lanset America Corporation, US",
+            "Target_AS_Number": "16578",
+            "source": 5,
+            "target": 131
+        }
+    ],
+    "Nodes": [
+        {
+            "AS_Name": "COMCAST-6161 - Comcast Cable Communications, US",
+            "AS_Number": "6161",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-6161 - Comcast Cable Communications, US",
+            "Source_AS_Number": 6161,
+            "value": 0
+        },
+        {
+            "AS_Name": "COMCAST-7015 - Comcast Cable Communications Holdings, Inc, US",
+            "AS_Number": "7015",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7015 - Comcast Cable Communications Holdings, Inc, US",
+            "Source_AS_Number": 7015,
+            "value": 0
+        },
+        {
+            "AS_Name": "COMCAST-7725 - Comcast Cable Communications Holdings, Inc, US",
+            "AS_Number": "7725",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7725 - Comcast Cable Communications Holdings, Inc, US",
+            "Source_AS_Number": 7725,
+            "value": 0
+        },
+        {
+            "AS_Name": "COMCAST-7757 - Comcast Cable Communications Holdings, Inc, US",
+            "AS_Number": "7757",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7757 - Comcast Cable Communications Holdings, Inc, US",
+            "Source_AS_Number": 7757,
+            "value": 0
+        },
+        {
+            "AS_Name": "COMCAST-TELECOMM-2 - Comcast Telecommunications, Inc., US",
+            "AS_Number": "7853",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-TELECOMM-2 - Comcast Telecommunications, Inc., US",
+            "Source_AS_Number": 7853,
+            "value": 0
+        },
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922",
+            "Shared": false,
+            "Shared_By": [
+                "LEVEL3 - Level 3 Communications, Inc., US",
+                "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+                "COGENT-174 - Cogent Communications, US",
+                "WOODYNET-2 - WoodyNet, US",
+                "WOODYNET-1 - WoodyNet, US",
+                "ISC-AS - Internet Systems Consortium, Inc., US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+                "DNIC-AS-00668 - DoD Network Information Center, US",
+                "TWDX - TowardEX Technologies International, Inc., US",
+                "CW Vodafone Ltd, GB",
+                "L-ROOT - ICANN, US",
+                "TELIANET , SE",
+                "HURRICANE - Hurricane Electric, Inc., US",
+                "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+                "BTN-ASN - Beyond The Network America, Inc., US",
+                "KDDI KDDI CORPORATION, JP",
+                "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+                "GTT-BACKBONE GTT, DE",
+                "ZAYO-6461 - Zayo Bandwidth Inc, US",
+                "XO-AS15 - XO Communications, US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "ATT-INTERNET4 - AT&T Services, Inc., US",
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+                "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+                "DTAG Internet service provider operations, DE",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "HWNG , NL",
+                "ROGERS-CABLE - Rogers Cable Communications Inc., CA",
+                "SINGTEL-AS-AP Singapore Telecommunications Ltd, SG",
+                "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+                "KIXS-AS-KR Korea Telecom, KR",
+                "AMAZON-02 - Amazon.com, Inc., US",
+                "SPRINTLINK - Sprint, US",
+                "ASN-TELSTRA-GLOBAL Telstra Global, HK",
+                "VOXILITY , RO",
+                "SHAW - Shaw Communications Inc., CA",
+                "LGI-UPC formerly known as UPC Broadband Holding B.V., AT",
+                "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+                "FASTLY - Fastly, US",
+                "TELEFONICA Telefonica Wholesale Network, ES",
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+                "ASN852 - TELUS Communications Inc., CA",
+                "SERVERCENTRAL - Server Central Network, US",
+                "ASN-VINS - ViaWest , US",
+                "TDC TDC A/S, DK",
+                "AS-VOBIZ - vanoppen.biz LLC, US",
+                "KPN , NL",
+                "CYRUSONE - CyrusOne LLC, US",
+                "I-ROOT DNS root name server i.root-servers.net., SE",
+                "RIPE-NCC-AS , NL",
+                "LINODE-AP Linode, LLC, SG",
+                "HETZNER-AS , DE",
+                "ACTTG - Accretive Networks, US",
+                "EASYNET Easynet Global Services, GB",
+                "CENTURYLINK-LEGACY-LIGHTCORE - CenturyTel Internet Holdings, Inc., US",
+                "INTEGRATELECOM - Integra Telecom, Inc., US",
+                "CABLE-NET-1 - Cablevision Systems Corp., US",
+                "VMWARE - VMware, Inc., US",
+                "MEGAPATH2-US - MegaPath Networks Inc., US",
+                "TWN - Trion Worlds, Inc., US",
+                "BACOM - Bell Canada, CA",
+                "LIGHTBOUND-AS - IQuest Internet, US",
+                "AEBS-ASN - AE Business Solutions, US",
+                "SOFTLAYER - SoftLayer Technologies Inc., US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "AOL-ATDN - AOL Transit Data Network, US",
+                "WZCOM-US - WZ Communications Inc., US",
+                "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+                "WOLFENET - Wolfenet, US",
+                "PEER1 - Peer 1 Network (USA) Inc., US",
+                "GIGAINFRA Softbank BB Corp., JP",
+                "CONCORD-MA - Town of Concord MA, US",
+                "COGENT-2149 - Cogent Communications, US",
+                "GCI - GENERAL COMMUNICATION, INC., US",
+                "YAHOO-GQ1 - Yahoo, US",
+                "BT , GB",
+                "CLOUDFLARENET - CloudFlare, Inc., US",
+                "LVLT-3549 - Level 3 Communications, Inc., US",
+                "AS-SSI - Netflix Streaming Services Inc., US",
+                "MACLEAN-FOGG - Mac Lean-Fogg Company, US",
+                "DATANOC - Lanset America Corporation, US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": 7922,
+            "value": 81
+        },
+        {
+            "AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "AS_Number": "3356",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "AS_Number": "2914",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "COGENT-174 - Cogent Communications, US",
+            "AS_Number": "174",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "WOODYNET-2 - WoodyNet, US",
+            "AS_Number": "715",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "WOODYNET-1 - WoodyNet, US",
+            "AS_Number": "42",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "AS_Number": "3557",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "209",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "AS_Number": "668",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "TWDX - TowardEX Technologies International, Inc., US",
+            "AS_Number": "27552",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "CW Vodafone Ltd, GB",
+            "AS_Number": "1273",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "L-ROOT - ICANN, US",
+            "AS_Number": "20144",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "TELIANET , SE",
+            "AS_Number": "1299",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "AS_Number": "6939",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "AS_Number": "6453",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "BTN-ASN - Beyond The Network America, Inc., US",
+            "AS_Number": "3491",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "KDDI KDDI CORPORATION, JP",
+            "AS_Number": "2516",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "AS_Number": "6762",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "M-ROOT-DNS WIDE Project, JP",
+                "NET-ACCESS-CORP - Net Access Corporation, US",
+                "HETZNER-AS , DE",
+                "AS-CHOOPA - Choopa, LLC, US",
+                "IAM-AS, MA",
+                "VISP-LB-AS , LB",
+                "COLUMBUS-NETWORKS - Columbus Networks USA, Inc., US",
+                "FLAG-AS Flag Telecom Global Internet AS, GB",
+                "Uninet S.A. de C.V., MX",
+                "GAMING1 , BE",
+                "HUGESERVER-NETWORKS - HugeServer Networks, LLC, US",
+                "C2C-NET , NL",
+                "BTEL-BG-AS , BG",
+                "MOBILY-AS Etihad Etisalat Company (Mobily), SA",
+                "BBIL-AP BHARTI Airtel Ltd., IN",
+                "FUSE-NET - Cincinnati Bell Telephone, US",
+                "NOWATEL-AS , PL",
+                "TRANSTELCO-INC - Transtelco Inc, US",
+                "MORATELINDONAP-AS-ID PT.Mora Telematika Indonesia, ID",
+                "INTERNAP-BLOCK-4 - Internap Network Services Corporation, US",
+                "VOCUS-BACKBONE-AS Vocus Connect International Backbone, AU",
+                "AS-COLOCROSSING - ColoCrossing, US",
+                "ASN-QUADRANET-GLOBAL - QuadraNet, Inc, US",
+                "SURFNET-NL SURFnet, The Netherlands, NL",
+                "BARR-XPLR-ASN - Xplornet Communications Inc., CA",
+                "VERIXI , BE",
+                "MEGAPATH2-US - MegaPath Networks Inc., US",
+                "IQPL-AS , PL",
+                "ARTNET , PL"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 30
+        },
+        {
+            "AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "AS_Number": "6461",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "AS_Number": "7500",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "NET-ACCESS-CORP - Net Access Corporation, US",
+            "AS_Number": "8001",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "HETZNER-AS , DE",
+            "AS_Number": "24940",
+            "Shared": true,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 2
+        },
+        {
+            "AS_Name": "XO-AS15 - XO Communications, US",
+            "AS_Number": "2828",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "AS_Number": "7843",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "SCRR-10796 - Time Warner Cable Internet LLC, US",
+                "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+                "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+                "SCRR-11427 - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 5
+        },
+        {
+            "AS_Name": "SCRR-10796 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "10796",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "AS_Number": "7018",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "AS_Number": "4837",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "CHINA169-BJ China Unicom Beijing Province Network, CN",
+                "CNNIC-KUANCOM-AP Beijing Kuancom Network Technology Co.,Ltd., CN",
+                "CNCGROUP-SH China Unicom Shanghai network, CN",
+                "CNCGROUP-SZ China Unicom Shenzen network, CN"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 5
+        },
+        {
+            "AS_Name": "CHINA169-BJ China Unicom Beijing Province Network, CN",
+            "AS_Number": "4808",
+            "Shared": false,
+            "Shared_By": [
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+            "AS_Number": "11164",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "DTAG Internet service provider operations, DE",
+            "AS_Number": "3320",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "701",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "HWNG , NL",
+            "AS_Number": "12989",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "ROGERS-CABLE - Rogers Cable Communications Inc., CA",
+            "AS_Number": "812",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS-CHOOPA - Choopa, LLC, US",
+            "AS_Number": "20473",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "SINGTEL-AS-AP Singapore Telecommunications Ltd, SG",
+            "AS_Number": "7473",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "AS_Number": "25152",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "KIXS-AS-KR Korea Telecom, KR",
+            "AS_Number": "4766",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "IAM-AS, MA",
+            "AS_Number": "6713",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "AMAZON-02 - Amazon.com, Inc., US",
+            "AS_Number": "16509",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "SPRINTLINK - Sprint, US",
+            "AS_Number": "1239",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "ASN-TELSTRA-GLOBAL Telstra Global, HK",
+            "AS_Number": "4637",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "VOXILITY , RO",
+            "AS_Number": "3223",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "CNNIC-KUANCOM-AP Beijing Kuancom Network Technology Co.,Ltd., CN",
+            "AS_Number": "17969",
+            "Shared": false,
+            "Shared_By": [
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "value": 1
+        },
+        {
+            "AS_Name": "VISP-LB-AS , LB",
+            "AS_Number": "35197",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "SHAW - Shaw Communications Inc., CA",
+            "AS_Number": "6327",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "LGI-UPC formerly known as UPC Broadband Holding B.V., AT",
+            "AS_Number": "6830",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+            "AS_Number": "22773",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "FASTLY - Fastly, US",
+            "AS_Number": "54113",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "COLUMBUS-NETWORKS - Columbus Networks USA, Inc., US",
+            "AS_Number": "23520",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "TELEFONICA Telefonica Wholesale Network, ES",
+            "AS_Number": "12956",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "AS_Number": "4134",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "CHINANET-IDC-SN China Telecom (Group), CN",
+                "CHINANET-SH-AP China Telecom (Group), CN",
+                "CHINATELECOM-GUANGDONG-IDC Guangdong, CN",
+                "CNIX-AP China Networks Inter-Exchange, CN",
+                "CHINANET-IDC-BJ-AP IDC, China Telecommunications Corporation, CN",
+                "CHINANET-JS-AS-AP AS Number for CHINANET jiangsu province backbone, CN",
+                "CT-GUANGZHOU-IDC CHINANET Guangdong province network, CN",
+                "CHINANET-IDC-GD China Telecom (Group), CN",
+                "CT-JIANGXI-IDC CHINANET Jiangx province IDC network, CN"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 10
+        },
+        {
+            "AS_Name": "CHINANET-IDC-SN China Telecom (Group), CN",
+            "AS_Number": "4835",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "ASN852 - TELUS Communications Inc., CA",
+            "AS_Number": "852",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "SERVERCENTRAL - Server Central Network, US",
+            "AS_Number": "23352",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "FLAG-AS Flag Telecom Global Internet AS, GB",
+            "AS_Number": "15412",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "Uninet S.A. de C.V., MX",
+            "AS_Number": "8151",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CNCGROUP-SH China Unicom Shanghai network, CN",
+            "AS_Number": "17621",
+            "Shared": false,
+            "Shared_By": [
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "value": 1
+        },
+        {
+            "AS_Name": "ASN-VINS - ViaWest , US",
+            "AS_Number": "13649",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "TDC TDC A/S, DK",
+            "AS_Number": "3292",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "GAMING1 , BE",
+            "AS_Number": "200869",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "HUGESERVER-NETWORKS - HugeServer Networks, LLC, US",
+            "AS_Number": "25780",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS-VOBIZ - vanoppen.biz LLC, US",
+            "AS_Number": "11404",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "C2C-NET , NL",
+            "AS_Number": "24753",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "BTEL-BG-AS , BG",
+            "AS_Number": "44814",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINANET-SH-AP China Telecom (Group), CN",
+            "AS_Number": "4812",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "KPN , NL",
+            "AS_Number": "286",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11351",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "CYRUSONE - CyrusOne LLC, US",
+            "AS_Number": "20013",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "AS_Number": "29216",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "RIPE-NCC-AS , NL",
+            "AS_Number": "3333",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "LINODE-AP Linode, LLC, SG",
+            "AS_Number": "63949",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "MOBILY-AS Etihad Etisalat Company (Mobily), SA",
+            "AS_Number": "35819",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINATELECOM-GUANGDONG-IDC Guangdong, CN",
+            "AS_Number": "58543",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "CNIX-AP China Networks Inter-Exchange, CN",
+            "AS_Number": "4847",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "ACTTG - Accretive Networks, US",
+            "AS_Number": "11608",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "EASYNET Easynet Global Services, GB",
+            "AS_Number": "4589",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+            "AS_Number": "33363",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "BBIL-AP BHARTI Airtel Ltd., IN",
+            "AS_Number": "9498",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINANET-IDC-BJ-AP IDC, China Telecommunications Corporation, CN",
+            "AS_Number": "23724",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-LIGHTCORE - CenturyTel Internet Holdings, Inc., US",
+            "AS_Number": "22561",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTEGRATELECOM - Integra Telecom, Inc., US",
+            "AS_Number": "7385",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "CABLE-NET-1 - Cablevision Systems Corp., US",
+            "AS_Number": "6128",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "VMWARE - VMware, Inc., US",
+            "AS_Number": "55048",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "FUSE-NET - Cincinnati Bell Telephone, US",
+            "AS_Number": "6181",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINANET-JS-AS-AP AS Number for CHINANET jiangsu province backbone, CN",
+            "AS_Number": "23650",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "AS_Number": "4565",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "TWN - Trion Worlds, Inc., US",
+            "AS_Number": "46235",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "BACOM - Bell Canada, CA",
+            "AS_Number": "577",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "LIGHTBOUND-AS - IQuest Internet, US",
+            "AS_Number": "7332",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "NOWATEL-AS , PL",
+            "AS_Number": "60191",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "AEBS-ASN - AE Business Solutions, US",
+            "AS_Number": "40433",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11427",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "TRANSTELCO-INC - Transtelco Inc, US",
+            "AS_Number": "32098",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "MORATELINDONAP-AS-ID PT.Mora Telematika Indonesia, ID",
+            "AS_Number": "23947",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "SOFTLAYER - SoftLayer Technologies Inc., US",
+            "AS_Number": "36351",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "AS_Number": "30036",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "AOL-ATDN - AOL Transit Data Network, US",
+            "AS_Number": "1668",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "WZCOM-US - WZ Communications Inc., US",
+            "AS_Number": "40824",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+            "AS_Number": "8075",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "WOLFENET - Wolfenet, US",
+            "AS_Number": "4258",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "PEER1 - Peer 1 Network (USA) Inc., US",
+            "AS_Number": "13768",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "GIGAINFRA Softbank BB Corp., JP",
+            "AS_Number": "17676",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "CONCORD-MA - Town of Concord MA, US",
+            "AS_Number": "25808",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "COGENT-2149 - Cogent Communications, US",
+            "AS_Number": "2149",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTERNAP-BLOCK-4 - Internap Network Services Corporation, US",
+            "AS_Number": "14743",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "VOCUS-BACKBONE-AS Vocus Connect International Backbone, AU",
+            "AS_Number": "4826",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE",
+                "AMNET-AU-AP Amnet IT Services Pty Ltd, AU"
+            ],
+            "Source": true,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 2
+        },
+        {
+            "AS_Name": "AMNET-AU-AP Amnet IT Services Pty Ltd, AU",
+            "AS_Number": "9822",
+            "Shared": false,
+            "Shared_By": [
+                "VOCUS-BACKBONE-AS Vocus Connect International Backbone, AU"
+            ],
+            "Source": false,
+            "Source_AS_Name": "VOCUS-BACKBONE-AS Vocus Connect International Backbone, AU",
+            "Source_AS_Number": "4826",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS-COLOCROSSING - ColoCrossing, US",
+            "AS_Number": "36352",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "GCI - GENERAL COMMUNICATION, INC., US",
+            "AS_Number": "8047",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "ASN-QUADRANET-GLOBAL - QuadraNet, Inc, US",
+            "AS_Number": "8100",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "YAHOO-GQ1 - Yahoo, US",
+            "AS_Number": "36647",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "BT , GB",
+            "AS_Number": "5400",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "SURFNET-NL SURFnet, The Netherlands, NL",
+            "AS_Number": "1103",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CT-GUANGZHOU-IDC CHINANET Guangdong province network, CN",
+            "AS_Number": "58466",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "CNCGROUP-SZ China Unicom Shenzen network, CN",
+            "AS_Number": "17623",
+            "Shared": false,
+            "Shared_By": [
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "value": 1
+        },
+        {
+            "AS_Name": "BARR-XPLR-ASN - Xplornet Communications Inc., CA",
+            "AS_Number": "22995",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CLOUDFLARENET - CloudFlare, Inc., US",
+            "AS_Number": "13335",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "VERIXI , BE",
+            "AS_Number": "49964",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINANET-IDC-GD China Telecom (Group), CN",
+            "AS_Number": "4816",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "AS_Number": "3549",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "IQPL-AS , PL",
+            "AS_Number": "47544",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "CT-JIANGXI-IDC CHINANET Jiangx province IDC network, CN",
+            "AS_Number": "134238",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS-SSI - Netflix Streaming Services Inc., US",
+            "AS_Number": "2906",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "ARTNET , PL",
+            "AS_Number": "197155",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "MACLEAN-FOGG - Mac Lean-Fogg Company, US",
+            "AS_Number": "26532",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "DATANOC - Lanset America Corporation, US",
+            "AS_Number": "16578",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        }
+    ],
+    "Source_List": [
+        {
+            "AS_Name": "COMCAST-6161 - Comcast Cable Communications, US",
+            "AS_Number": "6161"
+        },
+        {
+            "AS_Name": "COMCAST-7015 - Comcast Cable Communications Holdings, Inc, US",
+            "AS_Number": "7015"
+        },
+        {
+            "AS_Name": "COMCAST-7725 - Comcast Cable Communications Holdings, Inc, US",
+            "AS_Number": "7725"
+        },
+        {
+            "AS_Name": "COMCAST-7757 - Comcast Cable Communications Holdings, Inc, US",
+            "AS_Number": "7757"
+        },
+        {
+            "AS_Name": "COMCAST-TELECOMM-2 - Comcast Telecommunications, Inc., US",
+            "AS_Number": "7853"
+        },
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922"
+        }
+    ]
+}

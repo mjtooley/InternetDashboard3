@@ -1,0 +1,552 @@
+{
+    "Networks": [
+        {
+            "Aggregate_Routes": [
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": null,
+                            "lat": 51.4964,
+                            "lng": -0.1224
+                        },
+                        {
+                            "Name": "HETZNER-RZ-NBG-NET",
+                            "lat": 49.4478,
+                            "lng": 11.0683
+                        }
+                    ],
+                    "Destination": "HETZNER-RZ-NBG-NET",
+                    "Final_RTT": 118.52,
+                    "ISP_RTT": 35.495,
+                    "Traceroutes": [
+                        [
+                            [
+                                35.495,
+                                118.52
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": null,
+                                "RTT": 2.074,
+                                "lat": 51.4964,
+                                "lng": -0.1224
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 28.007,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 10.963,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 13.88,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 16.593,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 16.901,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 23.886,
+                                "lat": 39.6478,
+                                "lng": -104.9878
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 25.998,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 23.535,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "TATA COMMUNICATIONS (AMERICA) INC",
+                                "RTT": 35.495,
+                                "lat": 39.7351,
+                                "lng": -75.6684
+                            },
+                            {
+                                "Name": "TATA COMMUNICATIONS (AMERICA) INC",
+                                "RTT": 109.164,
+                                "lat": 39.7351,
+                                "lng": -75.6684
+                            },
+                            {
+                                "Name": "Customers access -30 and BB internal use",
+                                "RTT": 113.628,
+                                "lat": 47.0,
+                                "lng": 8.0
+                            },
+                            {
+                                "Name": "Customers access -30 and BB internal use",
+                                "RTT": 116.003,
+                                "lat": 47.0,
+                                "lng": 8.0
+                            },
+                            {
+                                "Name": "Customers access -30 and BB internal use",
+                                "RTT": 120.661,
+                                "lat": 47.0,
+                                "lng": 8.0
+                            },
+                            {
+                                "Name": "Customers access -30 and BB internal use",
+                                "RTT": 117.923,
+                                "lat": 47.0,
+                                "lng": 8.0
+                            },
+                            {
+                                "Name": "Customers access -30 and BB internal use",
+                                "RTT": 116.014,
+                                "lat": 48.8628,
+                                "lng": 2.3292
+                            },
+                            {
+                                "Name": "DE, Frankfurt",
+                                "RTT": 118.588,
+                                "lat": 51.2993,
+                                "lng": 9.491
+                            },
+                            {
+                                "Name": "PROVIDER Local Registry",
+                                "RTT": 119.147,
+                                "lat": 51.2993,
+                                "lng": 9.491
+                            },
+                            {
+                                "Name": "PROVIDER Local Registry",
+                                "RTT": 118.714,
+                                "lat": 51.2993,
+                                "lng": 9.491
+                            },
+                            {
+                                "Name": "PROVIDER Local Registry",
+                                "RTT": 119.904,
+                                "lat": 51.2993,
+                                "lng": 9.491
+                            },
+                            {
+                                "Name": "HETZNER-RZ-NBG-NET",
+                                "RTT": 118.52,
+                                "lat": 49.4478,
+                                "lng": 11.0683
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "Time Warner Cable Internet LLC",
+                            "lat": 39.9586,
+                            "lng": -83.8063
+                        },
+                        {
+                            "Name": "ISC-NET1",
+                            "lat": 37.751,
+                            "lng": -97.822
+                        }
+                    ],
+                    "Destination": "ISC-NET1",
+                    "Final_RTT": 94.908,
+                    "ISP_RTT": 98.445,
+                    "Traceroutes": [
+                        [
+                            [
+                                98.445,
+                                94.908
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 631.895,
+                                "lat": 39.9586,
+                                "lng": -83.8063
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 23.0,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 13.975,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 21.979,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 30.358,
+                                "lat": 39.6478,
+                                "lng": -104.9878
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 93.762,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 101.856,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 93.892,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 100.54,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 97.305,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Internet Systems Consortium, Inc.",
+                                "RTT": 98.445,
+                                "lat": 37.4625,
+                                "lng": -122.2405
+                            },
+                            {
+                                "Name": "ISC-NET1",
+                                "RTT": 94.908,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "Time Warner Cable Internet LLC",
+                            "lat": 37.751,
+                            "lng": -97.822
+                        },
+                        {
+                            "Name": "I-ROOTSERVER",
+                            "lat": 59.3247,
+                            "lng": 18.056
+                        }
+                    ],
+                    "Destination": "I-ROOTSERVER",
+                    "Final_RTT": 249.718,
+                    "ISP_RTT": 40.718,
+                    "Traceroutes": [
+                        [
+                            [
+                                40.718,
+                                249.718
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 22.7,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 13.642,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 21.573,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 29.218,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 29.922,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 28.912,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "TATA COMMUNICATIONS (AMERICA) INC",
+                                "RTT": 40.718,
+                                "lat": 39.7351,
+                                "lng": -75.6684
+                            },
+                            {
+                                "Name": "TATA COMMUNICATIONS (AMERICA) INC",
+                                "RTT": 248.698,
+                                "lat": 39.7351,
+                                "lng": -75.6684
+                            },
+                            {
+                                "Name": "TATA COMMUNICATIONS (AMERICA) INC",
+                                "RTT": 245.535,
+                                "lat": 39.7351,
+                                "lng": -75.6684
+                            },
+                            {
+                                "Name": "Customers access -30 and BB internal use",
+                                "RTT": 259.997,
+                                "lat": 18.5333,
+                                "lng": 73.8667
+                            },
+                            {
+                                "Name": "Customer access /30 & BB usage",
+                                "RTT": 246.68,
+                                "lat": 18.5333,
+                                "lng": 73.8667
+                            },
+                            {
+                                "Name": "I-ROOTSERVER",
+                                "RTT": 249.718,
+                                "lat": 59.3247,
+                                "lng": 18.056
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "Time Warner Cable Internet LLC",
+                            "lat": 40.0992,
+                            "lng": -83.1141
+                        },
+                        {
+                            "Name": "COGENT-192-33-24",
+                            "lat": 37.751,
+                            "lng": -97.822
+                        }
+                    ],
+                    "Destination": "COGENT-192-33-24",
+                    "Final_RTT": 28.954,
+                    "ISP_RTT": 32.128,
+                    "Traceroutes": [
+                        [
+                            [
+                                32.128,
+                                28.954
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 27.072,
+                                "lat": 40.0992,
+                                "lng": -83.1141
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 30.396,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 21.948,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 22.054,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 29.658,
+                                "lat": 39.6478,
+                                "lng": -104.9878
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 29.611,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 29.934,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "PSINet, Inc.",
+                                "RTT": 32.128,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "PSINet, Inc.",
+                                "RTT": 30.635,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "PSINet, Inc.",
+                                "RTT": 30.223,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "COGENT-192-33-24",
+                                "RTT": 28.954,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "Aggregate_Route": [
+                        {
+                            "Name": "Time Warner Cable Internet LLC",
+                            "lat": 41.7044,
+                            "lng": -80.7318
+                        },
+                        {
+                            "Name": "RIPE-NCC-K-ROOT",
+                            "lat": 52.35,
+                            "lng": 4.9167
+                        }
+                    ],
+                    "Destination": "RIPE-NCC-K-ROOT",
+                    "Final_RTT": 55.942,
+                    "ISP_RTT": 34.644,
+                    "Traceroutes": [
+                        [
+                            [
+                                34.644,
+                                55.942
+                            ]
+                        ],
+                        [
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 30.655,
+                                "lat": 41.7044,
+                                "lng": -80.7318
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 10.331,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 13.812,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 17.833,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 21.92,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 34.361,
+                                "lat": 39.6478,
+                                "lng": -104.9878
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 37.343,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Time Warner Cable Internet LLC",
+                                "RTT": 30.494,
+                                "lat": 37.751,
+                                "lng": -97.822
+                            },
+                            {
+                                "Name": "Hurricane Electric, Inc.",
+                                "RTT": 34.644,
+                                "lat": 37.5497,
+                                "lng": -121.9621
+                            },
+                            {
+                                "Name": "Hurricane Electric, Inc.",
+                                "RTT": 40.688,
+                                "lat": 37.5497,
+                                "lng": -121.9621
+                            },
+                            {
+                                "Name": "Hurricane Electric, Inc.",
+                                "RTT": 64.277,
+                                "lat": 37.5497,
+                                "lng": -121.9621
+                            },
+                            {
+                                "Name": "RIPE-NCC-K-ROOT",
+                                "RTT": 55.942,
+                                "lat": 52.35,
+                                "lng": 4.9167
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "Name": "Charter"
+        }
+    ]
+}

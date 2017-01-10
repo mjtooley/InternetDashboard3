@@ -1,0 +1,1626 @@
+{
+    "Backbone_AS_List": [
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257"
+        },
+        {
+            "AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "AS_Number": "4837"
+        },
+        {
+            "AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "AS_Number": "4134"
+        }
+    ],
+    "Links": [
+        {
+            "RTT": "0.32",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "Target_AS_Number": "7342",
+            "source": 0,
+            "target": 1
+        },
+        {
+            "RTT": "30.73",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Target_AS_Number": "2914",
+            "source": 0,
+            "target": 2
+        },
+        {
+            "RTT": "31.24",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 0,
+            "target": 3
+        },
+        {
+            "RTT": "31.19",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "WOODYNET-2 - WoodyNet, US",
+            "Target_AS_Number": "715",
+            "source": 0,
+            "target": 4
+        },
+        {
+            "RTT": "0.39",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "3557",
+            "source": 0,
+            "target": 5
+        },
+        {
+            "RTT": "33.12",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Target_AS_Number": "209",
+            "source": 0,
+            "target": 6
+        },
+        {
+            "RTT": "1.19",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "IIJ Internet Initiative Japan Inc., JP",
+            "Target_AS_Number": "2497",
+            "source": 0,
+            "target": 7
+        },
+        {
+            "RTT": "0.52",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "CW Vodafone Ltd, GB",
+            "Target_AS_Number": "1273",
+            "source": 0,
+            "target": 8
+        },
+        {
+            "RTT": "2.34",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Target_AS_Number": "23148",
+            "source": 0,
+            "target": 9
+        },
+        {
+            "RTT": "5.3",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TELIANET , SE",
+            "Target_AS_Number": "1299",
+            "source": 0,
+            "target": 10
+        },
+        {
+            "RTT": "31.99",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "Target_AS_Number": "6939",
+            "source": 0,
+            "target": 11
+        },
+        {
+            "RTT": "31.43",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 0,
+            "target": 12
+        },
+        {
+            "RTT": "32.09",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "BTN-ASN - Beyond The Network America, Inc., US",
+            "Target_AS_Number": "3491",
+            "source": 0,
+            "target": 13
+        },
+        {
+            "RTT": "6.02",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "COLUMBUS-NETWORKS - Columbus Networks USA, Inc., US",
+            "Target_AS_Number": "23520",
+            "source": 0,
+            "target": 14
+        },
+        {
+            "RTT": "4.4",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TDC TDC A/S, DK",
+            "Target_AS_Number": "3292",
+            "source": 0,
+            "target": 15
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 0,
+            "target": 16
+        },
+        {
+            "RTT": "9.92",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "HANARO-AS Hanaro Telecom Inc., KR",
+            "Target_AS_Number": "9318",
+            "source": 0,
+            "target": 17
+        },
+        {
+            "RTT": "198.01",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LSFIBERNET-AS LS FIBERNET PRIVATE LIMITED, IN",
+            "Target_AS_Number": "133298",
+            "source": 0,
+            "target": 18
+        },
+        {
+            "RTT": "5.7",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TELEFONICA Telefonica Wholesale Network, ES",
+            "Target_AS_Number": "12956",
+            "source": 0,
+            "target": 19
+        },
+        {
+            "RTT": "0.27",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "Target_AS_Number": "29216",
+            "source": 0,
+            "target": 20
+        },
+        {
+            "RTT": "10.8",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 0,
+            "target": 21
+        },
+        {
+            "RTT": "3.98",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 21,
+            "target": 22
+        },
+        {
+            "RTT": "25.58",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "Uninet S.A. de C.V., MX",
+            "Target_AS_Number": "8151",
+            "source": 21,
+            "target": 23
+        },
+        {
+            "RTT": "15.27",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 0,
+            "target": 24
+        },
+        {
+            "RTT": "10.36",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "DTAG Internet service provider operations, DE",
+            "Target_AS_Number": "3320",
+            "source": 0,
+            "target": 25
+        },
+        {
+            "RTT": "5.3",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 0,
+            "target": 26
+        },
+        {
+            "RTT": "2.52",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LGI-UPC formerly known as UPC Broadband Holding B.V., AT",
+            "Target_AS_Number": "6830",
+            "source": 0,
+            "target": 27
+        },
+        {
+            "RTT": "0.67",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "XO-AS15 - XO Communications, US",
+            "Target_AS_Number": "2828",
+            "source": 0,
+            "target": 28
+        },
+        {
+            "RTT": "2.79",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Target_AS_Number": "4837",
+            "source": 0,
+            "target": 29
+        },
+        {
+            "RTT": "247.98",
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "Target_AS_Name": "CHINA169-BJ China Unicom Beijing Province Network, CN",
+            "Target_AS_Number": "4808",
+            "source": 29,
+            "target": 30
+        },
+        {
+            "RTT": "6.38",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 0,
+            "target": 31
+        },
+        {
+            "RTT": "9.57",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "CENTURYLINK-LEGACY-SAVVIS - Savvis, US",
+            "Target_AS_Number": "3561",
+            "source": 0,
+            "target": 32
+        },
+        {
+            "RTT": "2.79",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "CITYMESH-AS , BE",
+            "Target_AS_Number": "199095",
+            "source": 21,
+            "target": 33
+        },
+        {
+            "RTT": "17.27",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3549",
+            "source": 0,
+            "target": 34
+        },
+        {
+            "RTT": "2.55",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "INTEROUTE 25 Canada Square, Canary Wharf, 31st Floor, GB",
+            "Target_AS_Number": "8928",
+            "source": 21,
+            "target": 35
+        },
+        {
+            "RTT": "5.05",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "MEDIMMUNE - Medimmune, LLC, US",
+            "Target_AS_Number": "4969",
+            "source": 0,
+            "target": 36
+        },
+        {
+            "RTT": "0.47",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "SPRINTLINK - Sprint, US",
+            "Target_AS_Number": "1239",
+            "source": 0,
+            "target": 37
+        },
+        {
+            "RTT": "0.96",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Target_AS_Number": "4134",
+            "source": 0,
+            "target": 38
+        },
+        {
+            "RTT": "1.04",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "Target_AS_Number": "6762",
+            "source": 0,
+            "target": 39
+        },
+        {
+            "RTT": "27.25",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "ALENT-ASN-1 - Alentus Corporation, US",
+            "Target_AS_Number": "4250",
+            "source": 21,
+            "target": 40
+        },
+        {
+            "RTT": "1.83",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "AS17054 - CONTINENTAL BROADBAND PENNSYLVANIA, INC., US",
+            "Target_AS_Number": "17054",
+            "source": 0,
+            "target": 41
+        },
+        {
+            "RTT": "0.25",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "VOCS - VOCUS INC, US",
+            "Target_AS_Number": "36606",
+            "source": 0,
+            "target": 42
+        },
+        {
+            "RTT": "57.62",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "Telecommunication Services of Trinidad and Tobago, TT",
+            "Target_AS_Number": "5639",
+            "source": 0,
+            "target": 43
+        },
+        {
+            "RTT": "9.93",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+            "Target_AS_Number": "8075",
+            "source": 0,
+            "target": 44
+        },
+        {
+            "RTT": "5.05",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "BBIL-AP BHARTI Airtel Ltd., IN",
+            "Target_AS_Number": "9498",
+            "source": 0,
+            "target": 45
+        },
+        {
+            "RTT": "3.32",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "CITelecom-AS, CI",
+            "Target_AS_Number": "29571",
+            "source": 0,
+            "target": 46
+        },
+        {
+            "RTT": "32.64",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "AS-CHOOPA - Choopa, LLC, US",
+            "Target_AS_Number": "20473",
+            "source": 21,
+            "target": 47
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "COGENT-2149 - Cogent Communications, US",
+            "Target_AS_Number": "2149",
+            "source": 0,
+            "target": 48
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "WOODYNET-1 - WoodyNet, US",
+            "Target_AS_Number": "42",
+            "source": 0,
+            "target": 49
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "Target_AS_Number": "25152",
+            "source": 0,
+            "target": 50
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "L-ROOT - ICANN, US",
+            "Target_AS_Number": "20144",
+            "source": 0,
+            "target": 51
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "Target_AS_Number": "7500",
+            "source": 0,
+            "target": 52
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "RIPE-NCC-AS , NL",
+            "Target_AS_Number": "3333",
+            "source": 0,
+            "target": 53
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LINODE-AP Linode, LLC, SG",
+            "Target_AS_Number": "63949",
+            "source": 0,
+            "target": 54
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 0,
+            "target": 22
+        },
+        {
+            "RTT": "190.79",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "TE-AS TE-AS, EG",
+            "Target_AS_Number": "8452",
+            "source": 21,
+            "target": 55
+        },
+        {
+            "RTT": "1.0",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "NOBIS-TECH - Nobis Technology Group, LLC, US",
+            "Target_AS_Number": "15003",
+            "source": 21,
+            "target": 56
+        },
+        {
+            "RTT": "4.14",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TWGATE-AP Taiwan Internet Gateway, TW",
+            "Target_AS_Number": "9505",
+            "source": 0,
+            "target": 57
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "GTUS - Grant Thornton LLP, US",
+            "Target_AS_Number": "40401",
+            "source": 0,
+            "target": 58
+        },
+        {
+            "RTT": "0.19",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "GTA-AP Teleguam Holdings, LLC, GU",
+            "Target_AS_Number": "9246",
+            "source": 0,
+            "target": 59
+        },
+        {
+            "RTT": "6.52",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 0,
+            "target": 60
+        },
+        {
+            "RTT": "157.7",
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "Target_AS_Name": "ENDAV-AS , BG",
+            "Target_AS_Number": "49597",
+            "source": 38,
+            "target": 61
+        },
+        {
+            "RTT": "3.44",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "INTERNAP-BLK - Internap Network Services Corporation, US",
+            "Target_AS_Number": "10912",
+            "source": 0,
+            "target": 62
+        },
+        {
+            "RTT": "130.18",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "AMX Argentina S.A., AR",
+            "Target_AS_Number": "19037",
+            "source": 21,
+            "target": 63
+        },
+        {
+            "RTT": "0.65",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "INTELSAT-1 - INTELSAT GLOBAL SERVICE CORPORATION, US",
+            "Target_AS_Number": "22351",
+            "source": 0,
+            "target": 64
+        },
+        {
+            "RTT": "21.41",
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "Target_AS_Name": "CNCGROUP-SH China Unicom Shanghai network, CN",
+            "Target_AS_Number": "17621",
+            "source": 29,
+            "target": 65
+        },
+        {
+            "RTT": "73.94",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "ETPI-IDS-AS-AP Eastern Telecoms Phils., Inc., PH",
+            "Target_AS_Number": "9658",
+            "source": 21,
+            "target": 66
+        },
+        {
+            "RTT": "0.1",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "Target_AS_Number": "4565",
+            "source": 0,
+            "target": 67
+        },
+        {
+            "RTT": "8.65",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 0,
+            "target": 68
+        },
+        {
+            "RTT": "2.44",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "INTEGRATELECOM - Integra Telecom, Inc., US",
+            "Target_AS_Number": "7385",
+            "source": 0,
+            "target": 69
+        }
+    ],
+    "Nodes": [
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "701",
+            "Shared": false,
+            "Shared_By": [
+                "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+                "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+                "COGENT-174 - Cogent Communications, US",
+                "WOODYNET-2 - WoodyNet, US",
+                "ISC-AS - Internet Systems Consortium, Inc., US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+                "IIJ Internet Initiative Japan Inc., JP",
+                "CW Vodafone Ltd, GB",
+                "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "TELIANET , SE",
+                "HURRICANE - Hurricane Electric, Inc., US",
+                "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+                "BTN-ASN - Beyond The Network America, Inc., US",
+                "COLUMBUS-NETWORKS - Columbus Networks USA, Inc., US",
+                "TDC TDC A/S, DK",
+                "LEVEL3 - Level 3 Communications, Inc., US",
+                "HANARO-AS Hanaro Telecom Inc., KR",
+                "LSFIBERNET-AS LS FIBERNET PRIVATE LIMITED, IN",
+                "TELEFONICA Telefonica Wholesale Network, ES",
+                "I-ROOT DNS root name server i.root-servers.net., SE",
+                "GTT-BACKBONE GTT, DE",
+                "ATT-INTERNET4 - AT&T Services, Inc., US",
+                "DTAG Internet service provider operations, DE",
+                "ZAYO-6461 - Zayo Bandwidth Inc, US",
+                "LGI-UPC formerly known as UPC Broadband Holding B.V., AT",
+                "XO-AS15 - XO Communications, US",
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "CENTURYLINK-LEGACY-SAVVIS - Savvis, US",
+                "LVLT-3549 - Level 3 Communications, Inc., US",
+                "MEDIMMUNE - Medimmune, LLC, US",
+                "SPRINTLINK - Sprint, US",
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+                "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+                "AS17054 - CONTINENTAL BROADBAND PENNSYLVANIA, INC., US",
+                "VOCS - VOCUS INC, US",
+                "Telecommunication Services of Trinidad and Tobago, TT",
+                "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+                "BBIL-AP BHARTI Airtel Ltd., IN",
+                "CITelecom-AS, CI",
+                "COGENT-2149 - Cogent Communications, US",
+                "WOODYNET-1 - WoodyNet, US",
+                "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+                "L-ROOT - ICANN, US",
+                "M-ROOT-DNS WIDE Project, JP",
+                "RIPE-NCC-AS , NL",
+                "LINODE-AP Linode, LLC, SG",
+                "HETZNER-AS , DE",
+                "TWGATE-AP Taiwan Internet Gateway, TW",
+                "GTUS - Grant Thornton LLP, US",
+                "GTA-AP Teleguam Holdings, LLC, GU",
+                "KDDI KDDI CORPORATION, JP",
+                "INTERNAP-BLK - Internap Network Services Corporation, US",
+                "INTELSAT-1 - INTELSAT GLOBAL SERVICE CORPORATION, US",
+                "MEGAPATH2-US - MegaPath Networks Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "INTEGRATELECOM - Integra Telecom, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 701,
+            "value": 57
+        },
+        {
+            "AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "AS_Number": "7342",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "AS_Number": "2914",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "COGENT-174 - Cogent Communications, US",
+            "AS_Number": "174",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "WOODYNET-2 - WoodyNet, US",
+            "AS_Number": "715",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "AS_Number": "3557",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "209",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "IIJ Internet Initiative Japan Inc., JP",
+            "AS_Number": "2497",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CW Vodafone Ltd, GB",
+            "AS_Number": "1273",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "23148",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "TELIANET , SE",
+            "AS_Number": "1299",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "AS_Number": "6939",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "AS_Number": "6453",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "BTN-ASN - Beyond The Network America, Inc., US",
+            "AS_Number": "3491",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "COLUMBUS-NETWORKS - Columbus Networks USA, Inc., US",
+            "AS_Number": "23520",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "TDC TDC A/S, DK",
+            "AS_Number": "3292",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "AS_Number": "3356",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "HANARO-AS Hanaro Telecom Inc., KR",
+            "AS_Number": "9318",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "LSFIBERNET-AS LS FIBERNET PRIVATE LIMITED, IN",
+            "AS_Number": "133298",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "TELEFONICA Telefonica Wholesale Network, ES",
+            "AS_Number": "12956",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "AS_Number": "29216",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "HETZNER-AS , DE",
+                "Uninet S.A. de C.V., MX",
+                "CITYMESH-AS , BE",
+                "INTEROUTE 25 Canada Square, Canary Wharf, 31st Floor, GB",
+                "ALENT-ASN-1 - Alentus Corporation, US",
+                "AS-CHOOPA - Choopa, LLC, US",
+                "TE-AS TE-AS, EG",
+                "NOBIS-TECH - Nobis Technology Group, LLC, US",
+                "AMX Argentina S.A., AR",
+                "ETPI-IDS-AS-AP Eastern Telecoms Phils., Inc., PH"
+            ],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 11
+        },
+        {
+            "AS_Name": "HETZNER-AS , DE",
+            "AS_Number": "24940",
+            "Shared": true,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 2
+        },
+        {
+            "AS_Name": "Uninet S.A. de C.V., MX",
+            "AS_Number": "8151",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "AS_Number": "7018",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "DTAG Internet service provider operations, DE",
+            "AS_Number": "3320",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "AS_Number": "6461",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "LGI-UPC formerly known as UPC Broadband Holding B.V., AT",
+            "AS_Number": "6830",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "XO-AS15 - XO Communications, US",
+            "AS_Number": "2828",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "AS_Number": "4837",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CHINA169-BJ China Unicom Beijing Province Network, CN",
+                "CNCGROUP-SH China Unicom Shanghai network, CN"
+            ],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 3
+        },
+        {
+            "AS_Name": "CHINA169-BJ China Unicom Beijing Province Network, CN",
+            "AS_Number": "4808",
+            "Shared": false,
+            "Shared_By": [
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "value": 1
+        },
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-SAVVIS - Savvis, US",
+            "AS_Number": "3561",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CITYMESH-AS , BE",
+            "AS_Number": "199095",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "AS_Number": "3549",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTEROUTE 25 Canada Square, Canary Wharf, 31st Floor, GB",
+            "AS_Number": "8928",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "MEDIMMUNE - Medimmune, LLC, US",
+            "AS_Number": "4969",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "SPRINTLINK - Sprint, US",
+            "AS_Number": "1239",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "AS_Number": "4134",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "ENDAV-AS , BG"
+            ],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 2
+        },
+        {
+            "AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "AS_Number": "6762",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "ALENT-ASN-1 - Alentus Corporation, US",
+            "AS_Number": "4250",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS17054 - CONTINENTAL BROADBAND PENNSYLVANIA, INC., US",
+            "AS_Number": "17054",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "VOCS - VOCUS INC, US",
+            "AS_Number": "36606",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "Telecommunication Services of Trinidad and Tobago, TT",
+            "AS_Number": "5639",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+            "AS_Number": "8075",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "BBIL-AP BHARTI Airtel Ltd., IN",
+            "AS_Number": "9498",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CITelecom-AS, CI",
+            "AS_Number": "29571",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS-CHOOPA - Choopa, LLC, US",
+            "AS_Number": "20473",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "COGENT-2149 - Cogent Communications, US",
+            "AS_Number": "2149",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "WOODYNET-1 - WoodyNet, US",
+            "AS_Number": "42",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "AS_Number": "25152",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "L-ROOT - ICANN, US",
+            "AS_Number": "20144",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "AS_Number": "7500",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "RIPE-NCC-AS , NL",
+            "AS_Number": "3333",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "LINODE-AP Linode, LLC, SG",
+            "AS_Number": "63949",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "TE-AS TE-AS, EG",
+            "AS_Number": "8452",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "NOBIS-TECH - Nobis Technology Group, LLC, US",
+            "AS_Number": "15003",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "TWGATE-AP Taiwan Internet Gateway, TW",
+            "AS_Number": "9505",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "GTUS - Grant Thornton LLP, US",
+            "AS_Number": "40401",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "GTA-AP Teleguam Holdings, LLC, GU",
+            "AS_Number": "9246",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "KDDI KDDI CORPORATION, JP",
+            "AS_Number": "2516",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "ENDAV-AS , BG",
+            "AS_Number": "49597",
+            "Shared": false,
+            "Shared_By": [
+                "CHINANET-BACKBONE No.31,Jin-rong Street, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINANET-BACKBONE No.31,Jin-rong Street, CN",
+            "Source_AS_Number": "4134",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTERNAP-BLK - Internap Network Services Corporation, US",
+            "AS_Number": "10912",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "AMX Argentina S.A., AR",
+            "AS_Number": "19037",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTELSAT-1 - INTELSAT GLOBAL SERVICE CORPORATION, US",
+            "AS_Number": "22351",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "CNCGROUP-SH China Unicom Shanghai network, CN",
+            "AS_Number": "17621",
+            "Shared": false,
+            "Shared_By": [
+                "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CHINA169-BACKBONE CNCGROUP China169 Backbone, CN",
+            "Source_AS_Number": "4837",
+            "value": 1
+        },
+        {
+            "AS_Name": "ETPI-IDS-AS-AP Eastern Telecoms Phils., Inc., PH",
+            "AS_Number": "9658",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "AS_Number": "4565",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "AS_Number": "7843",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTEGRATELECOM - Integra Telecom, Inc., US",
+            "AS_Number": "7385",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "702",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 702,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "703",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 703,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "704",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 704,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "705",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 705,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET-IPV6 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "284",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET-IPV6 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 284,
+            "value": 0
+        },
+        {
+            "AS_Name": "VERIZON-BUSINESS-MAE-AS6066 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "6066",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "VERIZON-BUSINESS-MAE-AS6066 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 6066,
+            "value": 0
+        }
+    ],
+    "Source_List": [
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "701"
+        }
+    ]
+}

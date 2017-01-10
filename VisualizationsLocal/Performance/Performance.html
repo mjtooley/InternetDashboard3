@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Network Performance</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="map"></div>
+<div id='slider'>
+    <footer class="lp">
+        <div class="transport">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <ul class="nav">
+                        <li class="ctrl">
+                            <a id="play-pause" href="#"><i id="play-pause-icon" class="fa fa-play fa-lg"></i></a>
+                        </li>
+                        <li class="ctrl dropup">
+                            <a id="clock-btn" class="clock" data-toggle="dropdown" href="#">
+                                <span id="cursor-date"></span><br/>
+                                <span id="cursor-time"></span>
+                            </a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="clock-btn">
+                                <label></label>
+                                <div class="input-append bootstrap-timepicker">
+                                    <input id="timepicker" type="text" class="input-small span2">
+                                    <span class="add-on"><i class="fa fa-clock-o"></i></span>
+                                </div>
+                                <div id="calendar"></div>
+                                <div class="input-append">
+                                    <input id="date-input" type="text" class="input-small">
+                                    <span class="add-on"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li>
+                            <div id="time-slider"></div>
+                        </li>
+                        <li class="ctrl dropup">
+                            <a id="speed-btn" data-toggle="dropdown" href="#"><i class="fa fa-dashboard fa-lg"></i> <span id="speed-icon-val" class="speed">1</span>x</a>
+                            <div class="speed-menu dropdown-menu" role="menu" aria-labelledby="speed-btn">
+                                <label><b>Speed</b></label>
+                                <input id="speed-input" class="span1 speed" type="text" value="1" />
+                                <div id="speed-slider"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"></script>
+<script src="Slider.js"></script>
+<script src="Map.js"></script>
+<script src="bootstrap-timepicker.js"></script>
+<script src="L.Polyline.SnakeAnim.js"></script>
+<script src="Logos.js"></script>
+
+
+<script>
+    var sliderOptions = {
+        startTime: "January 1, 2016 00:00:56",
+        endTime: "January 1, 2016 00:20:56",
+        speed: 360,
+        tickLen: 100000
+    };
+    var slider = new Slider(sliderOptions, function(d){
+        var date = new Date(d);
+        var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
+        visualize(formatDate(date));
+    });
+
+    new SliderControls(slider);
+
+    mapFunctions.createMap(function() { slider._tick(slider) })
+</script>
+</body>
+</html>

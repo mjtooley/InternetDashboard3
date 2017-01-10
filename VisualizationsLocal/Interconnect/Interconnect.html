@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interconnection</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id='infoLegend' class="info"></div>
+
+<div id='slider'>
+    <footer class="lp">
+        <div class="transport">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <ul class="nav">
+                        <li class="ctrl">
+                            <a id="play-pause" href="#"><i id="play-pause-icon" class="fa fa-play fa-lg"></i></a>
+                        </li>
+                        <li class="ctrl dropup">
+                            <a id="clock-btn" class="clock" data-toggle="dropdown" href="#">
+                                <span id="cursor-date"></span><br/>
+                                <span id="cursor-time"></span>
+                            </a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="clock-btn">
+                                <label></label>
+                                <div class="input-append bootstrap-timepicker">
+                                    <input id="timepicker" type="text" class="input-small span2">
+                                    <span class="add-on"><i class="fa fa-clock-o"></i></span>
+                                </div>
+                                <div id="calendar"></div>
+                                <div class="input-append">
+                                    <input id="date-input" type="text" class="input-small">
+                                    <span class="add-on"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li>
+                            <div id="time-slider"></div>
+                        </li>
+                        <li class="ctrl dropup">
+                            <a id="speed-btn" data-toggle="dropdown" href="#"><i class="fa fa-dashboard fa-lg"></i> <span id="speed-icon-val" class="speed">1</span>x</a>
+                            <div class="speed-menu dropdown-menu" role="menu" aria-labelledby="speed-btn">
+                                <label><b>Speed</b></label>
+                                <input id="speed-input" class="span1 speed" type="text" value="1" />
+                                <div id="speed-slider"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id='search' class='inner-addon left-addon'>
+    <i class="fa fa-search"></i>
+    <input type="text" class='search-box' id="search-box" placeholder="Enter an AS name, AS number, or a company name">
+</div>
+
+<div id='graphKey' class="info">
+    <svg width=100 height=30>
+        <circle cx=16 cy =12 r=12 fill=#66B266></circle>
+        <text font-size="12px" x="41" y="15" fill="black">Shared AS</text>
+    </svg>
+    <svg width=95 height=30>
+        <circle cx=16 cy =14 r=12 fill=#fff stroke=#cecece stroke-width=3px stroke-opacity=.8></circle>
+        <text font-size="12px" x="41" y="15" fill="black">Backbone</text>
+    </svg>
+    <svg width=100 height=30>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="cloud-group"
+             viewBox="0 0 1014 628" width="35" height="30" class="source-backbone">
+            <path id="cloud" vector-effect="non-scaling-stroke" d="M574.1,31.5c-86.8,0-164.8,37.9-218.3,98c-17.4-7.1-36.5-11-56.5-11
+            c-82.6,0-149.6,67-149.6,149.6c0,11.6,1.3,23,3.9,33.8c-69.5,12.8-122.1,73.8-122.1,147c0,82.6,67,149.6,149.6,149.6h610.4
+            c110.5,0,200-89.5,200-200c0-93.4-64-171.8-150.5-193.8C795.4,102.6,693.1,31.5,574.1,31.5z"></path>
+        </svg>
+        <text font-size="12px" x="41" y="18" fill="black">Source AS</text>
+    </svg>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="Logos.js"></script>
+<script src="Slider.js"></script>
+<script src="bootstrap-timepicker.js"></script>
+<script src="Graph.js"></script>
+
+<script>
+    var sliderOptions = {
+        startTime: "June 12, 2016 00:00:00",
+        endTime: "June 14, 2016 00:00:00",
+        speed: 360,
+        tickLen: 1800000
+    };
+    var slider = new Slider(sliderOptions, function(d){
+        var date = new Date(d);
+        var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
+        visualize(formatDate(date));
+    });
+
+    new SliderControls(slider);
+
+    slider._tick(slider);
+</script>
+
+</body>
+</html>

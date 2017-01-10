@@ -1,0 +1,2588 @@
+{
+    "Backbone_AS_List": [
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257"
+        },
+        {
+            "AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "AS_Number": "7843"
+        }
+    ],
+    "Links": [
+        {
+            "RTT": "3.26",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 0,
+            "target": 1
+        },
+        {
+            "RTT": "1.44",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Target_AS_Number": "2914",
+            "source": 0,
+            "target": 2
+        },
+        {
+            "RTT": "1.12",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 0,
+            "target": 3
+        },
+        {
+            "RTT": "0.85",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "WOODYNET-1 - WoodyNet, US",
+            "Target_AS_Number": "42",
+            "source": 0,
+            "target": 4
+        },
+        {
+            "RTT": "1.1",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "3557",
+            "source": 0,
+            "target": 5
+        },
+        {
+            "RTT": "14.44",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Target_AS_Number": "209",
+            "source": 0,
+            "target": 6
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "Target_AS_Number": "668",
+            "source": 0,
+            "target": 7
+        },
+        {
+            "RTT": "4.44",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TWDX - TowardEX Technologies International, Inc., US",
+            "Target_AS_Number": "27552",
+            "source": 0,
+            "target": 8
+        },
+        {
+            "RTT": "8.15",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "Target_AS_Number": "6762",
+            "source": 0,
+            "target": 9
+        },
+        {
+            "RTT": "1.37",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "L-ROOT - ICANN, US",
+            "Target_AS_Number": "20144",
+            "source": 0,
+            "target": 10
+        },
+        {
+            "RTT": "11.44",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 0,
+            "target": 11
+        },
+        {
+            "RTT": "6.66",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 0,
+            "target": 12
+        },
+        {
+            "RTT": "0.7",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 12,
+            "target": 13
+        },
+        {
+            "RTT": "0.25",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 0,
+            "target": 14
+        },
+        {
+            "RTT": "17.33",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "Target_AS_Number": "7500",
+            "source": 12,
+            "target": 15
+        },
+        {
+            "RTT": "9.59",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+            "Target_AS_Number": "11164",
+            "source": 0,
+            "target": 16
+        },
+        {
+            "RTT": "5.23",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "Target_AS_Number": "6939",
+            "source": 0,
+            "target": 17
+        },
+        {
+            "RTT": "3.81",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "CW Vodafone Ltd, GB",
+            "Target_AS_Number": "1273",
+            "source": 0,
+            "target": 18
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "Target_AS_Number": "7500",
+            "source": 0,
+            "target": 15
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 0,
+            "target": 13
+        },
+        {
+            "RTT": "0.32",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 0,
+            "target": 19
+        },
+        {
+            "RTT": "1.74",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "Target_AS_Number": "7342",
+            "source": 0,
+            "target": 20
+        },
+        {
+            "RTT": "1.89",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ROLLERNETWORK - Roller Network LLC, US",
+            "Target_AS_Number": "11170",
+            "source": 0,
+            "target": 21
+        },
+        {
+            "RTT": "2.78",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "RCN-AS - RCN, US",
+            "Target_AS_Number": "6079",
+            "source": 0,
+            "target": 22
+        },
+        {
+            "RTT": "0.44",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "Target_AS_Number": "4565",
+            "source": 0,
+            "target": 23
+        },
+        {
+            "RTT": "32.64",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "SONOMA - Sonoma Interconnect, US",
+            "Target_AS_Number": "7065",
+            "source": 0,
+            "target": 24
+        },
+        {
+            "RTT": "0.9",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Target_AS_Number": "209",
+            "source": 12,
+            "target": 6
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "Target_AS_Number": "29216",
+            "source": 0,
+            "target": 25
+        },
+        {
+            "RTT": "5.77",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "20001",
+            "source": 0,
+            "target": 26
+        },
+        {
+            "RTT": "0.67",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "AS-VOBIZ - vanoppen.biz LLC, US",
+            "Target_AS_Number": "11404",
+            "source": 0,
+            "target": 27
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "LOS-NETTOS-AS - Los Nettos, US",
+            "Target_AS_Number": "226",
+            "source": 0,
+            "target": 28
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "COGENT-2149 - Cogent Communications, US",
+            "Target_AS_Number": "2149",
+            "source": 0,
+            "target": 29
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "Target_AS_Number": "25152",
+            "source": 0,
+            "target": 30
+        },
+        {
+            "RTT": "0.04",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "NORDUNET , NO",
+            "Target_AS_Number": "2603",
+            "source": 0,
+            "target": 31
+        },
+        {
+            "RTT": "1.49",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "YAHOO-GQ1 - Yahoo, US",
+            "Target_AS_Number": "36647",
+            "source": 0,
+            "target": 32
+        },
+        {
+            "RTT": "7.3",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 0,
+            "target": 33
+        },
+        {
+            "RTT": "7.46",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 33,
+            "target": 19
+        },
+        {
+            "RTT": "5.99",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "Target_AS_Number": "6939",
+            "source": 33,
+            "target": 17
+        },
+        {
+            "RTT": "4.17",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 33,
+            "target": 3
+        },
+        {
+            "RTT": "2.18",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+            "Target_AS_Number": "11164",
+            "source": 33,
+            "target": 16
+        },
+        {
+            "RTT": "2.65",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 33,
+            "target": 1
+        },
+        {
+            "RTT": "0.77",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "ISC-AS-1280 - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "1280",
+            "source": 33,
+            "target": 34
+        },
+        {
+            "RTT": "4.57",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 33,
+            "target": 11
+        },
+        {
+            "RTT": "0.5",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 0,
+            "target": 35
+        },
+        {
+            "RTT": "0.68",
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "Target_AS_Name": "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+            "Target_AS_Number": "33363",
+            "source": 0,
+            "target": 36
+        },
+        {
+            "RTT": "26.81",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 43,
+            "target": 35
+        },
+        {
+            "RTT": "36.55",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "Target_AS_Number": "7342",
+            "source": 43,
+            "target": 20
+        },
+        {
+            "RTT": "0.24",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Target_AS_Number": "2914",
+            "source": 43,
+            "target": 2
+        },
+        {
+            "RTT": "1.36",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 43,
+            "target": 3
+        },
+        {
+            "RTT": "4.71",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3549",
+            "source": 43,
+            "target": 44
+        },
+        {
+            "RTT": "1.06",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "TELIANET , SE",
+            "Target_AS_Number": "1299",
+            "source": 43,
+            "target": 45
+        },
+        {
+            "RTT": "50.4",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Target_AS_Number": "209",
+            "source": 43,
+            "target": 6
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "Target_AS_Number": "668",
+            "source": 43,
+            "target": 7
+        },
+        {
+            "RTT": "49.95",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 43,
+            "target": 14
+        },
+        {
+            "RTT": "2.3",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "ROLLERNETWORK - Roller Network LLC, US",
+            "Target_AS_Number": "11170",
+            "source": 43,
+            "target": 21
+        },
+        {
+            "RTT": "4.23",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 43,
+            "target": 12
+        },
+        {
+            "RTT": "13.13",
+            "Source_AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11351",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 47,
+            "target": 33
+        },
+        {
+            "RTT": "1.6",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "KIXS-AS-KR Korea Telecom, KR",
+            "Target_AS_Number": "4766",
+            "source": 33,
+            "target": 48
+        },
+        {
+            "RTT": "1.35",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "XO-AS15 - XO Communications, US",
+            "Target_AS_Number": "2828",
+            "source": 33,
+            "target": 49
+        },
+        {
+            "RTT": "1.37",
+            "Source_AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11351",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 47,
+            "target": 0
+        },
+        {
+            "RTT": "13.82",
+            "Source_AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11426",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 50,
+            "target": 33
+        },
+        {
+            "RTT": "3.87",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "CW Vodafone Ltd, GB",
+            "Target_AS_Number": "1273",
+            "source": 33,
+            "target": 18
+        },
+        {
+            "RTT": "0.53",
+            "Source_AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11426",
+            "Target_AS_Name": "CISCOSYSTEMS - Cisco Systems, Inc., US",
+            "Target_AS_Number": "109",
+            "source": 50,
+            "target": 51
+        },
+        {
+            "RTT": "5.9",
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 52,
+            "target": 33
+        },
+        {
+            "RTT": "28.07",
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "Target_AS_Name": "SCRR-11955 - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "11955",
+            "source": 52,
+            "target": 53
+        },
+        {
+            "RTT": "0.78",
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 52,
+            "target": 35
+        },
+        {
+            "RTT": "3.68",
+            "Source_AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "12271",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 54,
+            "target": 33
+        },
+        {
+            "RTT": "2.55",
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 26,
+            "target": 33
+        },
+        {
+            "RTT": "1.69",
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "Target_AS_Name": "UNIVHAWAII - University of Hawaii, US",
+            "Target_AS_Number": "6360",
+            "source": 26,
+            "target": 55
+        },
+        {
+            "RTT": "0.21",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 33,
+            "target": 14
+        },
+        {
+            "RTT": "0.49",
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 26,
+            "target": 0
+        },
+        {
+            "RTT": "26.4",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "TELIANET , SE",
+            "Target_AS_Number": "1299",
+            "source": 61,
+            "target": 45
+        },
+        {
+            "RTT": "23.15",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Target_AS_Number": "2914",
+            "source": 61,
+            "target": 2
+        },
+        {
+            "RTT": "2.5",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 61,
+            "target": 12
+        },
+        {
+            "RTT": "164.81",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "AMS-IX1 , NL",
+            "Target_AS_Number": "1200",
+            "source": 12,
+            "target": 62
+        },
+        {
+            "RTT": "12.84",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 61,
+            "target": 1
+        },
+        {
+            "RTT": "15.1",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "Target_AS_Number": "6939",
+            "source": 61,
+            "target": 17
+        },
+        {
+            "RTT": "156.26",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "Target_AS_Number": "7342",
+            "source": 61,
+            "target": 20
+        },
+        {
+            "RTT": "124.7",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 12,
+            "target": 3
+        },
+        {
+            "RTT": "122.04",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "3557",
+            "source": 12,
+            "target": 5
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "Target_AS_Number": "668",
+            "source": 12,
+            "target": 7
+        },
+        {
+            "RTT": "215.37",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Target_AS_Number": "23148",
+            "source": 61,
+            "target": 63
+        },
+        {
+            "RTT": "2.32",
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "Target_AS_Name": "L-ROOT - ICANN, US",
+            "Target_AS_Number": "20144",
+            "source": 12,
+            "target": 10
+        },
+        {
+            "RTT": "166.49",
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "Target_AS_Name": "ONEANDONE-AS Brauerstrasse 48, DE",
+            "Target_AS_Number": "8560",
+            "source": 61,
+            "target": 64
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "Target_AS_Number": "7342",
+            "source": 70,
+            "target": 20
+        },
+        {
+            "RTT": "32.04",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Target_AS_Number": "2914",
+            "source": 70,
+            "target": 2
+        },
+        {
+            "RTT": "32.95",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 70,
+            "target": 3
+        },
+        {
+            "RTT": "31.31",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "WOODYNET-2 - WoodyNet, US",
+            "Target_AS_Number": "715",
+            "source": 70,
+            "target": 71
+        },
+        {
+            "RTT": "2.66",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "3557",
+            "source": 70,
+            "target": 5
+        },
+        {
+            "RTT": "31.3",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Target_AS_Number": "209",
+            "source": 70,
+            "target": 6
+        },
+        {
+            "RTT": "0.08",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "IIJ Internet Initiative Japan Inc., JP",
+            "Target_AS_Number": "2497",
+            "source": 70,
+            "target": 72
+        },
+        {
+            "RTT": "5.2",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Target_AS_Number": "23148",
+            "source": 70,
+            "target": 63
+        },
+        {
+            "RTT": "32.77",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 70,
+            "target": 19
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "WOODYNET-1 - WoodyNet, US",
+            "Target_AS_Number": "42",
+            "source": 70,
+            "target": 4
+        },
+        {
+            "RTT": "11.71",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "Target_AS_Number": "29216",
+            "source": 70,
+            "target": 25
+        },
+        {
+            "RTT": "0.38",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 70,
+            "target": 12
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LOS-NETTOS-AS - Los Nettos, US",
+            "Target_AS_Number": "226",
+            "source": 70,
+            "target": 28
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "COGENT-2149 - Cogent Communications, US",
+            "Target_AS_Number": "2149",
+            "source": 70,
+            "target": 29
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LGTLD - VeriSign Global Registry Services, US",
+            "Target_AS_Number": "36628",
+            "source": 70,
+            "target": 73
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "Target_AS_Number": "25152",
+            "source": 70,
+            "target": 30
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "L-ROOT - ICANN, US",
+            "Target_AS_Number": "20144",
+            "source": 70,
+            "target": 10
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "Target_AS_Number": "7500",
+            "source": 70,
+            "target": 15
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "HETZNER-AS , DE",
+            "Target_AS_Number": "24940",
+            "source": 70,
+            "target": 13
+        },
+        {
+            "RTT": "0.35",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 70,
+            "target": 1
+        },
+        {
+            "RTT": "0.1",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+            "Target_AS_Number": "22773",
+            "source": 70,
+            "target": 74
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "Target_AS_Number": "668",
+            "source": 70,
+            "target": 7
+        },
+        {
+            "RTT": "2.83",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "TWDX - TowardEX Technologies International, Inc., US",
+            "Target_AS_Number": "27552",
+            "source": 70,
+            "target": 8
+        },
+        {
+            "RTT": "1.04",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "Target_AS_Number": "6762",
+            "source": 70,
+            "target": 9
+        },
+        {
+            "RTT": "1.21",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "Target_AS_Number": "4565",
+            "source": 70,
+            "target": 23
+        },
+        {
+            "RTT": "7.17",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 70,
+            "target": 11
+        },
+        {
+            "RTT": "0.36",
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 70,
+            "target": 0
+        },
+        {
+            "RTT": "20.45",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "Target_AS_Number": "7342",
+            "source": 6,
+            "target": 20
+        },
+        {
+            "RTT": "0.71",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "CSUNET-NW - California State University, Office of the Chancellor, US",
+            "Target_AS_Number": "2152",
+            "source": 6,
+            "target": 81
+        },
+        {
+            "RTT": "21.94",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 6,
+            "target": 3
+        },
+        {
+            "RTT": "1.22",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "MAX-GIGAPOP - University of Maryland, US",
+            "Target_AS_Number": "10886",
+            "source": 6,
+            "target": 82
+        },
+        {
+            "RTT": "6.28",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "AS297 - National Aeronautics and Space Administration, US",
+            "Target_AS_Number": "297",
+            "source": 6,
+            "target": 83
+        },
+        {
+            "RTT": "46.48",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "3557",
+            "source": 6,
+            "target": 5
+        },
+        {
+            "RTT": "46.01",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "Target_AS_Number": "668",
+            "source": 6,
+            "target": 7
+        },
+        {
+            "RTT": "104.2",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "Target_AS_Number": "29216",
+            "source": 6,
+            "target": 25
+        },
+        {
+            "RTT": "4.6",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 6,
+            "target": 14
+        },
+        {
+            "RTT": "9.47",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 6,
+            "target": 1
+        },
+        {
+            "RTT": "31.13",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 6,
+            "target": 11
+        },
+        {
+            "RTT": "12.13",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 6,
+            "target": 19
+        },
+        {
+            "RTT": "1.92",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 6,
+            "target": 0
+        },
+        {
+            "RTT": "1.13",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "ELBRACHT-COMPUTER-AS , DE",
+            "Target_AS_Number": "29404",
+            "source": 6,
+            "target": 84
+        },
+        {
+            "RTT": "10.77",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "Target_AS_Number": "6762",
+            "source": 6,
+            "target": 9
+        },
+        {
+            "RTT": "8.71",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Target_AS_Number": "3257",
+            "source": 6,
+            "target": 12
+        },
+        {
+            "RTT": "0.0",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "Target_AS_Number": "7500",
+            "source": 6,
+            "target": 15
+        },
+        {
+            "RTT": "0.67",
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "Target_AS_Name": "INTEGRATELECOM - Integra Telecom, Inc., US",
+            "Target_AS_Number": "7385",
+            "source": 6,
+            "target": 85
+        },
+        {
+            "RTT": "0.19",
+            "Source_AS_Name": "NCTA-WASHINGTONDC - National Cable & Telecommunications Association, US",
+            "Source_AS_Number": "26868",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 91,
+            "target": 0
+        }
+    ],
+    "Nodes": [
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922",
+            "Shared": true,
+            "Shared_By": [
+                "LEVEL3 - Level 3 Communications, Inc., US",
+                "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+                "COGENT-174 - Cogent Communications, US",
+                "WOODYNET-1 - WoodyNet, US",
+                "ISC-AS - Internet Systems Consortium, Inc., US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+                "DNIC-AS-00668 - DoD Network Information Center, US",
+                "TWDX - TowardEX Technologies International, Inc., US",
+                "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+                "L-ROOT - ICANN, US",
+                "KDDI KDDI CORPORATION, JP",
+                "GTT-BACKBONE GTT, DE",
+                "ZAYO-6461 - Zayo Bandwidth Inc, US",
+                "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+                "HURRICANE - Hurricane Electric, Inc., US",
+                "CW Vodafone Ltd, GB",
+                "M-ROOT-DNS WIDE Project, JP",
+                "HETZNER-AS , DE",
+                "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+                "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+                "ROLLERNETWORK - Roller Network LLC, US",
+                "RCN-AS - RCN, US",
+                "MEGAPATH2-US - MegaPath Networks Inc., US",
+                "SONOMA - Sonoma Interconnect, US",
+                "I-ROOT DNS root name server i.root-servers.net., SE",
+                "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+                "AS-VOBIZ - vanoppen.biz LLC, US",
+                "LOS-NETTOS-AS - Los Nettos, US",
+                "COGENT-2149 - Cogent Communications, US",
+                "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+                "NORDUNET , NO",
+                "YAHOO-GQ1 - Yahoo, US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "ATT-INTERNET4 - AT&T Services, Inc., US",
+                "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+                "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+                "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+                "NCTA-WASHINGTONDC - National Cable & Telecommunications Association, US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": 7922,
+            "value": 40
+        },
+        {
+            "AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "AS_Number": "3356",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 5
+        },
+        {
+            "AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "AS_Number": "2914",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 4
+        },
+        {
+            "AS_Name": "COGENT-174 - Cogent Communications, US",
+            "AS_Number": "174",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "GTT-BACKBONE GTT, DE",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 6
+        },
+        {
+            "AS_Name": "WOODYNET-1 - WoodyNet, US",
+            "AS_Number": "42",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "ISC-AS - Internet Systems Consortium, Inc., US",
+            "AS_Number": "3557",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "GTT-BACKBONE GTT, DE",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 4
+        },
+        {
+            "AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "209",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "GTT-BACKBONE GTT, DE",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+                "CSUNET-NW - California State University, Office of the Chancellor, US",
+                "COGENT-174 - Cogent Communications, US",
+                "MAX-GIGAPOP - University of Maryland, US",
+                "AS297 - National Aeronautics and Space Administration, US",
+                "ISC-AS - Internet Systems Consortium, Inc., US",
+                "DNIC-AS-00668 - DoD Network Information Center, US",
+                "I-ROOT DNS root name server i.root-servers.net., SE",
+                "ZAYO-6461 - Zayo Bandwidth Inc, US",
+                "LEVEL3 - Level 3 Communications, Inc., US",
+                "KDDI KDDI CORPORATION, JP",
+                "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "ELBRACHT-COMPUTER-AS , DE",
+                "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+                "GTT-BACKBONE GTT, DE",
+                "M-ROOT-DNS WIDE Project, JP",
+                "INTEGRATELECOM - Integra Telecom, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 22
+        },
+        {
+            "AS_Name": "DNIC-AS-00668 - DoD Network Information Center, US",
+            "AS_Number": "668",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "GTT-BACKBONE GTT, DE",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 5
+        },
+        {
+            "AS_Name": "TWDX - TowardEX Technologies International, Inc., US",
+            "AS_Number": "27552",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+            "AS_Number": "6762",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 3
+        },
+        {
+            "AS_Name": "L-ROOT - ICANN, US",
+            "AS_Number": "20144",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "GTT-BACKBONE GTT, DE",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 3
+        },
+        {
+            "AS_Name": "KDDI KDDI CORPORATION, JP",
+            "AS_Number": "2516",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 4
+        },
+        {
+            "AS_Name": "GTT-BACKBONE GTT, DE",
+            "AS_Number": "3257",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "HETZNER-AS , DE",
+                "M-ROOT-DNS WIDE Project, JP",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+                "AMS-IX1 , NL",
+                "COGENT-174 - Cogent Communications, US",
+                "ISC-AS - Internet Systems Consortium, Inc., US",
+                "DNIC-AS-00668 - DoD Network Information Center, US",
+                "L-ROOT - ICANN, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 13
+        },
+        {
+            "AS_Name": "HETZNER-AS , DE",
+            "AS_Number": "24940",
+            "Shared": true,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 3
+        },
+        {
+            "AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "AS_Number": "6461",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 4
+        },
+        {
+            "AS_Name": "M-ROOT-DNS WIDE Project, JP",
+            "AS_Number": "7500",
+            "Shared": true,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 4
+        },
+        {
+            "AS_Name": "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+            "AS_Number": "11164",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "AS_Number": "6939",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 3
+        },
+        {
+            "AS_Name": "CW Vodafone Ltd, GB",
+            "AS_Number": "1273",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "AS_Number": "6453",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 4
+        },
+        {
+            "AS_Name": "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+            "AS_Number": "7342",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 5
+        },
+        {
+            "AS_Name": "ROLLERNETWORK - Roller Network LLC, US",
+            "AS_Number": "11170",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "RCN-AS - RCN, US",
+            "AS_Number": "6079",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+            "AS_Number": "4565",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "SONOMA - Sonoma Interconnect, US",
+            "AS_Number": "7065",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "AS_Number": "29216",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 3
+        },
+        {
+            "AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "AS_Number": "20001",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "UNIVHAWAII - University of Hawaii, US",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 4
+        },
+        {
+            "AS_Name": "AS-VOBIZ - vanoppen.biz LLC, US",
+            "AS_Number": "11404",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "LOS-NETTOS-AS - Los Nettos, US",
+            "AS_Number": "226",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "COGENT-2149 - Cogent Communications, US",
+            "AS_Number": "2149",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+            "AS_Number": "25152",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 2
+        },
+        {
+            "AS_Name": "NORDUNET , NO",
+            "AS_Number": "2603",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "YAHOO-GQ1 - Yahoo, US",
+            "AS_Number": "36647",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "AS_Number": "7843",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+                "HURRICANE - Hurricane Electric, Inc., US",
+                "COGENT-174 - Cogent Communications, US",
+                "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+                "LEVEL3 - Level 3 Communications, Inc., US",
+                "ISC-AS-1280 - Internet Systems Consortium, Inc., US",
+                "KDDI KDDI CORPORATION, JP",
+                "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+                "KIXS-AS-KR Korea Telecom, KR",
+                "XO-AS15 - XO Communications, US",
+                "SCRR-11426 - Time Warner Cable Internet LLC, US",
+                "CW Vodafone Ltd, GB",
+                "SCRR-11427 - Time Warner Cable Internet LLC, US",
+                "SCRR-12271 - Time Warner Cable Internet LLC, US",
+                "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+                "ZAYO-6461 - Zayo Bandwidth Inc, US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 17
+        },
+        {
+            "AS_Name": "ISC-AS-1280 - Internet Systems Consortium, Inc., US",
+            "AS_Number": "1280",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "AS_Number": "7018",
+            "Shared": true,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "SCRR-11427 - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 3
+        },
+        {
+            "AS_Name": "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+            "AS_Number": "33363",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": "7922",
+            "value": 1
+        },
+        {
+            "AS_Name": "COXNET - Cox Enterprises Inc, US",
+            "AS_Number": "13433",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "COXNET - Cox Enterprises Inc, US",
+            "Source_AS_Number": 13433,
+            "value": 0
+        },
+        {
+            "AS_Name": "CHARTER-16787 - Charter Communications, US",
+            "AS_Number": "16787",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CHARTER-16787 - Charter Communications, US",
+            "Source_AS_Number": 16787,
+            "value": 0
+        },
+        {
+            "AS_Name": "CHARTER-17277 - Charter Communications, US",
+            "AS_Number": "17277",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CHARTER-17277 - Charter Communications, US",
+            "Source_AS_Number": 17277,
+            "value": 0
+        },
+        {
+            "AS_Name": "CHARTER-STL - Charter Communications, US",
+            "AS_Number": "19444",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CHARTER-STL - Charter Communications, US",
+            "Source_AS_Number": 19444,
+            "value": 0
+        },
+        {
+            "AS_Name": "CHARTER-TN - Charter Communications, US",
+            "AS_Number": "19157",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CHARTER-TN - Charter Communications, US",
+            "Source_AS_Number": 19157,
+            "value": 0
+        },
+        {
+            "AS_Name": "CABLEVISION-CORP - Cablevision Systems Corp., US",
+            "AS_Number": "19720",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CABLEVISION-CORP - Cablevision Systems Corp., US",
+            "Source_AS_Number": 19720,
+            "value": 0
+        },
+        {
+            "AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "AS_Number": "30036",
+            "Shared": false,
+            "Shared_By": [
+                "ATT-INTERNET4 - AT&T Services, Inc., US",
+                "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+                "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+                "COGENT-174 - Cogent Communications, US",
+                "LVLT-3549 - Level 3 Communications, Inc., US",
+                "TELIANET , SE",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+                "DNIC-AS-00668 - DoD Network Information Center, US",
+                "ZAYO-6461 - Zayo Bandwidth Inc, US",
+                "ROLLERNETWORK - Roller Network LLC, US",
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": true,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": 30036,
+            "value": 11
+        },
+        {
+            "AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "AS_Number": "3549",
+            "Shared": false,
+            "Shared_By": [
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "value": 1
+        },
+        {
+            "AS_Name": "TELIANET , SE",
+            "AS_Number": "1299",
+            "Shared": true,
+            "Shared_By": [
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "value": 2
+        },
+        {
+            "AS_Name": "Desarrollos Digitales S. A., AR",
+            "AS_Number": "10795",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "Desarrollos Digitales S. A., AR",
+            "Source_AS_Number": 10795,
+            "value": 0
+        },
+        {
+            "AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11351",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 11351,
+            "value": 2
+        },
+        {
+            "AS_Name": "KIXS-AS-KR Korea Telecom, KR",
+            "AS_Number": "4766",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "XO-AS15 - XO Communications, US",
+            "AS_Number": "2828",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11426",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "CISCOSYSTEMS - Cisco Systems, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 11426,
+            "value": 2
+        },
+        {
+            "AS_Name": "CISCOSYSTEMS - Cisco Systems, Inc., US",
+            "AS_Number": "109",
+            "Shared": false,
+            "Shared_By": [
+                "SCRR-11426 - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11426",
+            "value": 1
+        },
+        {
+            "AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11427",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+                "SCRR-11955 - Time Warner Cable Internet LLC, US",
+                "ATT-INTERNET4 - AT&T Services, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 11427,
+            "value": 3
+        },
+        {
+            "AS_Name": "SCRR-11955 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11955",
+            "Shared": false,
+            "Shared_By": [
+                "SCRR-11427 - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "value": 1
+        },
+        {
+            "AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "12271",
+            "Shared": false,
+            "Shared_By": [
+                "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 12271,
+            "value": 1
+        },
+        {
+            "AS_Name": "UNIVHAWAII - University of Hawaii, US",
+            "AS_Number": "6360",
+            "Shared": false,
+            "Shared_By": [
+                "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "value": 1
+        },
+        {
+            "AS_Name": "ADELPHIA-AS2 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "14065",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ADELPHIA-AS2 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 14065,
+            "value": 0
+        },
+        {
+            "AS_Name": "TW-CABLE - Time Warner Cable, US",
+            "AS_Number": "3456",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "TW-CABLE - Time Warner Cable, US",
+            "Source_AS_Number": 3456,
+            "value": 0
+        },
+        {
+            "AS_Name": "NAVISITE-EAST - Navisite Internet Services, US",
+            "AS_Number": "10334",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "NAVISITE-EAST - Navisite Internet Services, US",
+            "Source_AS_Number": 10334,
+            "value": 0
+        },
+        {
+            "AS_Name": "NAVISITE-WEST-2 - Navisite, Inc., US",
+            "AS_Number": "14134",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "NAVISITE-WEST-2 - Navisite, Inc., US",
+            "Source_AS_Number": 14134,
+            "value": 0
+        },
+        {
+            "AS_Name": "NAVISITE-EAST-2 - Navisite, Inc., US",
+            "AS_Number": "14135",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "NAVISITE-EAST-2 - Navisite, Inc., US",
+            "Source_AS_Number": 14135,
+            "value": 0
+        },
+        {
+            "AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "AS_Number": "19108",
+            "Shared": false,
+            "Shared_By": [
+                "TELIANET , SE",
+                "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+                "GTT-BACKBONE GTT, DE",
+                "LEVEL3 - Level 3 Communications, Inc., US",
+                "HURRICANE - Hurricane Electric, Inc., US",
+                "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+                "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "ONEANDONE-AS Brauerstrasse 48, DE"
+            ],
+            "Source": true,
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": 19108,
+            "value": 8
+        },
+        {
+            "AS_Name": "AMS-IX1 , NL",
+            "AS_Number": "1200",
+            "Shared": false,
+            "Shared_By": [
+                "GTT-BACKBONE GTT, DE"
+            ],
+            "Source": false,
+            "Source_AS_Name": "GTT-BACKBONE GTT, DE",
+            "Source_AS_Number": "3257",
+            "value": 1
+        },
+        {
+            "AS_Name": "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "23148",
+            "Shared": true,
+            "Shared_By": [
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "value": 2
+        },
+        {
+            "AS_Name": "ONEANDONE-AS Brauerstrasse 48, DE",
+            "AS_Number": "8560",
+            "Shared": false,
+            "Shared_By": [
+                "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": "19108",
+            "value": 1
+        },
+        {
+            "AS_Name": "ATTIS-ASN3420 - AT&T Internet Services, US",
+            "AS_Number": "3420",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ATTIS-ASN3420 - AT&T Internet Services, US",
+            "Source_AS_Number": 3420,
+            "value": 0
+        },
+        {
+            "AS_Name": "ATTIS-ASN3421 - AT&T Internet Services, US",
+            "AS_Number": "3421",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ATTIS-ASN3421 - AT&T Internet Services, US",
+            "Source_AS_Number": 3421,
+            "value": 0
+        },
+        {
+            "AS_Name": "ATTIS-ASN3422 - AT&T Internet Services, US",
+            "AS_Number": "3422",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ATTIS-ASN3422 - AT&T Internet Services, US",
+            "Source_AS_Number": 3422,
+            "value": 0
+        },
+        {
+            "AS_Name": "ATTIS-ASN3423 - AT&T Internet Services, US",
+            "AS_Number": "3423",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ATTIS-ASN3423 - AT&T Internet Services, US",
+            "Source_AS_Number": 3423,
+            "value": 0
+        },
+        {
+            "AS_Name": "HFMT - National Nuclear Security Administration, Kansas City Plant, US",
+            "AS_Number": "3424",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "HFMT - National Nuclear Security Administration, Kansas City Plant, US",
+            "Source_AS_Number": 3424,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "701",
+            "Shared": false,
+            "Shared_By": [
+                "VERISIGN-AS - VeriSign Infrastructure & Operations, US",
+                "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+                "COGENT-174 - Cogent Communications, US",
+                "WOODYNET-2 - WoodyNet, US",
+                "ISC-AS - Internet Systems Consortium, Inc., US",
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+                "IIJ Internet Initiative Japan Inc., JP",
+                "TERRENAP - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+                "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+                "WOODYNET-1 - WoodyNet, US",
+                "I-ROOT DNS root name server i.root-servers.net., SE",
+                "GTT-BACKBONE GTT, DE",
+                "LOS-NETTOS-AS - Los Nettos, US",
+                "COGENT-2149 - Cogent Communications, US",
+                "LGTLD - VeriSign Global Registry Services, US",
+                "K-ROOT-SERVER Reseaux IP Europeens Network Coordination Centre (RIPE NCC), EU",
+                "L-ROOT - ICANN, US",
+                "M-ROOT-DNS WIDE Project, JP",
+                "HETZNER-AS , DE",
+                "LEVEL3 - Level 3 Communications, Inc., US",
+                "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+                "DNIC-AS-00668 - DoD Network Information Center, US",
+                "TWDX - TowardEX Technologies International, Inc., US",
+                "SEABONE-NET TELECOM ITALIA SPARKLE S.p.A., IT",
+                "MEGAPATH2-US - MegaPath Networks Inc., US",
+                "KDDI KDDI CORPORATION, JP",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 701,
+            "value": 27
+        },
+        {
+            "AS_Name": "WOODYNET-2 - WoodyNet, US",
+            "AS_Number": "715",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "IIJ Internet Initiative Japan Inc., JP",
+            "AS_Number": "2497",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "LGTLD - VeriSign Global Registry Services, US",
+            "AS_Number": "36628",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+            "AS_Number": "22773",
+            "Shared": false,
+            "Shared_By": [
+                "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": "701",
+            "value": 1
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "702",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 702,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "703",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 703,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "704",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 704,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "705",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 705,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET-IPV6 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "284",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET-IPV6 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 284,
+            "value": 0
+        },
+        {
+            "AS_Name": "VERIZON-BUSINESS-MAE-AS6066 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "6066",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "VERIZON-BUSINESS-MAE-AS6066 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 6066,
+            "value": 0
+        },
+        {
+            "AS_Name": "CSUNET-NW - California State University, Office of the Chancellor, US",
+            "AS_Number": "2152",
+            "Shared": false,
+            "Shared_By": [
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "MAX-GIGAPOP - University of Maryland, US",
+            "AS_Number": "10886",
+            "Shared": false,
+            "Shared_By": [
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS297 - National Aeronautics and Space Administration, US",
+            "AS_Number": "297",
+            "Shared": false,
+            "Shared_By": [
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "ELBRACHT-COMPUTER-AS , DE",
+            "AS_Number": "29404",
+            "Shared": false,
+            "Shared_By": [
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "INTEGRATELECOM - Integra Telecom, Inc., US",
+            "AS_Number": "7385",
+            "Shared": false,
+            "Shared_By": [
+                "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": "209",
+            "value": 1
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-EMBARQ-WNPK - Embarq Corporation, US",
+            "AS_Number": "2379",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-LEGACY-EMBARQ-WNPK - Embarq Corporation, US",
+            "Source_AS_Number": 2379,
+            "value": 0
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-EMBARQ-CMDS - Embarq Corporation, US",
+            "AS_Number": "3447",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-LEGACY-EMBARQ-CMDS - Embarq Corporation, US",
+            "Source_AS_Number": 3447,
+            "value": 0
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-SAVVIS - Savvis, US",
+            "AS_Number": "3561",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-LEGACY-SAVVIS - Savvis, US",
+            "Source_AS_Number": 3561,
+            "value": 0
+        },
+        {
+            "AS_Name": "CENTURYLINK-ASIA-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "3908",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-ASIA-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": 3908,
+            "value": 0
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-QWEST-VDOC - Qwest Communications Company, LLC, US",
+            "AS_Number": "3909",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-LEGACY-QWEST-VDOC - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": 3909,
+            "value": 0
+        },
+        {
+            "AS_Name": "NCTA-WASHINGTONDC - National Cable & Telecommunications Association, US",
+            "AS_Number": "26868",
+            "Shared": false,
+            "Shared_By": [
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "NCTA-WASHINGTONDC - National Cable & Telecommunications Association, US",
+            "Source_AS_Number": 26868,
+            "value": 1
+        }
+    ],
+    "Source_List": [
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922"
+        },
+        {
+            "AS_Name": "COXNET - Cox Enterprises Inc, US",
+            "AS_Number": "13433"
+        },
+        {
+            "AS_Name": "CHARTER-16787 - Charter Communications, US",
+            "AS_Number": "16787"
+        },
+        {
+            "AS_Name": "CHARTER-17277 - Charter Communications, US",
+            "AS_Number": "17277"
+        },
+        {
+            "AS_Name": "CHARTER-STL - Charter Communications, US",
+            "AS_Number": "19444"
+        },
+        {
+            "AS_Name": "CHARTER-TN - Charter Communications, US",
+            "AS_Number": "19157"
+        },
+        {
+            "AS_Name": "CABLEVISION-CORP - Cablevision Systems Corp., US",
+            "AS_Number": "19720"
+        },
+        {
+            "AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "AS_Number": "30036"
+        },
+        {
+            "AS_Name": "Desarrollos Digitales S. A., AR",
+            "AS_Number": "10795"
+        },
+        {
+            "AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11351"
+        },
+        {
+            "AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11426"
+        },
+        {
+            "AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11427"
+        },
+        {
+            "AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "12271"
+        },
+        {
+            "AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "AS_Number": "20001"
+        },
+        {
+            "AS_Name": "ADELPHIA-AS2 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "14065"
+        },
+        {
+            "AS_Name": "TW-CABLE - Time Warner Cable, US",
+            "AS_Number": "3456"
+        },
+        {
+            "AS_Name": "NAVISITE-EAST - Navisite Internet Services, US",
+            "AS_Number": "10334"
+        },
+        {
+            "AS_Name": "NAVISITE-WEST-2 - Navisite, Inc., US",
+            "AS_Number": "14134"
+        },
+        {
+            "AS_Name": "NAVISITE-EAST-2 - Navisite, Inc., US",
+            "AS_Number": "14135"
+        },
+        {
+            "AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "AS_Number": "19108"
+        },
+        {
+            "AS_Name": "ATTIS-ASN3420 - AT&T Internet Services, US",
+            "AS_Number": "3420"
+        },
+        {
+            "AS_Name": "ATTIS-ASN3421 - AT&T Internet Services, US",
+            "AS_Number": "3421"
+        },
+        {
+            "AS_Name": "ATTIS-ASN3422 - AT&T Internet Services, US",
+            "AS_Number": "3422"
+        },
+        {
+            "AS_Name": "ATTIS-ASN3423 - AT&T Internet Services, US",
+            "AS_Number": "3423"
+        },
+        {
+            "AS_Name": "HFMT - National Nuclear Security Administration, Kansas City Plant, US",
+            "AS_Number": "3424"
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "701"
+        },
+        {
+            "AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "209"
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "702"
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "703"
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "704"
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "705"
+        },
+        {
+            "AS_Name": "UUNET-IPV6 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "284"
+        },
+        {
+            "AS_Name": "VERIZON-BUSINESS-MAE-AS6066 - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "6066"
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-EMBARQ-WNPK - Embarq Corporation, US",
+            "AS_Number": "2379"
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-EMBARQ-CMDS - Embarq Corporation, US",
+            "AS_Number": "3447"
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-SAVVIS - Savvis, US",
+            "AS_Number": "3561"
+        },
+        {
+            "AS_Name": "CENTURYLINK-ASIA-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "3908"
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-QWEST-VDOC - Qwest Communications Company, LLC, US",
+            "AS_Number": "3909"
+        },
+        {
+            "AS_Name": "NCTA-WASHINGTONDC - National Cable & Telecommunications Association, US",
+            "AS_Number": "26868"
+        }
+    ]
+}

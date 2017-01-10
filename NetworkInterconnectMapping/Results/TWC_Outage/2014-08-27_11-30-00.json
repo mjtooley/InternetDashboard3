@@ -1,0 +1,887 @@
+{
+    "Backbone_AS_List": [
+        {
+            "AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "AS_Number": "7843"
+        }
+    ],
+    "Date": "2014-08-27_11-30-00",
+    "Links": [
+        {
+            "RTT": "17.51",
+            "Source_AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11351",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 6,
+            "target": 7
+        },
+        {
+            "RTT": "1.08",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "Target_AS_Number": "6453",
+            "source": 7,
+            "target": 8
+        },
+        {
+            "RTT": "2.61",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "Target_AS_Number": "6939",
+            "source": 7,
+            "target": 9
+        },
+        {
+            "RTT": "2.19",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "COGENT-174 - Cogent Communications, US",
+            "Target_AS_Number": "174",
+            "source": 7,
+            "target": 10
+        },
+        {
+            "RTT": "0.41",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "AS297 - National Aeronautics and Space Administration, US",
+            "Target_AS_Number": "297",
+            "source": 7,
+            "target": 11
+        },
+        {
+            "RTT": "17.84",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "ISC-AS-1280 - Internet Systems Consortium, Inc., US",
+            "Target_AS_Number": "1280",
+            "source": 7,
+            "target": 12
+        },
+        {
+            "RTT": "4.38",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "XO-AS15 - XO Communications, US",
+            "Target_AS_Number": "2828",
+            "source": 7,
+            "target": 13
+        },
+        {
+            "RTT": "5.21",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "TELE2, SE",
+            "Target_AS_Number": "1257",
+            "source": 7,
+            "target": 14
+        },
+        {
+            "RTT": "8.7",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "Target_AS_Number": "6461",
+            "source": 7,
+            "target": 15
+        },
+        {
+            "RTT": "0.48",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "KDDI KDDI CORPORATION, JP",
+            "Target_AS_Number": "2516",
+            "source": 7,
+            "target": 16
+        },
+        {
+            "RTT": "4.85",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3356",
+            "source": 7,
+            "target": 17
+        },
+        {
+            "RTT": "0.22",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "Target_AS_Number": "3549",
+            "source": 7,
+            "target": 18
+        },
+        {
+            "RTT": "0.81",
+            "Source_AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11426",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 19,
+            "target": 7
+        },
+        {
+            "RTT": "0.18",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "Target_AS_Number": "29216",
+            "source": 7,
+            "target": 20
+        },
+        {
+            "RTT": "5.99",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "WVFIBER-1 - WV FIBER, US",
+            "Target_AS_Number": "19151",
+            "source": 7,
+            "target": 21
+        },
+        {
+            "RTT": "21.69",
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "Target_AS_Name": "SCRR-11955 - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "11955",
+            "source": 22,
+            "target": 23
+        },
+        {
+            "RTT": "128.57",
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 22,
+            "target": 7
+        },
+        {
+            "RTT": "0.76",
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 22,
+            "target": 24
+        },
+        {
+            "RTT": "5.09",
+            "Source_AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "12271",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 25,
+            "target": 7
+        },
+        {
+            "RTT": "4.34",
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "Target_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Target_AS_Number": "7843",
+            "source": 26,
+            "target": 7
+        },
+        {
+            "RTT": "0.84",
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "Target_AS_Name": "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+            "Target_AS_Number": "11164",
+            "source": 7,
+            "target": 27
+        },
+        {
+            "RTT": "6.69",
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "Target_AS_Name": "UNIVHAWAII - University of Hawaii, US",
+            "Target_AS_Number": "6360",
+            "source": 26,
+            "target": 28
+        },
+        {
+            "RTT": "0.81",
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "Target_AS_Number": "7018",
+            "source": 26,
+            "target": 24
+        },
+        {
+            "RTT": "0.5",
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Target_AS_Number": "7922",
+            "source": 26,
+            "target": 0
+        }
+    ],
+    "Nodes": [
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922",
+            "Shared": true,
+            "Shared_By": [
+                "20001"
+            ],
+            "Source": true,
+            "Source_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "Source_AS_Number": 7922,
+            "value": 1
+        },
+        {
+            "AS_Name": "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+            "AS_Number": "22773",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+            "Source_AS_Number": 22773,
+            "value": 0
+        },
+        {
+            "AS_Name": "CHARTER-NET-HKY-NC - Charter Communications, US",
+            "AS_Number": "20115",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CHARTER-NET-HKY-NC - Charter Communications, US",
+            "Source_AS_Number": 20115,
+            "value": 0
+        },
+        {
+            "AS_Name": "CABLE-NET-1 - Cablevision Systems Corp., US",
+            "AS_Number": "6128",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CABLE-NET-1 - Cablevision Systems Corp., US",
+            "Source_AS_Number": 6128,
+            "value": 0
+        },
+        {
+            "AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "AS_Number": "30036",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": 30036,
+            "value": 0
+        },
+        {
+            "AS_Name": "SCRR-10796 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "10796",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "SCRR-10796 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 10796,
+            "value": 0
+        },
+        {
+            "AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11351",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": true,
+            "Source_AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 11351,
+            "value": 1
+        },
+        {
+            "AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "AS_Number": "7843",
+            "Shared": true,
+            "Shared_By": [
+                "11351",
+                "6453",
+                "6939",
+                "174",
+                "297",
+                "1280",
+                "2828",
+                "1257",
+                "6461",
+                "2516",
+                "3356",
+                "3549",
+                "11426",
+                "29216",
+                "19151",
+                "11427",
+                "12271",
+                "20001",
+                "11164"
+            ],
+            "Source": true,
+            "Source_AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11351",
+            "value": 19
+        },
+        {
+            "AS_Name": "AS6453 - TATA COMMUNICATIONS (AMERICA) INC, US",
+            "AS_Number": "6453",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "HURRICANE - Hurricane Electric, Inc., US",
+            "AS_Number": "6939",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "COGENT-174 - Cogent Communications, US",
+            "AS_Number": "174",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "AS297 - National Aeronautics and Space Administration, US",
+            "AS_Number": "297",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "ISC-AS-1280 - Internet Systems Consortium, Inc., US",
+            "AS_Number": "1280",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "XO-AS15 - XO Communications, US",
+            "AS_Number": "2828",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "TELE2, SE",
+            "AS_Number": "1257",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "AS_Number": "6461",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "KDDI KDDI CORPORATION, JP",
+            "AS_Number": "2516",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "LEVEL3 - Level 3 Communications, Inc., US",
+            "AS_Number": "3356",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "LVLT-3549 - Level 3 Communications, Inc., US",
+            "AS_Number": "3549",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11426",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": true,
+            "Source_AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 11426,
+            "value": 1
+        },
+        {
+            "AS_Name": "I-ROOT DNS root name server i.root-servers.net., SE",
+            "AS_Number": "29216",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "WVFIBER-1 - WV FIBER, US",
+            "AS_Number": "19151",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11427",
+            "Shared": false,
+            "Shared_By": [
+                "11955",
+                "7843",
+                "7018"
+            ],
+            "Source": true,
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 11427,
+            "value": 3
+        },
+        {
+            "AS_Name": "SCRR-11955 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11955",
+            "Shared": false,
+            "Shared_By": [
+                "11427"
+            ],
+            "Source": false,
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "value": 1
+        },
+        {
+            "AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "AS_Number": "7018",
+            "Shared": true,
+            "Shared_By": [
+                "11427",
+                "20001"
+            ],
+            "Source": false,
+            "Source_AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "11427",
+            "value": 2
+        },
+        {
+            "AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "12271",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": true,
+            "Source_AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 12271,
+            "value": 1
+        },
+        {
+            "AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "AS_Number": "20001",
+            "Shared": false,
+            "Shared_By": [
+                "7843",
+                "6360",
+                "7018",
+                "7922"
+            ],
+            "Source": true,
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": 20001,
+            "value": 4
+        },
+        {
+            "AS_Name": "INTERNET2-TRANSITRAIL-CPS - Internet2, US",
+            "AS_Number": "11164",
+            "Shared": false,
+            "Shared_By": [
+                "7843"
+            ],
+            "Source": false,
+            "Source_AS_Name": "TWCABLE-BACKBONE - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "7843",
+            "value": 1
+        },
+        {
+            "AS_Name": "UNIVHAWAII - University of Hawaii, US",
+            "AS_Number": "6360",
+            "Shared": false,
+            "Shared_By": [
+                "20001"
+            ],
+            "Source": false,
+            "Source_AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "Source_AS_Number": "20001",
+            "value": 1
+        },
+        {
+            "AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "AS_Number": "19108",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "SUDDENLINK-COMMUNICATIONS - Suddenlink Communications, US",
+            "Source_AS_Number": 19108,
+            "value": 0
+        },
+        {
+            "AS_Name": "ATT-MOBILITY-LLC-AS20057 - AT&T Mobility LLC, US",
+            "AS_Number": "20057",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ATT-MOBILITY-LLC-AS20057 - AT&T Mobility LLC, US",
+            "Source_AS_Number": 20057,
+            "value": 0
+        },
+        {
+            "AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "AS_Number": "701",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "UUNET - MCI Communications Services, Inc. d/b/a Verizon Business, US",
+            "Source_AS_Number": 701,
+            "value": 0
+        },
+        {
+            "AS_Name": "CELLCO - Cellco Partnership DBA Verizon Wireless, US",
+            "AS_Number": "22394",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CELLCO - Cellco Partnership DBA Verizon Wireless, US",
+            "Source_AS_Number": 22394,
+            "value": 0
+        },
+        {
+            "AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "AS_Number": "209",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-US-LEGACY-QWEST - Qwest Communications Company, LLC, US",
+            "Source_AS_Number": 209,
+            "value": 0
+        },
+        {
+            "AS_Name": "CENTURYLINK-LEGACY-LIGHTCORE - CenturyTel Internet Holdings, Inc., US",
+            "AS_Number": "22561",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CENTURYLINK-LEGACY-LIGHTCORE - CenturyTel Internet Holdings, Inc., US",
+            "Source_AS_Number": 22561,
+            "value": 0
+        },
+        {
+            "AS_Name": "NCTA-WASHINGTONDC - National Cable & Telecommunications Association, US",
+            "AS_Number": "26868",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "NCTA-WASHINGTONDC - National Cable & Telecommunications Association, US",
+            "Source_AS_Number": 26868,
+            "value": 0
+        },
+        {
+            "AS_Name": "CISCOSYSTEMS - Cisco Systems, Inc., US",
+            "AS_Number": "109",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CISCOSYSTEMS - Cisco Systems, Inc., US",
+            "Source_AS_Number": 109,
+            "value": 0
+        },
+        {
+            "AS_Name": "DMM - Cisco Systems, Inc., US",
+            "AS_Number": "3943",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "DMM - Cisco Systems, Inc., US",
+            "Source_AS_Number": 3943,
+            "value": 0
+        },
+        {
+            "AS_Name": "ESNET-WEST - ESnet, US",
+            "AS_Number": "292",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "ESNET-WEST - ESnet, US",
+            "Source_AS_Number": 292,
+            "value": 0
+        },
+        {
+            "AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "AS_Number": "2914",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "NTT-COMMUNICATIONS-2914 - NTT America, Inc., US",
+            "Source_AS_Number": 2914,
+            "value": 0
+        },
+        {
+            "AS_Name": "FRONTIER-FRTR - Frontier Communications of America, Inc., US",
+            "AS_Number": "5650",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "FRONTIER-FRTR - Frontier Communications of America, Inc., US",
+            "Source_AS_Number": 5650,
+            "value": 0
+        },
+        {
+            "AS_Name": "TWTC - tw telecom holdings, inc., US",
+            "AS_Number": "4323",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "TWTC - tw telecom holdings, inc., US",
+            "Source_AS_Number": 4323,
+            "value": 0
+        },
+        {
+            "AS_Name": "HNS-DIRECPC - Hughes Network Systems, US",
+            "AS_Number": "6621",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "HNS-DIRECPC - Hughes Network Systems, US",
+            "Source_AS_Number": 6621,
+            "value": 0
+        },
+        {
+            "AS_Name": "SONOMA - Sonoma Interconnect, US",
+            "AS_Number": "7065",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "SONOMA - Sonoma Interconnect, US",
+            "Source_AS_Number": 7065,
+            "value": 0
+        },
+        {
+            "AS_Name": "WB-DEN2 - ViaSat,Inc., US",
+            "AS_Number": "7155",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "WB-DEN2 - ViaSat,Inc., US",
+            "Source_AS_Number": 7155,
+            "value": 0
+        },
+        {
+            "AS_Name": "CABLEONE - CABLE ONE, INC., US",
+            "AS_Number": "11492",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CABLEONE - CABLE ONE, INC., US",
+            "Source_AS_Number": 11492,
+            "value": 0
+        },
+        {
+            "AS_Name": "SFMIX-MGMT - San Francisco Metropolitan Internet Exchange (SFMIX), US",
+            "AS_Number": "12276",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "SFMIX-MGMT - San Francisco Metropolitan Internet Exchange (SFMIX), US",
+            "Source_AS_Number": 12276,
+            "value": 0
+        },
+        {
+            "AS_Name": "GOOGLE-FIBER - Google Fiber Inc., US",
+            "AS_Number": "16591",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "GOOGLE-FIBER - Google Fiber Inc., US",
+            "Source_AS_Number": 16591,
+            "value": 0
+        },
+        {
+            "AS_Name": "LONI - Louisiana Board of Regents/Louisiana Optical Network Initiative (LONI), US",
+            "AS_Number": "32440",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "LONI - Louisiana Board of Regents/Louisiana Optical Network Initiative (LONI), US",
+            "Source_AS_Number": 32440,
+            "value": 0
+        },
+        {
+            "AS_Name": "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+            "AS_Number": "33363",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "BHN-TAMPA - BRIGHT HOUSE NETWORKS, LLC, US",
+            "Source_AS_Number": 33363,
+            "value": 0
+        },
+        {
+            "AS_Name": "YELP - Yelp! Inc., US",
+            "AS_Number": "33445",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "YELP - Yelp! Inc., US",
+            "Source_AS_Number": 33445,
+            "value": 0
+        },
+        {
+            "AS_Name": "OPENDNS - OpenDNS, LLC, US",
+            "AS_Number": "36692",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "OPENDNS - OpenDNS, LLC, US",
+            "Source_AS_Number": 36692,
+            "value": 0
+        },
+        {
+            "AS_Name": "CLOUDFLARENET-SFO - CloudFlare, Inc., US",
+            "AS_Number": "394536",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "CLOUDFLARENET-SFO - CloudFlare, Inc., US",
+            "Source_AS_Number": 394536,
+            "value": 0
+        },
+        {
+            "AS_Name": "NORTHLAND-CABLE - NORTHLAND CABLE TELEVISION INC., US",
+            "AS_Number": "40285",
+            "Shared": false,
+            "Shared_By": [],
+            "Source": true,
+            "Source_AS_Name": "NORTHLAND-CABLE - NORTHLAND CABLE TELEVISION INC., US",
+            "Source_AS_Number": 40285,
+            "value": 0
+        }
+    ],
+    "Source_List": [
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922"
+        },
+        {
+            "AS_Name": "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+            "AS_Number": "22773"
+        },
+        {
+            "AS_Name": "CHARTER-NET-HKY-NC - Charter Communications, US",
+            "AS_Number": "20115"
+        },
+        {
+            "AS_Name": "CABLE-NET-1 - Cablevision Systems Corp., US",
+            "AS_Number": "6128"
+        },
+        {
+            "AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "AS_Number": "30036"
+        },
+        {
+            "AS_Name": "SCRR-10796 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "10796"
+        },
+        {
+            "AS_Name": "RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11351"
+        },
+        {
+            "AS_Name": "SCRR-11426 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11426"
+        },
+        {
+            "AS_Name": "SCRR-11427 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "11427"
+        },
+        {
+            "AS_Name": "SCRR-12271 - Time Warner Cable Internet LLC, US",
+            "AS_Number": "12271"
+        },
+        {
+            "AS_Name": "ROADRUNNER-WEST - Time Warner Cable Internet LLC, US",
+            "AS_Number": "20001"
+        }
+    ]
+}

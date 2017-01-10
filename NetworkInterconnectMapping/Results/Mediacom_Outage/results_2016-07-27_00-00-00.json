@@ -1,0 +1,84 @@
+{
+    "Backbone_AS_List": [],
+    "Links": [
+        {
+            "RTT": "0.81",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Target_AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "source": 0,
+            "target": 1
+        },
+        {
+            "RTT": "0.87",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Target_AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "source": 0,
+            "target": 2
+        },
+        {
+            "RTT": "3.89",
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Target_AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "source": 0,
+            "target": 3
+        }
+    ],
+    "Nodes": [
+        {
+            "AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "AS_Number": "30036",
+            "Shared": false,
+            "Shared_By": [
+                "ATT-INTERNET4 - AT&T Services, Inc., US",
+                "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+                "ZAYO-6461 - Zayo Bandwidth Inc, US"
+            ],
+            "Source": true,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": 30036,
+            "value": 3
+        },
+        {
+            "AS_Name": "ATT-INTERNET4 - AT&T Services, Inc., US",
+            "AS_Number": "7018",
+            "Shared": false,
+            "Shared_By": [
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "value": 1
+        },
+        {
+            "AS_Name": "COMCAST-7922 - Comcast Cable Communications, Inc., US",
+            "AS_Number": "7922",
+            "Shared": false,
+            "Shared_By": [
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "value": 1
+        },
+        {
+            "AS_Name": "ZAYO-6461 - Zayo Bandwidth Inc, US",
+            "AS_Number": "6461",
+            "Shared": false,
+            "Shared_By": [
+                "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US"
+            ],
+            "Source": false,
+            "Source_AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "Source_AS_Number": "30036",
+            "value": 1
+        }
+    ],
+    "Source_List": [
+        {
+            "AS_Name": "MEDIACOM-ENTERPRISE-BUSINESS - Mediacom Communications Corp, US",
+            "AS_Number": "30036"
+        }
+    ]
+}

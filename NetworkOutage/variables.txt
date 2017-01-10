@@ -1,0 +1,9 @@
+i_dunno: 104.228.234.215
+network_name: RR-NYSREGION-ASN-01 - Time Warner Cable Internet LLC, US
+k = length of sandy dict: 0
+z = keys in sandy dict: []
+sandy: {10800: ['Time Warner Cable Internet LLC, US', 11351]}
+stupid = {id: pack sent, pack recv}: {10800: [3, 3]}
+fake = country code: US
+again list: []
+count packets: {11351: [3, 3]}
