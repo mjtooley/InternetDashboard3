@@ -5,9 +5,10 @@ import ConfigParser
 import ast
 import getopt,sys
 import threading
-from NetworkOutage.NetworkOutage import networkOutage, networkOutage2
+from NetworkOutage.NetworkOutage import networkOutage, networkOutage2, NetworkOutageThread
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
-from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2
+from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2, PeformanceThread
+from configuration import getAsnList
 from SaveToMongoDB import saveToMongoDB
 from StreamingResults import getStreamResults
 import profile
@@ -80,8 +81,6 @@ def main(argv):
         start_time = now - WINDOW  # back up 30 minutes
         end_time = now
 
-        #start_time = 1480550501
-        #end_time = 1480551501
         while True:
             print "Start:",datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
 
@@ -89,8 +88,31 @@ def main(argv):
             saveToMongoDB(start_time,end_time)
 
             # Compute the results and store them in them DB for the web front-end to retrieve
-            networkOutage2(end_time - WINDOW*10, end_time)
-            networkPerformance2(end_time-WINDOW*10, end_time)
+            #networkOutage2(end_time - WINDOW*10, end_time)
+            #networkPerformance2(end_time-WINDOW*10, end_time)
+
+            list_of_source_asns = getAsnList()
+            threads = []
+            number_of_threads = 0
+
+            for asn in list_of_source_asns:
+                thread_name = "Outage " + str(number_of_threads + 1)
+                thread = NetworkOutageThread(end_time - WINDOW*10, end_time, asn, thread_name)
+                thread.start()
+                threads.append(thread)
+                number_of_threads = number_of_threads + 1
+
+                thread_name = "Performance " + str(number_of_threads + 1)
+                thread = PeformanceThread(end_time - WINDOW*10, end_time, asn, thread_name)
+                thread.start()
+                threads.append(thread)
+                number_of_threads = number_of_threads + 1
+
+            # Wait for all the threads to finish
+            for t in threads:
+                t.join()
+            print "All threads finished..."
+
             networkInterconnects(end_time - WINDOW*10, end_time)
 
             start_time = end_time # move the window forward

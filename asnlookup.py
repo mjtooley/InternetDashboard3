@@ -1,3 +1,6 @@
+import pygeoip
+import re
+
 class Asn:
     def __index__(self):
         self.asn = dict()
@@ -27,43 +30,21 @@ class Asn:
         self.asn['5650'] = 'Frontier'
         self.asn['11492'] = 'CableOne'
 
-    def getNetworkName(self,asn):
-        if asn in dict:
-            name = self.asn[asn]
-        else:
-            name = 'unknown'
-        return name
+def getAsn(ip):
+    as_name = 'none'  # default
+    gi_asn = pygeoip.GeoIP('GeoIPASNum.dat')
+    asn_name = gi_asn.asn_by_addr(ip)
+    asn = None
 
 
-asn = {}
-asn[7922] = 'Comcast'
-asn[22773] = 'Cox'
-asn[20115] = 'Charter'
-asn[6128] = 'AlticeUSA'
-asn[30036] = 'Mediacom'
-asn[10796] = 'Charter'
-asn[11351] = 'Charter'
-asn[11426] = 'Charter'
-asn[11427] = 'Charter'
-asn[12271] = 'Charter'
-asn[20001] = 'Charter'
-asn[19108] = 'AlticeUSA'
-asn[7018] = 'ATT'
-asn[20057] = 'ATT'
-asn[701] = 'Verizon'
-asn[702] = 'Verizon'
-asn[22394] = 'Verizon Wireless'
-asn[209] = 'CenturyLink'
-asn[22561] = 'CenturyLink'
-asn[26868] = 'NCTA'
-asn[6939] = 'Hurricane Electric'
-asn[174] = 'Cogent'
-asn[3549] = 'Level 3'
-asn[5650] = 'Frontier'
-asn[11492] = 'CableOne'
+    if asn_name:
+        names = str(asn_name).split()
+        try:
+            asn = int(re.sub('[^0-9]', '', names[0]))  # Parse out the leadign number
+        except:
+            asn = None
+        del names[0]  #
+        as_name = ' '.join(names)  # Re-assemble the ASN Name withouth the leading number
 
-if source_asn in dict:
-    name = asn[source_asn]
-else:
-    name = 'unknown'
-return name
+    return asn, as_name
+

@@ -22,7 +22,10 @@ class Find(object):
         for packetnumber in range(0, 3):
             if "from" in hop[packetnumber]:
                 hop_ip_address.append(hop[packetnumber]["from"])
-                hop_rtt.append(hop[packetnumber]["rtt"])
+
+                if "rtt" in hop[packetnumber]:
+                    hop_rtt.append(hop[packetnumber]["rtt"])
+
             elif "x" in hop[packetnumber]:
                 pass
 
@@ -66,11 +69,15 @@ class Find(object):
         median_rtts = []
 
         for hopnumber in range(0, self.total_hops):
-            checkedHop = self.checkHop(self.single_measurement["result"][hopnumber]["result"])
-            ip_path.append(checkedHop[0])
-            median_rtts.append(checkedHop[1])
-            getLocation = self.findLocation(checkedHop[0])
-            locations.append(getLocation)
+            if "result" in self.single_measurement["result"][hopnumber]:
+                try:
+                    checkedHop = self.checkHop(self.single_measurement["result"][hopnumber]["result"])
+                    ip_path.append(checkedHop[0])
+                    median_rtts.append(checkedHop[1])
+                    getLocation = self.findLocation(checkedHop[0])
+                    locations.append(getLocation)
+                except:
+                    pass
 
 
         return ip_path, locations, median_rtts

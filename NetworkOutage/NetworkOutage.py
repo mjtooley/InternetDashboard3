@@ -17,7 +17,7 @@ from ripe.atlas.cousteau import Probe
 import geocoder
 from configuration import getAsnList,getMongoDB,getmsm_ids
 
-class myThread(threading.Thread):
+class NetworkOutageThread(threading.Thread):
     def __init__(self, start_time, stop_time, source_asn, thread_name):
         threading.Thread.__init__(self)
         self.start_time = start_time
@@ -133,7 +133,7 @@ def networkOutage2(start, end):
 
     for asn in list_of_source_asns:
         thread_name = "NetworkOutage " + str(number_of_threads + 1)
-        thread = myThread(start, end, asn, thread_name)
+        thread = NetworkOutageThread(start, end, asn, thread_name)
         thread.start()
         threads.append(thread)
         number_of_threads = number_of_threads + 1

@@ -6,12 +6,16 @@ MongoDB.
 import threading
 from pymongo import MongoClient
 from ripe.atlas.cousteau import AtlasResultsRequest, ProbeRequest
-from configuration import getAsnList,getMongoServer,getmsm_ids
-import sys
 from socket import socket
 from configuration import getAsnList,getMongoServer,getmsm_ids,getCarbonServer
+import calendar
+import time
 import datetime
-
+import ConfigParser
+import getopt,sys
+from NetworkOutage.NetworkOutage import networkOutage, networkOutage2, NetworkOutageThread
+from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
+from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2, PeformanceThread
 
 
 # Define class myThread to spawn a thread and get results for each ASN from RIPE servers
@@ -165,8 +169,73 @@ def saveToMongoDB(start_time, stop_time):
     print "All threads finished, exiting saveToMongoDB."
     print "-------------------------------------------\n \n"
 
-def main():
-    saveToMongoDB(1451606400, 1451606760)
+
+def RefreshDatabase(argv):
+    configfile = ""
+    try:
+        opts, args = getopt.getopt(argv, "hc:", ["help", "config="])
+    except getopt.GetoptError:
+        print("Usage: Internetdashboard.py -c <config file> or Internetdashboard.py --config <config file>")
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == "-h":
+            print ('internetdashboard.py [-c <config file>]')
+            sys.exit()
+        elif opt in ("-c", "--config"):
+            configfile = arg
+
+    if configfile != "":
+        config = ConfigParser.RawConfigParser(allow_no_value=True)
+        config.read(configfile)
+
+        start_string = config.get('Options', 'start')
+        date_time_string = start_string + " " + "00:00:00"
+        time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
+        start_time = calendar.timegm(time_tuple)
+
+        end_string = config.get('Options', 'end')
+        date_time_string = end_string + " " + "00:00:00"
+        time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
+        end_time = calendar.timegm(time_tuple)
+
+    print "Refreshing the database with test and computed results."
+    print "Start:", datetime.datetime.fromtimestamp(start_time).strftime(
+        '%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
+
+    # Update the datebase with the latest results
+    # saveToMongoDB(start_time, end_time)
+    list_of_source_asns = getAsnList()
+    threads = []
+    number_of_threads = 0
+
+    for asn in list_of_source_asns:
+        #thread_name = "Outage " + str(number_of_threads + 1)
+        #thread = NetworkOutageThread(start_time, end_time, asn, thread_name)
+        #thread.start()
+        #threads.append(thread)
+        #number_of_threads = number_of_threads + 1
+
+        thread_name = "Performance " + str(number_of_threads + 1)
+        thread = PeformanceThread(start_time, end_time, asn, thread_name)
+        thread.start()
+        threads.append(thread)
+        number_of_threads = number_of_threads + 1
+
+    # Wait for all the threads to finish
+    for t in threads:
+        t.join()
+    print "All threads finished..."
+
+    #networkInterconnects(start_time, end_time)
+
+    print "Done...."
+
+def main(argv):
+    # Jan 1 2017 = 1483228800
+    # Jan 10 2017 = 1484006400
+    #saveToMongoDB(1483228800, 1484006400)
+    RefreshDatabase(argv)
+
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1:])

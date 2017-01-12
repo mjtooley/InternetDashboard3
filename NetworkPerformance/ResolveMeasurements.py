@@ -3,6 +3,8 @@ from IPy import IP
 from pprint import pprint
 import sys
 import traceback
+import pygeoip
+import re
 
 class Resolve(object):
     """
@@ -53,13 +55,29 @@ class Resolve(object):
                 switch_to_name = True
             in_private = IP(ip_address)
             if in_private.iptype() != "PRIVATE":
-                client = IPWhois(ip_address)
-                ip_details = client.lookup_whois()
-                if not switch_to_name:
-                    as_name = ip_details["nets"][0]["description"]
+                #client = IPWhois(ip_address)
+                #ip_details = client.lookup_whois()
+                #if not switch_to_name:
+                #    as_name = ip_details["nets"][0]["description"]
+                #else:
+                #    as_name = ip_details["nets"][0]["name"]
+                #asn = ip_details["asn"]
+
+                gi_asn = pygeoip.GeoIP('GeoIPASNum.dat')
+                as_name = gi_asn.asn_by_addr(ip_address)
+                if as_name:
+                    names = str(as_name).split()
+                    try:
+                        asn = int(re.sub('[^0-9]', '', names[0])) # Parse out the leadign number
+                    except:
+                        pass
+                    del names[0]  #
+                    as_name = ' '.join(names) # Re-assemble the ASN Name withouth the leading number
                 else:
-                    as_name = ip_details["nets"][0]["name"]
-                asn = ip_details["asn"]
+                    #asn = 0
+                    #as_name = 'Private'
+                    continue
+
             elif in_private.iptype() == "PRIVATE":
                 is_source = False
                 as_name = "Private or unknown"
@@ -118,15 +136,23 @@ class Resolve(object):
         try:
             if two_hops[1]["ASN"] is None:
                 return
-            if ("Private" in two_hops[1]["ASN"]) \
-                    or ("NA" in two_hops[1]["ASN"]) \
-                    or (int(two_hops[1]["ASN"]) == self.as_number): #("Private" in two_hops[0]["ASN"]) or
-                return
-            elif (two_hops[0]["AS_Name"] != two_hops[1]["AS_Name"]) and (two_hops[0]["ASN"] != two_hops[1]["ASN"]):
-                # neighbors["Neighbor_AS_Name"] = two_hops[1]["AS_Name"]
-                # neighbors["Neighbor_ASN"] = two_hops[1]["ASN"]
-                # neighbors["Hopnumber"] = hopnumber
-                # return neighbors
+
+            if isinstance(two_hops[1]["ASN"],int):
+                if (int(two_hops[1]["ASN"]) == self.as_number): #("Private" in two_hops[0]["ASN"]) or
+                    return
+            else:
+                try:
+                    if ( "Private" in two_hops[1]["ASN"] ) :
+                        return
+                except:
+                    pass
+                try:
+                    if ("NA" in two_hops[1]["ASN"]):
+                        return
+                except:
+                    pass
+
+            if (two_hops[0]["AS_Name"] != two_hops[1]["AS_Name"]) and (two_hops[0]["ASN"] != two_hops[1]["ASN"]):
                 return hopnumber
         except:
             exc_info = sys.exc_info()

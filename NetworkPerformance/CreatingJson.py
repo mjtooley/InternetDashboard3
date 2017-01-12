@@ -1,4 +1,6 @@
-import json
+import traceback
+import sys
+from collections import defaultdict
 
 class Creating(object):
     def __init__(self, network_dictionary, name_number, location, rtt):
@@ -36,24 +38,48 @@ class Creating(object):
         self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"] = []
 
     def addTraceroutes(self, aggregate_routes_index, destination, boundary):
-        if self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"] == []:
-            self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append([])
-        self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][0].append([])
-        self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][0][-1].append(self.rtt[boundary])
-        self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][0][-1].append(self.rtt[destination])
 
-        self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append([])
-        for details_index in range(0, len(self.name_number)):
-            if self.name_number[details_index]["AS_Name"] != "Private or unknown":
-                self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1].append({})
-                self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["Name"] = self.name_number[details_index]["AS_Name"]
-                self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["RTT"] = self.rtt[details_index]
-                if self.location[details_index] == []:
-                    self.location[details_index] = [0, 0]
-                self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["lat"] = self.location[details_index][0]
-                self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["lng"] = self.location[details_index][1]
+        try:
+            if self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index].has_key("Traceroutes"):
+                self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append([])
+            else:
+                self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"] =[]
+
+     #       if self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"] == []:
+     #           self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append([])
+
+
+            try:
+                if self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"]:
+                        self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append(self.rtt[boundary])
+                        self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append(self.rtt[destination])
+                else:
+                    self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"] =  [self.rtt[boundary]]
+                    self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append(self.rtt[destination])
+            except IndexError:
+                print "Index error"
+
+
+            self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"].append([])
+            for details_index in range(0, len(self.name_number)):
+                if self.name_number[details_index]["AS_Name"] != "Private or unknown":
+                    self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1].append({})
+                    self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["Name"] = self.name_number[details_index]["AS_Name"]
+                    self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["RTT"] = self.rtt[details_index]
+                    if self.location[details_index] == []:
+                        self.location[details_index] = [0, 0]
+                    self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["lat"] = self.location[details_index][0]
+                    self.network_dictionary["Networks"][-1]["Aggregate_Routes"][aggregate_routes_index]["Traceroutes"][-1][-1]["lng"] = self.location[details_index][1]
+        except:
+            exc_info = sys.exc_info()
+            traceback.print_exc()
+            print "Exception in NetworkPerformance:AddTraceroutes", exc_info
+
 
     def creating(self):
+        boundary = 0
+        destination = 0
+        traceroute_present = -1
         for details_index in range(0, len(self.name_number)):
             if self.name_number[details_index]["is_source"] == True:
                 source = details_index
@@ -64,11 +90,18 @@ class Creating(object):
             if self.name_number[details_index]["is_boundary"] == True:
                 boundary = details_index
 
-        traceroute_present = self.traceroutePresent(destination)
+        if destination != 0:
+            traceroute_present = self.traceroutePresent(destination)
+        else:
+            pass
 
-        if traceroute_present == -1:
-            self.addAggregateRoutes(traceroute_present, destination, boundary)
-            self.addAggregateRoute(traceroute_present, source, destination)
-        self.addTraceroutes(traceroute_present, destination, boundary)
+        if traceroute_present == -1: # No traceroute
+            try:
+                self.addAggregateRoutes(traceroute_present, destination, boundary)
+                self.addAggregateRoute(traceroute_present, source, destination)
+            except:
+                pass
+        if (boundary != 0) and (traceroute_present != -1):
+            self.addTraceroutes(traceroute_present, destination, boundary)
 
         return self.network_dictionary
