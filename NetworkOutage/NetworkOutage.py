@@ -117,13 +117,13 @@ def outagesThread(start, end,asn):
 
             current_result += 1
             # sys.stdout.write('.')
+            #
 
     to_save = Save()
     to_save.saveMeasurements(probe_dictionary)
 
     measurements.closeConnection()
     to_save.closeConnection()
-    print "\n"
     print "Finished NetworkOutage:", asn
 
 def networkOutage2(start, end):
