@@ -293,11 +293,12 @@ def perfomance_d(start, end, asn):
                 isp_dict[d2['Destination']][0].append((isp_RTT,RTT_med))
                 isp_dict[d2['Destination']].append(d2["traceroute"])
             else:
-                isp_dict[d2['Destination']] = [[isp_RTT, RTT_med]]
+                isp_dict[d2['Destination']] = [[(isp_RTT, RTT_med)]]
                 isp_dict[d2['Destination']].append(d2["traceroute"])
 
+    dictionary = [ isp_dict]
     name_net = ""
-    for k in isp_dict:
+    for k in dictionary:
         a=[]
         Aggregate_Route = []
         lis1 = []
@@ -337,7 +338,7 @@ def perfomance_d(start, end, asn):
                 traceback.print_exc()
                 print "Exception in NetworkPerformance:", exc_info
 
-            name_net = d2["isp"]  # Get the name of the ISP
+        name_net = d2["isp"]  # Get the name of the ISP
 
         if a!=[]:
             Route_for_network = {"Name": name_net, "Aggregate_Routes": a}
