@@ -189,12 +189,12 @@ def RefreshDatabase(argv):
         config.read(configfile)
 
         start_string = config.get('Options', 'start')
-        date_time_string = start_string + " " + "00:00:00"
+        date_time_string = start_string
         time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
         start_time = calendar.timegm(time_tuple)
 
         end_string = config.get('Options', 'end')
-        date_time_string = end_string + " " + "00:00:00"
+        date_time_string = end_string
         time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
         end_time = calendar.timegm(time_tuple)
 
@@ -203,17 +203,17 @@ def RefreshDatabase(argv):
         '%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
 
     # Update the datebase with the latest results
-    # saveToMongoDB(start_time, end_time)
+    saveToMongoDB(start_time, end_time)
     list_of_source_asns = getAsnList()
     threads = []
     number_of_threads = 0
 
     for asn in list_of_source_asns:
-        #thread_name = "Outage " + str(number_of_threads + 1)
-        #thread = NetworkOutageThread(start_time, end_time, asn, thread_name)
-        #thread.start()
-        #threads.append(thread)
-        #number_of_threads = number_of_threads + 1
+        thread_name = "Outage " + str(number_of_threads + 1)
+        thread = NetworkOutageThread(start_time, end_time, asn, thread_name)
+        thread.start()
+        threads.append(thread)
+        number_of_threads = number_of_threads + 1
 
         thread_name = "Performance " + str(number_of_threads + 1)
         thread = PeformanceThread(start_time, end_time, asn, thread_name)
@@ -226,7 +226,7 @@ def RefreshDatabase(argv):
         t.join()
     print "All threads finished..."
 
-    #networkInterconnects(start_time, end_time)
+    networkInterconnects(start_time, end_time)
 
     print "Done...."
 

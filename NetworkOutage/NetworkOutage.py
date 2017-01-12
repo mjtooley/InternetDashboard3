@@ -88,10 +88,11 @@ def outagesThread(start, end,asn):
     probe_dictionary["Probes"] = []
     probe_dictionary["AS_List"] = []
 
-    print "-->NetworkOutage:", asn
+
     current_result = 1
     measurements = Get()
     current_measurement = measurements.getMeasurements(asn, start, end)
+    print "-->NetworkOutage:", asn, " total measurements:", current_measurement[1]
     # if current_measurement[1] == 0:
     #     return
     while current_result < current_measurement[1]:
@@ -115,7 +116,7 @@ def outagesThread(start, end,asn):
             final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
 
             current_result += 1
-            sys.stdout.write('.')
+            # sys.stdout.write('.')
 
     to_save = Save()
     to_save.saveMeasurements(probe_dictionary)
@@ -123,7 +124,7 @@ def outagesThread(start, end,asn):
     measurements.closeConnection()
     to_save.closeConnection()
     print "\n"
-
+    print "Finished NetworkOutage:", asn
 
 def networkOutage2(start, end):
 
