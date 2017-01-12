@@ -219,10 +219,8 @@ def perfomance_d(start, end, asn):
     fin = []
     Net = []
     Route_for_network = {}
-    c_dict = {}
-    c_dict_final = {}
-    v_dict = {}
-    chart_dict = {}
+
+    isp_dict = {}  # initialize the dict
     dest_name = ""
     inter_network_name=""
     prev_name_net=0
@@ -234,7 +232,6 @@ def perfomance_d(start, end, asn):
         RTT_med = 0
         isp_RTT = 0
         list = []
-        print "Measurement"
         new_count = 0
         counter = 0
         prev_asn_name = " "
@@ -244,7 +241,6 @@ def perfomance_d(start, end, asn):
 
         if res['result'][Total_h - 1]['hop'] != 255:
             for i in range(0, Total_h):
-
                 try:
                     hop_ip = res['result'][i]['result'][0]['from']
                     location= getLocation(hop_ip)
@@ -280,9 +276,8 @@ def perfomance_d(start, end, asn):
                     prev_asn_name = inter_network_name
                     prev_result = location
 
-                except Exception as e:
-                    print e
-                    inter_network_name = "Unknown"
+                except KeyError: # the traceroute result is **** indicating unknown, so skip.
+                    pass
 
         d2 = {"traceroute": list,
               "timestamp": res['timestamp'],
@@ -291,7 +286,7 @@ def perfomance_d(start, end, asn):
               "isp_rtt": isp_RTT,
               "Final_rtt": RTT_med}
 
-        isp_dict = {} # initialize the dict
+
         if isp_RTT!=0 and RTT_med!=0:
 
             if d2['Destination'] in isp_dict:
@@ -337,8 +332,10 @@ def perfomance_d(start, end, asn):
                                            "Aggregate_Route": [{"Name": name_prb, "lat": lat_prb, "lng": Lon_prb},
                                                                {"Name": name_fin, "lat": lat_fin, "lng": lon_fin}]}
                 a.append(Aggregate_Route)
-            except:
-                "Error"
+            except Exception:
+                exc_info = sys.exc_info()
+                traceback.print_exc()
+                print "Exception in NetworkPerformance:", exc_info
 
             name_net = d2["isp"]  # Get the name of the ISP
 
