@@ -227,7 +227,7 @@ def perfomance_d(start, end, asn):
 
     measurements = Get()
     current_measurements = measurements.getMeasurements(asn, start, end)
-
+    d2 = {} # intializie it
     for res in current_measurements[0]:
         RTT_med = 0
         isp_RTT = 0
