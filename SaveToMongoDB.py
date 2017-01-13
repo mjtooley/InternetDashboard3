@@ -78,7 +78,10 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                 probe = Probe(id=probe_id)
                 latitude = probe.geometry["coordinates"][1]
                 longitude = probe.geometry["coordinates"][0]
-                location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
+                try:
+                    location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
+                except:
+                    state_name = "Kansas" # Unknown
                 state_name = location_from_coordinates.state
                 probe_dict = {"id":probe.id,"ip_address":probe.address_v4,"asn": asn,"longitude":longitude,"latitude":latitude, "state":state_name}
                 try:
