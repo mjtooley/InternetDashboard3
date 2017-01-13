@@ -116,7 +116,7 @@ def outagesThread(start, end,asn):
 
         current_result += 1
         # sys.stdout.write('.')
-        print "Measurement:", current_result
+        # print "Measurement:", current_result
         #
 
     to_save = Save()

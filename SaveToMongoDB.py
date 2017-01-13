@@ -117,9 +117,8 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                                     res["timestamp"]) + "\n"
                                 #print message
                                 sock.sendall(message)  # send the result to Carbon/Graphite
-                        except:
-                            e = sys.exc_info()
-                            print("Error Writing  to DB: ", str(e))
+                        except Exception as e :
+                            pass
 
     print "Finished Updating MongoDB for ASN:", asn," with ",db_writes," records."
 
