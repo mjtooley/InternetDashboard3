@@ -97,27 +97,35 @@ def getASNResults(asn, start_time, stop_time, target_asn):
             }
 
             is_success, results = AtlasResultsRequest(**kwargs).create()
-
             if is_success:
                 print "ASN:", asn, " TestId:", test_id, " Probes:", len(probe_list), "Count:", len(results)
                 for res in results:
                     if res != 'error':
                         try:
-                            res['asn'] = asn
-                            res['createdAt'] = datetime.datetime.now() # Get the time now in UTC format
-                            dbResult = db.results.insert_one(res)
-                            if dbResult:
-                                # Save Time-series Metrics to Carbon/Whisper
-                                message = "dashboard.mongodb.write" + "." + "success " + "1" + " " + str(
-                                    res["timestamp"]) + "\n"
-                                #print message
-                                sock.sendall(message)  # send the result to Carbon/Graphite
-                                db_writes = db_writes + 1
-                            else:
-                                message = "dashboard.mongodb.write" + "." + "fail " + "1" + " " + str(
-                                    res["timestamp"]) + "\n"
-                                #print message
-                                sock.sendall(message)  # send the result to Carbon/Graphite
+                            # Check for existing entry in DB to avoid adding duplicates
+                            dbResult = db.results.find({"prb_id":res["prb_id"],
+                                                            "msm_id":res["msm_id"],
+                                                            "timestamp":res["timestamp"],
+                                                            "src_addr":res["src_addr"],
+                                                            "dst_addr":res["dst_addr"],
+                                                            "asn":asn})
+                            if dbResult.count() == 0:
+                                # Not in the DB, so add it
+                                res['asn'] = asn
+                                res['createdAt'] = datetime.datetime.now() # Get the time now in UTC format
+                                dbResult = db.results.insert_one(res)
+                                if dbResult:
+                                    # Save Time-series Metrics to Carbon/Whisper
+                                    message = "dashboard.mongodb.write" + "." + "success " + "1" + " " + str(
+                                        res["timestamp"]) + "\n"
+                                    #print message
+                                    sock.sendall(message)  # send the result to Carbon/Graphite
+                                    db_writes = db_writes + 1
+                                else:
+                                    message = "dashboard.mongodb.write" + "." + "fail " + "1" + " " + str(
+                                        res["timestamp"]) + "\n"
+                                    #print message
+                                    sock.sendall(message)  # send the result to Carbon/Graphite
                         except:
                             e = sys.exc_info()
                             print("Error Writing  to DB: ", str(e))

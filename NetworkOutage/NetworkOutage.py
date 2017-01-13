@@ -91,12 +91,12 @@ def outagesThread(start, end,asn):
 
     current_result = 1
     measurements = Get()
-    current_measurement = measurements.getMeasurements(asn, start, end)
-    print "-->NetworkOutage:", asn, " total measurements:", current_measurement[1]
+    current_measurement, number_of_results = measurements.getMeasurements(asn, start, end)
+    print "-->NetworkOutage:", asn, " total measurements:", number_of_results
 
 # Note previously inside some while loop for some reason, not sure why
 
-    for this_result in current_measurement[0]:
+    for this_result in current_measurement:
         try:
             ip_address = this_result["from"]
             # client = IPWhois(ip_address)
@@ -116,7 +116,7 @@ def outagesThread(start, end,asn):
 
         current_result += 1
         # sys.stdout.write('.')
-        print "Measurement:", current_result, " of ", current_measurement[1]
+        print "Measurement:", current_result
         #
 
     to_save = Save()
