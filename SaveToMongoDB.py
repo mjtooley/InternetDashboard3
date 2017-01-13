@@ -102,30 +102,21 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                 for res in results:
                     if res != 'error':
                         try:
-                            # Check for existing entry in DB to avoid adding duplicates
-                            dbResult = db.results.find({"prb_id":res["prb_id"],
-                                                            "msm_id":res["msm_id"],
-                                                            "timestamp":res["timestamp"],
-                                                            "src_addr":res["src_addr"],
-                                                            "dst_addr":res["dst_addr"],
-                                                            "asn":asn})
-                            if dbResult.count() == 0:
-                                # Not in the DB, so add it
-                                res['asn'] = asn
-                                res['createdAt'] = datetime.datetime.now() # Get the time now in UTC format
-                                dbResult = db.results.insert_one(res)
-                                if dbResult:
-                                    # Save Time-series Metrics to Carbon/Whisper
-                                    message = "dashboard.mongodb.write" + "." + "success " + "1" + " " + str(
-                                        res["timestamp"]) + "\n"
-                                    #print message
-                                    sock.sendall(message)  # send the result to Carbon/Graphite
-                                    db_writes = db_writes + 1
-                                else:
-                                    message = "dashboard.mongodb.write" + "." + "fail " + "1" + " " + str(
-                                        res["timestamp"]) + "\n"
-                                    #print message
-                                    sock.sendall(message)  # send the result to Carbon/Graphite
+                            res['asn'] = asn
+                            res['createdAt'] = datetime.datetime.now() # Get the time now in UTC format
+                            dbResult = db.results.insert_one(res)
+                            if dbResult:
+                                # Save Time-series Metrics to Carbon/Whisper
+                                message = "dashboard.mongodb.write" + "." + "success " + "1" + " " + str(
+                                    res["timestamp"]) + "\n"
+                                #print message
+                                sock.sendall(message)  # send the result to Carbon/Graphite
+                                db_writes = db_writes + 1
+                            else:
+                                message = "dashboard.mongodb.write" + "." + "fail " + "1" + " " + str(
+                                    res["timestamp"]) + "\n"
+                                #print message
+                                sock.sendall(message)  # send the result to Carbon/Graphite
                         except:
                             e = sys.exc_info()
                             print("Error Writing  to DB: ", str(e))
@@ -165,6 +156,23 @@ except:
 
 def saveToMongoDB(start_time, stop_time):
     print "Starting SaveToMongoDB"
+
+    # Create the collection and Indexes
+    try:
+        client = MongoClient(getMongoServer(), 27017, connect=False)
+        # client = MongoClient("172.25.11.23", 27017)
+        # Specify the database name at that IP address. (Database Name = InternetDashboard)
+        db = client.InternetDashboard
+    except:
+        print "Couldn't connect to %(server)s , is MongoDB running?" % {'server': getMongoServer()}
+        sys.exit(1)
+    try:
+        result = db.results.create_index([('prb_id', 1),('msm_id',1),('timestamp',1),('src_addr',1),('dst_addr',1)],unique=True)
+    except Exception as e:
+        print e
+        pass
+
+
 
     # Counter for number of threads
     number_of_threads = 0
