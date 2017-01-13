@@ -170,7 +170,6 @@ def saveToMongoDB(start_time, stop_time):
         result = db.results.create_index([('prb_id', 1),('msm_id',1),('timestamp',1),('src_addr',1),('dst_addr',1)],unique=True)
     except Exception as e:
         print e,
-
         pass
 
 
