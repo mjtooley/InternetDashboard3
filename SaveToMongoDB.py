@@ -247,18 +247,18 @@ def RefreshDatabase(argv):
         threads.append(thread)
         number_of_threads = number_of_threads + 1
 
-        #thread_name = "Performance " + str(number_of_threads + 1)
-        #thread = PeformanceThread(start_time, end_time, asn, thread_name)
-        #thread.start()
-        #threads.append(thread)
-        #number_of_threads = number_of_threads + 1
+        thread_name = "Performance " + str(number_of_threads + 1)
+        thread = PeformanceThread(start_time, end_time, asn, thread_name)
+        thread.start()
+        threads.append(thread)
+        number_of_threads = number_of_threads + 1
 
     # Wait for all the threads to finish
     for t in threads:
         t.join()
     print "All threads finished..."
 
-    #networkInterconnects(start_time, end_time)
+    networkInterconnects(start_time, end_time)
 
     print "Done...."
 
