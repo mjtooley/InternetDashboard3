@@ -348,6 +348,7 @@ def perfomance_d(start, end, asn):
         # final_network_dictionary = switchNames(network_dictionary)
         prev_name_net = name_net
         Final_1 = {"Networks": Fin}
+        Final_1["Date"] = end # add the end time as the date
         to_save = Save()
         to_save.saveMeasurements(Final_1)
         measurements.closeConnection()

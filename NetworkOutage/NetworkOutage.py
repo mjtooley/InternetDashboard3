@@ -112,7 +112,8 @@ def outagesThread(start, end,asn):
         to_json.checkNetworkName(probe_dictionary)
 
         final_results = to_json.creatingJson()
-        final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
+        #final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
+        final_results["Data"] = end # Put the endtime in as the date
 
         current_result += 1
         # sys.stdout.write('.')

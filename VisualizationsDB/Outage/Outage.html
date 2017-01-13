@@ -83,9 +83,9 @@
         var date = new Date(); // Get the current time
         date = date - (1000*60*12) // Set the time for the data to display to be 15 minutes behind the wall clock
 
-        var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
-        fdate = formatDate(date)
-
+        //var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
+        //fdate = formatDate(date)
+        // Pass the date as a time stamp
         visualize(date);
     }
     

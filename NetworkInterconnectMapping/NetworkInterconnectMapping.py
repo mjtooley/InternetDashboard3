@@ -107,7 +107,8 @@ def interconnects(start, end, list_of_source_asns):
                     final_results = to_json.creatingJson(name_number, median_rtts)
                     # Add a Date key to find the json file from the database Internet_Dashboard/interconnects to
                     # display using d3
-                    final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
+                    #final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
+                    final_results["Date"] = end # insert the end time
                     # print "result:", current_result, " final_results ", final_results
                     # Increment the counter
                     current_result += 1
