@@ -4,6 +4,7 @@ from ripe.atlas.sagan import PingResult
 from ripe.atlas.cousteau import Probe
 import pygeoip
 import re
+from GetMeasurements import Get
 
 class Resolve(object):
     """
@@ -40,14 +41,10 @@ class Resolve(object):
             ## ip_details = self.client.lookup_whois(self.ip_address)
             ## as_name = ip_details["nets"][0]["description"]
             ping_result = PingResult(self.this_result)
-            probe = Probe(id=ping_result.probe_id)
-            if self.this_result["af"] == 6:
-                asn = probe.asn_v6
-                if probe.asn_v6 == None:
-                    asn = self.this_result["asn"]
-            else:
-                asn = self.this_result["asn"]
-
+            # probe = Probe(id=ping_result.probe_id)
+            probes = Get() # Get the probe details from the DB instead of querying RIPE
+            probe = probes.getProbe(ping_result.probe_id)
+            asn = probe["asn"]
             return asn, as_name, ping_result, probe
         except Exception as e:
             print e

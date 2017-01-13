@@ -30,6 +30,11 @@ class Get:
         total_number_of_results = all_results.count()
         return all_results, total_number_of_results
 
+    def getProbe(self,probeId):
+        probe = self.db.probes.find_one({"id":probeId})
+        return probe
+
+
     def closeConnection(self):
         """
         This function closes the connection to the database.

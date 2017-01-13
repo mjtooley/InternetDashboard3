@@ -5,7 +5,7 @@ MongoDB.
 
 import threading
 from pymongo import MongoClient
-from ripe.atlas.cousteau import AtlasResultsRequest, ProbeRequest
+from ripe.atlas.cousteau import AtlasResultsRequest, ProbeRequest, Probe
 from socket import socket
 from configuration import getAsnList,getMongoServer,getmsm_ids,getCarbonServer
 import calendar
@@ -16,7 +16,7 @@ import getopt,sys
 from NetworkOutage.NetworkOutage import networkOutage, networkOutage2, NetworkOutageThread
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
 from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2, PeformanceThread
-
+import geocoder
 
 # Define class myThread to spawn a thread and get results for each ASN from RIPE servers
 class myThread(threading.Thread):
@@ -70,8 +70,24 @@ def getASNResults(asn, start_time, stop_time, target_asn):
             print ("Probe error", str(e))
             probe_list = []
 
-        # Get the all the measurments of interest for these probes
+        # Store the Probe Information in Database to speed up the other processing
+        print "add probes to DB:", len(probe_list)
+        for probe_id in probe_list:
+            dbResult = db.probes.find({"id": probe_id})
+            if dbResult.count() == 0:
+                probe = Probe(id=probe_id)
+                latitude = probe.geometry["coordinates"][1]
+                longitude = probe.geometry["coordinates"][0]
+                location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
+                state_name = location_from_coordinates.state
+                probe_dict = {"id":probe.id,"ip_address":probe.address_v4,"asn": asn,"longitude":longitude,"latitude":latitude, "state":state_name}
+                try:
+                    dbResult = db.probes.insert_one(probe_dict)
+                except Exception as e:
+                    print "error adding probe to DB"
 
+
+        # Get the all the measurments of interest for these probes
         if len(probe_list) > 0:
             kwargs = {
                 "msm_id": test_id,
@@ -215,18 +231,18 @@ def RefreshDatabase(argv):
         threads.append(thread)
         number_of_threads = number_of_threads + 1
 
-        thread_name = "Performance " + str(number_of_threads + 1)
-        thread = PeformanceThread(start_time, end_time, asn, thread_name)
-        thread.start()
-        threads.append(thread)
-        number_of_threads = number_of_threads + 1
+        #thread_name = "Performance " + str(number_of_threads + 1)
+        #thread = PeformanceThread(start_time, end_time, asn, thread_name)
+        #thread.start()
+        #threads.append(thread)
+        #number_of_threads = number_of_threads + 1
 
     # Wait for all the threads to finish
     for t in threads:
         t.join()
     print "All threads finished..."
 
-    networkInterconnects(start_time, end_time)
+    #networkInterconnects(start_time, end_time)
 
     print "Done...."
 

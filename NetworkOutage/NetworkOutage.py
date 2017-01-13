@@ -93,31 +93,31 @@ def outagesThread(start, end,asn):
     measurements = Get()
     current_measurement = measurements.getMeasurements(asn, start, end)
     print "-->NetworkOutage:", asn, " total measurements:", current_measurement[1]
-    # if current_measurement[1] == 0:
-    #     return
-    while current_result < current_measurement[1]:
-        current_result += 1
-        for this_result in current_measurement[0]:
-            try:
-                ip_address = this_result["from"]
-                # client = IPWhois(ip_address)
-            except Exception as e:
-                print e
-                current_result += 1
-                continue
-            result_info = Resolve(this_result)
-            resolved_measurement = result_info.resolveMeasurements()
-            if resolved_measurement == None:
-                continue
-            to_json = Creating(probe_dictionary, resolved_measurement)
-            to_json.checkNetworkName(probe_dictionary)
 
-            final_results = to_json.creatingJson()
-            final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
+# Note previously inside some while loop for some reason, not sure why
 
+    for this_result in current_measurement[0]:
+        try:
+            ip_address = this_result["from"]
+            # client = IPWhois(ip_address)
+        except Exception as e:
+            print e
             current_result += 1
-            # sys.stdout.write('.')
-            #
+            continue
+        result_info = Resolve(this_result)
+        resolved_measurement = result_info.resolveMeasurements()
+        if resolved_measurement == None:
+            continue
+        to_json = Creating(probe_dictionary, resolved_measurement)
+        to_json.checkNetworkName(probe_dictionary)
+
+        final_results = to_json.creatingJson()
+        final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
+
+        current_result += 1
+        # sys.stdout.write('.')
+        print "Measurement:", current_result, " of ", current_measurement[1]
+        #
 
     to_save = Save()
     to_save.saveMeasurements(probe_dictionary)

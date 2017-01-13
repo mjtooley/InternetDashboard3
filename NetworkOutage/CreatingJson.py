@@ -32,7 +32,7 @@ class Creating(object):
         self.probe_dictionary["Probes"][-1]["received"] = packets_received
         self.probe_dictionary["Probes"][-1]["Packets_received"] = 100
         self.probe_dictionary["Probes"][-1]["Status"] = self.status
-        self.probe_dictionary["Probes"][-1]["state"] = self.getState(latitude, longitude)
+        self.probe_dictionary["Probes"][-1]["state"] = self.resolved_measurement[3]["state"]
         return self.probe_dictionary
 
     def getStatus(self, packets_sent, packets_received):
@@ -42,15 +42,16 @@ class Creating(object):
 
         return percent
 
-    def getState(self, latitude, longitude):
-        try:
-            location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
-            state_name = location_from_coordinates.state
-        except Exception as e:
-            state_name = None
-            print e
-
-        return state_name
+# Moved to Probe DB
+#    def getState(self, latitude, longitude):
+#        try:
+#            location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
+#            state_name = location_from_coordinates.state
+#        except Exception as e:
+#            state_name = None
+#            print e
+#
+#        return state_name
 
     def checkNetworkName(self, probe_dictionary):
         for probe_index in range(0, len(probe_dictionary["Probes"])):
@@ -66,8 +67,8 @@ class Creating(object):
 
     def creatingJson(self):
         try:
-            longitude = self.resolved_measurement[3].geometry["coordinates"][0]
-            latitude = self.resolved_measurement[3].geometry["coordinates"][1]
+            longitude = self.resolved_measurement[3]["longitude"]
+            latitude = self.resolved_measurement[3]["latitude"]
         except Exception as e:
             print e
         packets_sent = self.resolved_measurement[2].packets_sent
