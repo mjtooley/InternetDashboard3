@@ -65,12 +65,12 @@ def main(argv):
         config.read(configfile)
 
         start_string = config.get('Options', 'start')
-        date_time_string = start_string + " " + "00:00:00"
+        date_time_string = start_string
         time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
         start_time = calendar.timegm(time_tuple)
 
         end_string = config.get('Options','end')
-        date_time_string = end_string + " " + "00:00:00"
+        date_time_string = end_string
         time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
         end_time = calendar.timegm(time_tuple)
 
