@@ -76,21 +76,24 @@
 <script src="bootstrap-timepicker.js"></script>
 
 <script>
-    var myVar = setInterval(myTimer, 60000) // Run every minute
+    var myVar = setInterval(myTimer, 5) // Run every minute
     
     function myTimer() {
-        //d = "August 27, 2014 09:40:00"
+        //var date = "January 13, 2017 12:30:00"
         var date = new Date(); // Get the current time
-        date = date - (1000*60*2) // Set the time for the data to display to be 15 minutes behind the wall clock
+        date = date - (1000*60*12) // Set the time for the data to display to be 15 minutes behind the wall clock
+
         var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
-        visualize(formatDate(date));
+        fdate = formatDate(date)
+
+        visualize(date);
     }
     
     var date = Date();
     endDate = date.toLocaleString();
     
     var sliderOptions = {
-        startTime: "January 1, 2017 00:00:00",
+        startTime: "January 11, 2017 00:00:00",
         endTime: endDate,
         speed: 450,
         tickLen: 180000

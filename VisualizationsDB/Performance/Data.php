@@ -1,7 +1,7 @@
 <?php
 $connection = new MongoClient("mongodb://172.25.11.86");
-$db = $connection->Internet_Dashboard;
-$collection = $db->Performance;
+$db = $connection->InternetDashboard;
+$collection = $db->performance;
 $date = $_GET["date"]; // Get date from GET request
 $query = array("Date" => $date);
 $document = $collection->findOne($query);

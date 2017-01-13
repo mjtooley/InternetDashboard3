@@ -1,6 +1,6 @@
 <?php
 $connection = new MongoClient("mongodb://172.25.11.86");
-$db = $connection->Internet_Dashboard;
+$db = $connection->InternetDashboard;
 $collection = $db->interconnects;
 $date = $_GET["date"]; // Get date from GET request
 $query = array("Date" => $date);
