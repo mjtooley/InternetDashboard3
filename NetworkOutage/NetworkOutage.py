@@ -113,7 +113,7 @@ def outagesThread(start, end,asn):
 
         final_results = to_json.creatingJson()
         #final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
-        final_results["Data"] = end # Put the endtime in as the date
+        final_results["Date"] = end # Put the endtime in as the date
 
         current_result += 1
         # sys.stdout.write('.')
