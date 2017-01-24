@@ -80,7 +80,7 @@
     
     function myTimer() {
         //var date = "January 13, 2017 12:30:00"
-        var date = new Date().now; // Get the current time
+        var date = new Date(); // Get the current time
         date = date -1 // back up 1 mS
         date = date - (1000*60*60) // Set the time for the data to display to be 60 minutes behind the wall clock
         date = date - (date % (60*15)) // Round to 15 minute boundary
