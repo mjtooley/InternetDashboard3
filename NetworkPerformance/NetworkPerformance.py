@@ -297,7 +297,11 @@ def perfomance_d(start, end, asn):
                 isp_dict[d2['Destination']].append(d2["traceroute"])
 
     dictionary = [ isp_dict]
-    name_net = d2["isp"]  # Get the name of the ISP
+    try:
+        name_net = d2["isp"]  # Get the name of the ISP
+    except:
+        name_net = "Unknown" \
+                   ""
     for k in dictionary:
         a=[]
         Aggregate_Route = []

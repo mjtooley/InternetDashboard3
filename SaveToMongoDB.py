@@ -174,7 +174,7 @@ def saveToMongoDB(start_time, stop_time):
     except Exception as e:
         print e,
         pass
-
+    # Add db command to capp the databases if not capped
 
 
     # Counter for number of threads
