@@ -1,0 +1,4 @@
+#!/bin/bash
+cp ~/PycharmProjects/InternetDashboard3/VisualizationsDB/Outage/* /var/www/html/Outage/.
+cp ~/PycharmProjects/InternetDashboard3/VisualizationsDB/Interconnect/* /var/www/html/Interconnect/.
+cp ~/PycharmProjects/InternetDashboard3/VisualizationsDB/Performance/* /var/www/html/Performance/.
