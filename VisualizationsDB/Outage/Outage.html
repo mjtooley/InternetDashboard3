@@ -82,7 +82,7 @@
         //var date = "January 13, 2017 12:30:00"
         var now = new Date().getTime()/1000; // Get the current time
         var d = Math.trunc(now) - 1; // back up 1 mS
-        d = d - (60*3); // Set the time for the data to display to be 60 minutes behind the wall clock
+        d = d - (60*3); // Set the time for the data to display to be 3 minutes behind the wall clock
         d = d - (d % (60*15)); // Round to 15 minute boundary
         //d = 1485350100
         var date = d.toString()
