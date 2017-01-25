@@ -2,18 +2,14 @@ import calendar
 import time
 import datetime
 import ConfigParser
-import ast
 import getopt,sys
 import threading
-from NetworkOutage.NetworkOutage import networkOutage, networkOutage2, NetworkOutageThread
+from NetworkOutage.NetworkOutage import networkOutage
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
 from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2, PeformanceThread
 from configuration import getAsnList
 from SaveToMongoDB import saveToMongoDB
 from StreamingResults import getStreamResults
-import profile
-
-
 
 def getstart_time():
     user_date_choice = raw_input("Enter start date. (Format: yyyy-mm-dd): ")
@@ -96,11 +92,11 @@ def main(argv):
             number_of_threads = 0
 
             for asn in list_of_source_asns:
-                thread_name = "Outage " + str(number_of_threads + 1)
-                thread = NetworkOutageThread(end_time - WINDOW*10, end_time, asn, thread_name)
-                thread.start()
-                threads.append(thread)
-                number_of_threads = number_of_threads + 1
+                #thread_name = "Outage " + str(number_of_threads + 1)
+                #thread = NetworkOutageThread(end_time - WINDOW*10, end_time, asn, thread_name)
+                #thread.start()
+                #threads.append(thread)
+                #number_of_threads = number_of_threads + 1
 
                 thread_name = "Performance " + str(number_of_threads + 1)
                 thread = PeformanceThread(end_time - WINDOW*10, end_time, asn, thread_name)
@@ -113,6 +109,7 @@ def main(argv):
                 t.join()
             print "All threads finished..."
 
+            networkOutage(end_time - WINDOW*10, end_time)
             networkInterconnects(end_time - WINDOW*10, end_time)
 
             start_time = end_time # move the window forward

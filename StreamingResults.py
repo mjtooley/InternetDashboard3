@@ -14,7 +14,7 @@ from ripe.atlas.sagan import PingResult,TracerouteResult, DnsResult, HttpResult
 import threading
 from configuration import getAsnList,getMongoServer,getmsm_ids,getCarbonServer
 from pymongo import MongoClient
-from NetworkOutage.NetworkOutage import networkOutage, networkOutageUpdate
+
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects,computeNetworkInterconnects
 from NetworkPerformance.NetworkPerformance import networkPerformance,computePerformance
 from SaveToMongoDB import saveToMongoDB,saveResultToMongDB
