@@ -98,10 +98,12 @@
     var myVar = setInterval(myTimer, 5000) // Run every minute
     
     function myTimer() {
-        var d = new Date(); // Get the current time
-        d = d - (1000*60*3); // Set the time for the data to display to be 60 minutes behind the wall clock
+        var now = new Date().getTime()/1000; // Get the current time
+        var d = Math.trunc(now) - 1; // back up 1 mS
+        d = d - (60*3); // Set the time for the data to display to be 3 minutes behind the wall clock
         d = d - (d % (60*15)); // Round to 15 minute boundary
-        date = d.toString();
+        //d = 1485350100
+        var date = d.toString()
         visualize(date);
     }
     
