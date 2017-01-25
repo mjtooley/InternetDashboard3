@@ -76,19 +76,18 @@ def getASNResults(asn, start_time, stop_time, target_asn):
             dbResult = db.probes.find({"id": probe_id})
             if dbResult.count() == 0:
                 probe = Probe(id=probe_id)
-                latitude = probe.geometry["coordinates"][1]
-                longitude = probe.geometry["coordinates"][0]
                 try:
+                    latitude = probe.geometry["coordinates"][1]
+                    longitude = probe.geometry["coordinates"][0]
                     location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
                     state_name = location_from_coordinates.state
+                    probe_dict = {"id":probe.id,"ip_address":probe.address_v4,"asn": asn,"longitude":longitude,"latitude":latitude, "state":state_name}
+                    try:
+                        dbResult = db.probes.insert_one(probe_dict)
+                    except Exception as e:
+                        print "error adding probe to DB"
                 except:
-                    state_name = "Kansas" # Unknown
-
-                probe_dict = {"id":probe.id,"ip_address":probe.address_v4,"asn": asn,"longitude":longitude,"latitude":latitude, "state":state_name}
-                try:
-                    dbResult = db.probes.insert_one(probe_dict)
-                except Exception as e:
-                    print "error adding probe to DB"
+                    pass # ignore
 
 
         # Get the all the measurments of interest for these probes
