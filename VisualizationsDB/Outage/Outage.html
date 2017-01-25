@@ -76,15 +76,16 @@
 <script src="bootstrap-timepicker.js"></script>
 
 <script>
-    var myVar = setInterval(myTimer, 5) // Run every minute
+    var myVar = setInterval(myTimer, 600*15) // Run every minute
     
     function myTimer() {
         //var date = "January 13, 2017 12:30:00"
         var now = new Date().getTime()/1000; // Get the current time
-        date = Math.trunc(now) - 1; // back up 1 mS
-        date = date - (60*60); // Set the time for the data to display to be 60 minutes behind the wall clock
-        date = date - (date % (60*15)); // Round to 15 minute boundary
-
+        var d = Math.trunc(now) - 1; // back up 1 mS
+        d = d - (60*3); // Set the time for the data to display to be 60 minutes behind the wall clock
+        d = d - (d % (60*15)); // Round to 15 minute boundary
+        //d = 1485350100
+        var date = d.toString()
         // Pass the date as a time stamp
         visualize(date);
     }

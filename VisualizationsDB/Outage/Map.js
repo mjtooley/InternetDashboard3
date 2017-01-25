@@ -115,8 +115,11 @@ var mapFunctions = (function() {
         markerLegend.addTo(map);
 
         // Creating overlay
+
         d3.json("us-states.json", function (error, collection) {
-            if (error){ throw error }
+            if (error){ console.warn(error) }
+
+            var jsondata = collection;
 
             var feature = g.selectAll("path")
                 .data(collection.features)
@@ -182,7 +185,8 @@ var mapFunctions = (function() {
         for (var i=0;i<states.length;i++) {
             var state = states[i];
 
-            stateData[state].total += ASN_Data[AS_Number][state].total;
+            stateData[state].total = stateData[state].total + ASN_Data[AS_Number][state].total;
+
             var stateTotal =  stateData[state].total;
 
             stateData[state].up += ASN_Data[AS_Number][state].up;
