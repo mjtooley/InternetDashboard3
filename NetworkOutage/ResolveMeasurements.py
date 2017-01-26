@@ -11,7 +11,7 @@ class Resolve(object):
     This class is used to find the AS Name and probe details using the ping measurement.
     """
 
-    def __init__(self, this_result):
+    def __init__(self, this_result, list):
         """
         Initialize the class.
         :param this_result:
@@ -19,6 +19,8 @@ class Resolve(object):
         self.this_result = this_result
         self.ip_address = self.this_result["from"]
         self.client = IPWhois(self.ip_address)
+        self.probe_list = list
+
     def resolveMeasurements(self):
         """
         This function finds the AS Name using the source IP Address and returns the AS_Name.
@@ -42,10 +44,17 @@ class Resolve(object):
             ## as_name = ip_details["nets"][0]["description"]
             ping_result = PingResult(self.this_result)
             # probe = Probe(id=ping_result.probe_id)
-            probes = Get() # Get the probe details from the DB instead of querying RIPE
-            probe = probes.getProbe(ping_result.probe_id)
+            if ping_result.probe_id not in self.probe_list:
+                probes = Get() # Get the probe details from the DB instead of querying RIPE
+                probe = probes.getProbe(ping_result.probe_id)
+            else:
+                probe = self.probe_list[ping_result.probe_id]
+
             asn = probe["asn"]
             return asn, as_name, ping_result, probe
         except Exception as e:
             print e
+
+
+
 

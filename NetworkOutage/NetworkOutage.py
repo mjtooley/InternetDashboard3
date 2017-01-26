@@ -101,6 +101,7 @@ def outages(start, end, list_of_source_asns):
     probe_dictionary = {}
     probe_dictionary["Probes"] = []
     probe_dictionary["AS_List"] = []
+    probe_list = {}
 
     print "Processing NetworkOutages:"
 
@@ -118,10 +119,15 @@ def outages(start, end, list_of_source_asns):
                 print e
                 current_result += 1
                 continue
-            result_info = Resolve(this_result)
+            result_info = Resolve(this_result,probe_list)
             resolved_measurement = result_info.resolveMeasurements()
             if resolved_measurement == None:
                 continue
+            probe = resolved_measurement[3]
+            id = probe['id']
+            if id not in probe_list:
+                probe_list[id] = probe # Add the probe to the cache
+
             to_json = Creating(probe_dictionary, resolved_measurement)
             to_json.checkNetworkName(probe_dictionary)
 
