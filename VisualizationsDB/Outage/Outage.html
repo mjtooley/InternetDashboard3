@@ -105,9 +105,16 @@
         // visualize(formatDate(date));
     });
 
-    new SliderControls(slider);
+    // new SliderControls(slider);
 
     mapFunctions.createMap(function() { slider._tick(slider) });
+    // Create the initial map
+    var now = new Date().getTime()/1000; // Get the current time
+    var d = Math.trunc(now - (60*39)); // Set the time for the data to display to be 15 minutes behind the wall clock
+    d = d - (d % (60*15)); // Round to 15 minute boundary
+    var date = d.toString();
+    visualize(date);
+
 </script>
 </body>
 </html>
