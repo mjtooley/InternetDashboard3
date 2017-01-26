@@ -85,7 +85,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                     try:
                         dbResult = db.probes.insert_one(probe_dict)
                     except Exception as e:
-                        print "error adding probe to DB"
+                        print "error adding probe to DB", probe_id, e
                 except:
                     pass # ignore
 
@@ -171,8 +171,16 @@ def saveToMongoDB(start_time, stop_time):
     try:
         result = db.results.create_index([('prb_id', 1),('msm_id',1),('timestamp',1),('src_addr',1),('dst_addr',1)],unique=True)
     except Exception as e:
-        print e,
+        print e
         pass
+
+    # Add a probe index and make them unique
+    try:
+        result = db.probes.create_index([('id',1)],unique = True)
+    except Exception as e:
+        print e
+        pass
+
     # Add db command to capp the databases if not capped
 
 
