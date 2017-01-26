@@ -88,24 +88,25 @@
         visualize(date);
     }
     
-    //var date = Date();
-    //endDate = date.toLocaleString();
+    var date = Date();
+    endDate = date.toLocaleString();
     
-    //var sliderOptions = {
-    //    startTime: "January 1, 2017 00:00:56",
-    //    endTime: endDate,
-    //    speed: 360,
-    //    tickLen: 100000
-    //};
-    //var slider = new Slider(sliderOptions, function(d){
-    //    //var date = new Date(d);
-        //var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
+    var sliderOptions = {
+        startTime: "January 1, 2017 00:00:56",
+        endTime: endDate,
+        speed: 360,
+        tickLen: 100000
+    };
+    var slider = new Slider(sliderOptions, function(d){
+        var date = new Date(d);
+        var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
         // visualize(formatDate(date));
-    //});
+    });
 
-    // new SliderControls(slider);
+     new SliderControls(slider);
 
     mapFunctions.createMap(function() { slider._tick(slider) })
+
     var now = new Date().getTime()/1000; // Get the current time
     var d = Math.trunc(now - (60*15)); // Set the time for the data to display to be 15 minutes behind the wall clock
     d = d - (d % (60*15)); // Round to 15 minute boundary
