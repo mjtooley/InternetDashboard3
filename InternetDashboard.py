@@ -72,7 +72,7 @@ def main(argv):
 
         now = int(time.time())
 
-        WINDOW = 60*3
+        WINDOW = 60*15
         now = int(time.time())
         start_time = now - WINDOW  # back up 30 minutes
         end_time = now
@@ -99,7 +99,7 @@ def main(argv):
                 #number_of_threads = number_of_threads + 1
 
                 thread_name = "Performance " + str(number_of_threads + 1)
-                thread = PeformanceThread(end_time - WINDOW*10, end_time, asn, thread_name)
+                thread = PeformanceThread(end_time - 60*30, end_time, asn, thread_name)
                 thread.start()
                 threads.append(thread)
                 number_of_threads = number_of_threads + 1
@@ -109,8 +109,8 @@ def main(argv):
                 t.join()
             print "All threads finished..."
 
-            networkOutage(end_time - WINDOW*10, end_time)
-            networkInterconnects(end_time - WINDOW*10, end_time)
+            networkOutage(end_time - 60*30, end_time)
+            networkInterconnects(end_time - 60*30, end_time)
 
             start_time = end_time # move the window forward
 
