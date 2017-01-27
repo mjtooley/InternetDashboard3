@@ -296,7 +296,7 @@ def RefreshDatabase(argv):
 
 
     # Update the datebase with the latest results on hourly basis
-    start = start_time
+    start = start_time - start_time % 3600 # Round it to the hour
     end = start + 60*60 # Hour
     while ( start < end_time):
         print "Refreshing the database with test and computed results."
@@ -321,7 +321,7 @@ def RefreshDatabase(argv):
             t.join()
         # move ahead an hour
         start = end
-        end = start + 60*60
+        end = start + 60*60 # Bump it up an hour
 
     print "Done...."
 

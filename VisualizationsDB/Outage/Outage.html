@@ -94,24 +94,23 @@
     endDate = date.toLocaleString();
     
     var sliderOptions = {
-        startTime: "January 11, 2017 00:00:00",
+        startTime: "January 1, 2017 00:00:00",
         endTime: endDate,
         speed: 450,
-        tickLen: 180000
+        tickLen: 1000*60*60  // Hour
     };
     var slider = new Slider(sliderOptions, function(d){
         var date = new Date(d);
-        var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
-        // visualize(formatDate(date));
+        visualize(formatDate(date));
     });
 
-    // new SliderControls(slider);
+    new SliderControls(slider);
 
     mapFunctions.createMap(function() { slider._tick(slider) });
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
-    var d = Math.trunc(now - (60*60)); // Set the time for the data to display to be 15 minutes behind the wall clock
-    d = d - (d % (60*15)); // Round to 15 minute boundary
+    var d = Math.trunc(now - (60*60)); // Set the time for the data to display to be 60 minutes behind the wall clock
+    d = d - (d % (60*60)); // Round to 60 minute boundary
     var date = d.toString();
     visualize(date);
 
