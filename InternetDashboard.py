@@ -114,7 +114,7 @@ def main(argv):
             print "Awakened\n"
 
             now = int(time.time())
-            end_time = now # process from where we left off last time to now
+            end_time = now - (now % 3600) # process from where we left off last time to now
 
     else:
 

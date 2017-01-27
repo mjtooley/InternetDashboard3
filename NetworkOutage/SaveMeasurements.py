@@ -23,7 +23,10 @@ class Save:
         :return:
         """
         result['createdAt'] = datetime.datetime.now()  # Get the time now in UTC format
-        self.db2.outages.insert_one(result)
+        try:
+            self.db2.outages.insert_one(result)
+        except:
+            pass
 
     def closeConnection(self):
         """
