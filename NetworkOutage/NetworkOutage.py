@@ -135,7 +135,7 @@ def outages(start, end, list_of_source_asns):
             final_results["Date"] = str(end - end % (60*15)) # Put the endtime in as the date, and round it to a 15 minute boundary
 
             current_result += 1
-            sys.stdout.write('.')
+            # sys.stdout.write('.')
 
     to_save = Save()
     to_save.saveMeasurements(probe_dictionary)

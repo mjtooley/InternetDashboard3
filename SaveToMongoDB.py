@@ -39,7 +39,7 @@ class myThread(threading.Thread):
 def getASNResults(asn, start_time, stop_time, target_asn):
 
     db_writes = 0 # intialize db write counter
-    print "getASNResults for ",asn
+    #print "getASNResults for ",asn
     try:
         client = MongoClient(getMongoServer(), 27017, connect=False)
         # client = MongoClient("172.25.11.23", 27017)
@@ -71,7 +71,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
             probe_list = []
 
         # Store the Probe Information in Database to speed up the other processing
-        print "add probes to DB:", len(probe_list)
+        #print "add probes to DB:", len(probe_list)
         for probe_id in probe_list:
             dbResult = db.probes.find({"id": probe_id})
             if dbResult.count() == 0:
@@ -101,7 +101,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
 
             is_success, results = AtlasResultsRequest(**kwargs).create()
             if is_success:
-                print "ASN:", asn, " TestId:", test_id, " Probes:", len(probe_list), "Count:", len(results)
+                #print "ASN:", asn, " TestId:", test_id, " Probes:", len(probe_list), "Count:", len(results)
                 for res in results:
                     if res != 'error':
                         try:
@@ -157,7 +157,7 @@ except:
   sys.exit(1)
 
 def saveToMongoDB(start_time, stop_time):
-    print "Starting SaveToMongoDB"
+    #print "Starting SaveToMongoDB"
 
     # Create the collection and Indexes
     try:
@@ -168,6 +168,43 @@ def saveToMongoDB(start_time, stop_time):
     except:
         print "Couldn't connect to %(server)s , is MongoDB running?" % {'server': getMongoServer()}
         sys.exit(1)
+
+    # Add db command to collections to the databases if they don't exist
+    db_collections = db.collection_names()
+    if 'results' not in db_collections:
+        db.create_collection('results', capped=True, size=100000000000)
+    if 'probes' not in db_collections:
+        db.create_collection('probes', capped=True, size=10000000000)
+    if 'outages' not in db_collections:
+        db.create_collection('outages', capped=True, size=10000000000)
+    if 'interconnects' not in db_collections:
+        db.create_collection('interconnects', capped=True, size=10000000000)
+    if 'performance' not in db_collections:
+        db.create_collection('performance', capped=True, size=10000000000)
+
+    # Check if existing collections are capped
+    result = db.command('collstats','results')
+    if 'capped' not in result:
+        db.command('convertToCapped','results',size=100000000000)
+
+    result = db.command('collstats', 'probes')
+    if 'capped' not in result:
+        db.command('convertToCapped', 'probes', size=10000000000)
+
+    result = db.command('collstats', 'outages')
+    if 'capped' not in result:
+        db.command('convertToCapped', 'outages', size=10000000000)
+
+    result = db.command('collstats', 'interconnects')
+    if 'capped' not in result:
+        db.command('convertToCapped', 'interconnects', size=10000000000)
+
+    result = db.command('collstats', 'performance')
+    if 'capped' not in result:
+        db.command('convertToCapped', 'performance', size=10000000000)
+
+
+    # Created indexes and make them unique to ensure there aren't duplicate entries
     try:
         result = db.results.create_index([('prb_id', 1),('msm_id',1),('timestamp',1),('src_addr',1),('dst_addr',1)],unique=True)
     except Exception as e:
@@ -181,8 +218,23 @@ def saveToMongoDB(start_time, stop_time):
         print e
         pass
 
-    # Add db command to capp the databases if not capped
+    # For each output collection add an index by "Date' and make it unique
+    try:
+        result = db.outages.create_index([('Date',1)],unique = True)
+    except Exception as e:
+        print e
+        pass
+    try:
+        result = db.interconnects.create_index([('Date',1)],unique = True)
+    except Exception as e:
+        print e
+        pass
 
+    try:
+        result = db.performance.create_index([('Date',1)],unique = True)
+    except Exception as e:
+        print e
+        pass
 
     # Counter for number of threads
     number_of_threads = 0
@@ -240,29 +292,37 @@ def RefreshDatabase(argv):
         time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
         end_time = calendar.timegm(time_tuple)
 
-    print "Refreshing the database with test and computed results."
-    print "Start:", datetime.datetime.fromtimestamp(start_time).strftime(
-        '%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
 
-    # Update the datebase with the latest results
-    saveToMongoDB(start_time, end_time)
-    list_of_source_asns = getAsnList()
-    threads = []
-    number_of_threads = 0
-    networkOutage(start_time, end_time)
-    networkInterconnects(start_time, end_time)
 
-    for asn in list_of_source_asns:
-        thread_name = "Performance " + str(number_of_threads + 1)
-        thread = PeformanceThread(start_time, end_time, asn, thread_name)
-        thread.start()
-        threads.append(thread)
-        number_of_threads = number_of_threads + 1
 
-    # Wait for all the threads to finish
-    for t in threads:
-        t.join()
-    print "All threads finished..."
+    # Update the datebase with the latest results on hourly basis
+    start = start_time
+    end = start + 60*60 # Hour
+    while ( start < end_time):
+        print "Refreshing the database with test and computed results."
+        print "Start:", datetime.datetime.fromtimestamp(start).strftime(
+            '%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end).strftime('%Y-%m-%d %H:%M:%S')
+        saveToMongoDB(start, end)
+        list_of_source_asns = getAsnList()
+        threads = []
+        number_of_threads = 0
+        networkOutage(start, end)
+        networkInterconnects(start, end)
+
+        for asn in list_of_source_asns:
+            thread_name = "Performance " + str(number_of_threads + 1)
+            thread = PeformanceThread(start, end, asn, thread_name)
+            thread.start()
+            threads.append(thread)
+            number_of_threads = number_of_threads + 1
+
+        # Wait for all the threads to finish
+        for t in threads:
+            t.join()
+        # move ahead an hour
+        start = end
+        end = start + 60*60
+
     print "Done...."
 
 def main(argv):
