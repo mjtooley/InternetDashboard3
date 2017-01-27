@@ -72,7 +72,7 @@ def main(argv):
 
         now = int(time.time())
 
-        WINDOW = 60*15
+        WINDOW = 60*60
         now = int(time.time())
         start_time = now - WINDOW  # back up 30 minutes
         end_time = now
