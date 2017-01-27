@@ -76,13 +76,13 @@
 
 
 <script>
-    var myVar = setInterval(myTimer, 60000) // Run every minute
+    var myVar = setInterval(myTimer, 1000*60*60) // Run every hour
     
     function myTimer() {
         var now = new Date().getTime()/1000; // Get the current time
         var d = Math.trunc(now) - 1; // back up 1 mS
-        d = d - (60*3); // Set the time for the data to display to be 3 minutes behind the wall clock
-        d = d - (d % (60*15)); // Round to 15 minute boundary
+        d = d - (60*60); // Set the time for the data to display to be 3 minutes behind the wall clock
+        d = d - (d % (60*60)); // Round to 15 minute boundary
         //d = 1485350100
         var date = d.toString()
         visualize(date);
@@ -91,22 +91,26 @@
     var date = Date();
     endDate = date.toLocaleString();
     
+    var date = Date();
+    endDate = date.toLocaleString();
+
     var sliderOptions = {
-        startTime: "January 1, 2017 00:00:56",
+        startTime: "January 1, 2017 00:00:00",
         endTime: endDate,
-        speed: 360,
-        tickLen: 100000
+        speed: 3600,
+        tickLen: 1000*60*60  // Hour
     };
     var slider = new Slider(sliderOptions, function(d){
-        var date = new Date(d);
-        var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
-        // visualize(formatDate(date));
+        var when = new Date(d).getTime()/1000;
+        var d = Math.trunc(when);
+        date = d - (d % (60*60)); // Round to the 60 minute boundary to align with DB stamps
+        visualize(date);
     });
 
-     new SliderControls(slider);
+    new SliderControls(slider);
 
-    mapFunctions.createMap(function() { slider._tick(slider) })
-
+    mapFunctions.createMap(function() { slider._tick(slider) });
+    // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
     var d = Math.trunc(now - (60*60)); // Set the time for the data to display to be 60 minutes behind the wall clock
     d = d - (d % (60*60)); // Round to 60 minute boundary

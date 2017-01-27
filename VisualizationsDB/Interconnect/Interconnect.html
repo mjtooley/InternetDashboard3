@@ -95,7 +95,7 @@
 <script src="Graph.js"></script>
 
 <script>
-    var myVar = setInterval(myTimer, 120000) // Run every 2 minutes
+    var myVar = setInterval(myTimer, 1000*60*60) // Run every 2 minutes
     
     function myTimer() {
         var now = new Date().getTime()/1000; // Get the current time
@@ -107,21 +107,22 @@
         visualize(date);
     }
     
-    //var date = Date();
-    //endDate = date.toLocaleString();
+    var date = Date();
+    endDate = date.toLocaleString();
     
     
-    //var sliderOptions = {
-    //    startTime: "January 1, 2017 00:00:00",
-    //    endTime: endDate,
-    //    speed: 360,
-    //    tickLen: 1800000
-    //};
-    //var slider = new Slider(sliderOptions, function(d){
-    //    var date = new Date(d);
-    //    var formatDate = d3.time.format("%Y-%m-%d_%H-%M-%S");
-        // visualize(formatDate(date));
-    //});
+    var sliderOptions = {
+        startTime: "January 1, 2017 00:00:00",
+        endTime: endDate,
+        speed: 3600,
+        tickLen: 1000*60*60  // Hour
+    };
+    var slider = new Slider(sliderOptions, function(d){
+        var when = new Date(d).getTime()/1000;
+        var d = Math.trunc(when);
+        date = d - (d % (60*60)); // Round to the 60 minute boundary to align with DB stamps
+        visualize(date);
+    });
 
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
@@ -130,9 +131,9 @@
     var date = d.toString();
     visualize(date);
 
-    //new SliderControls(slider);
+    new SliderControls(slider);
 
-    //slider._tick(slider);
+    slider._tick(slider);
 </script>
 
 </body>

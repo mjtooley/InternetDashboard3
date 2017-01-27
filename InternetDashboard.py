@@ -74,8 +74,8 @@ def main(argv):
 
         WINDOW = 60*60
         now = int(time.time())
-        start_time = now - WINDOW  # back up 30 minutes
-        end_time = now
+        start_time = (now - (now % 3600)) - WINDOW  # Round it to the nearest hour and back up WINDOW minutes
+        end_time = now - (now % 3600)
 
         while True:
             print "Start:",datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
@@ -92,14 +92,8 @@ def main(argv):
             number_of_threads = 0
 
             for asn in list_of_source_asns:
-                #thread_name = "Outage " + str(number_of_threads + 1)
-                #thread = NetworkOutageThread(end_time - WINDOW*10, end_time, asn, thread_name)
-                #thread.start()
-                #threads.append(thread)
-                #number_of_threads = number_of_threads + 1
-
                 thread_name = "Performance " + str(number_of_threads + 1)
-                thread = PeformanceThread(end_time - 60*30, end_time, asn, thread_name)
+                thread = PeformanceThread(start_time, end_time, asn, thread_name)
                 thread.start()
                 threads.append(thread)
                 number_of_threads = number_of_threads + 1
@@ -109,8 +103,8 @@ def main(argv):
                 t.join()
             print "All threads finished..."
 
-            networkOutage(end_time - 60*30, end_time)
-            networkInterconnects(end_time - 60*30, end_time)
+            networkOutage(start_time, end_time)
+            networkInterconnects(start_time, end_time)
 
             start_time = end_time # move the window forward
 
