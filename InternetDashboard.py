@@ -115,6 +115,7 @@ def main(argv):
             start_time = end_time # move the window forward
 
             print "Going to Sleep for ", WINDOW/60," minutes\n"
+            print "Will wake up at", time.time()+WINDOW
             time.sleep(WINDOW) # 1800 seconds or 30 minutes
             print "Awakened\n"
 

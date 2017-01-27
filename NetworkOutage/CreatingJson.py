@@ -36,7 +36,10 @@ class Creating(object):
         return self.probe_dictionary
 
     def getStatus(self, packets_sent, packets_received):
-        percent = float(packets_received)/float(packets_sent) * 100
+        if packets_sent > 0:
+            percent = float(packets_received)/float(packets_sent) * 100
+        else:
+            percent = 0.0
         if percent <= 70.0:
             self.status = "DOWN"
 

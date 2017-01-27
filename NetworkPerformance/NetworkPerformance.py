@@ -239,62 +239,65 @@ def perfomance_d(start, end, asn):
 
         Total_h = len(res['result'])
 
-        if res['result'][Total_h - 1]['hop'] != 255:
-            for i in range(0, Total_h):
-                try:
-                    hop_ip = res['result'][i]['result'][0]['from']
-                    location= getLocation(hop_ip)
+        try:
+            if res['result'][Total_h - 1]['hop'] != 255:
+                for i in range(0, Total_h):
+                    try:
+                        hop_ip = res['result'][i]['result'][0]['from']
+                        location= getLocation(hop_ip)
 
-                    new_count += 1
-                    now_asn, inter_network_name = getAsn(hop_ip)
-                    if j == 0:
+                        new_count += 1
+                        now_asn, inter_network_name = getAsn(hop_ip)
+                        if j == 0:
+                            prev_asn_name = inter_network_name
+                            j = 1
+                        else:
+                            if prev_asn_name != inter_network_name and counter < 1 and now_asn is not None:
+                                hop_no = i - 1
+                                counter = 1
+                                name = prev_asn_name
+                                isp_RTT = RTT_med                 # find the edge
+                                description = inter_network_name  # ISP Name
+                                latitude = location[0]
+                                longitude = location[1]
+                                #print "-----------------------------------------------EDGE--------------------------------------------------------"
+
+                        #print "Hop ip", i + 1, "    ", hop_ip, "  ", inter_network_name, "  ", now_asn,
+
+                        rtt = []
+                        pack_size = res['result'][i]['result'][0]['size']
+                        rtt.append(res['result'][i]['result'][0]['rtt'])
+                        rtt.append(res['result'][i]['result'][1]['rtt'])
+                        rtt.append(res['result'][i]['result'][2]['rtt'])   # find RTT for all three packets
+                        RTT_med = sorted(rtt)[len(rtt) // 2]               # find the RTT median
+                        dest_name=inter_network_name
+                        d1 = {"Name": inter_network_name, "lat": location[0], "lng": location[1], "RTT": RTT_med}
+                        list.append(d1)
+                        prev_asn = now_asn
                         prev_asn_name = inter_network_name
-                        j = 1
-                    else:
-                        if prev_asn_name != inter_network_name and counter < 1 and now_asn is not None:
-                            hop_no = i - 1
-                            counter = 1
-                            name = prev_asn_name
-                            isp_RTT = RTT_med                 # find the edge
-                            description = inter_network_name  # ISP Name
-                            latitude = location[0]
-                            longitude = location[1]
-                            #print "-----------------------------------------------EDGE--------------------------------------------------------"
+                        prev_result = location
 
-                    #print "Hop ip", i + 1, "    ", hop_ip, "  ", inter_network_name, "  ", now_asn,
+                    except KeyError: # the traceroute result is **** indicating unknown, so skip.
+                        pass
 
-                    rtt = []
-                    pack_size = res['result'][i]['result'][0]['size']
-                    rtt.append(res['result'][i]['result'][0]['rtt'])
-                    rtt.append(res['result'][i]['result'][1]['rtt'])
-                    rtt.append(res['result'][i]['result'][2]['rtt'])   # find RTT for all three packets
-                    RTT_med = sorted(rtt)[len(rtt) // 2]               # find the RTT median
-                    dest_name=inter_network_name
-                    d1 = {"Name": inter_network_name, "lat": location[0], "lng": location[1], "RTT": RTT_med}
-                    list.append(d1)
-                    prev_asn = now_asn
-                    prev_asn_name = inter_network_name
-                    prev_result = location
-
-                except KeyError: # the traceroute result is **** indicating unknown, so skip.
-                    pass
-
-        d2 = {"traceroute": list,
-              "timestamp": res['timestamp'],
-              "Destination": dest_name,
-              "isp": description,
-              "isp_rtt": isp_RTT,
-              "Final_rtt": RTT_med}
+            d2 = {"traceroute": list,
+                  "timestamp": res['timestamp'],
+                  "Destination": dest_name,
+                  "isp": description,
+                  "isp_rtt": isp_RTT,
+                  "Final_rtt": RTT_med}
 
 
-        if isp_RTT!=0 and RTT_med!=0:
+            if isp_RTT!=0 and RTT_med!=0:
 
-            if d2['Destination'] in isp_dict:
-                isp_dict[d2['Destination']][0].append((isp_RTT,RTT_med))
-                isp_dict[d2['Destination']].append(d2["traceroute"])
-            else:
-                isp_dict[d2['Destination']] = [[(isp_RTT, RTT_med)]]
-                isp_dict[d2['Destination']].append(d2["traceroute"])
+                if d2['Destination'] in isp_dict:
+                    isp_dict[d2['Destination']][0].append((isp_RTT,RTT_med))
+                    isp_dict[d2['Destination']].append(d2["traceroute"])
+                else:
+                    isp_dict[d2['Destination']] = [[(isp_RTT, RTT_med)]]
+                    isp_dict[d2['Destination']].append(d2["traceroute"])
+        except:
+            continue
 
     dictionary = [ isp_dict]
     try:
