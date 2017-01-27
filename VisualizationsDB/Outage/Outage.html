@@ -100,7 +100,9 @@
         tickLen: 1000*60*60  // Hour
     };
     var slider = new Slider(sliderOptions, function(d){
-        var date = new Date(d);
+        var when = new Date(d).getTime()/1000;
+        var d = Math.trunc(when);
+        date = d - (d % (60*60)); // Round to the 60 minute boundary to align with DB stamps
         visualize(date);
     });
 
