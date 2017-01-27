@@ -101,7 +101,7 @@
     };
     var slider = new Slider(sliderOptions, function(d){
         var date = new Date(d);
-        visualize(formatDate(date));
+        visualize(date);
     });
 
     new SliderControls(slider);
