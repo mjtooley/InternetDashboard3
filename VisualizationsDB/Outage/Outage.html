@@ -90,9 +90,10 @@
         visualize(date);
     }
     
-    var date = new Date().getTime()/1000;
-    date = Math.trunc(date - 3600);
-    date = date - (date % 3600);
+    //var date = new Date().getTime()/1000;
+    //date = Math.trunc(date - 3600);
+    //date = date - (date % 3600);
+    var date = new Date();
     endDate = date.toLocaleString();
     
     var sliderOptions = {
