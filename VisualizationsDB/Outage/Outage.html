@@ -90,12 +90,12 @@
         visualize(date);
     }
     
-    var date = Date();
+    var date = new Date().getTime/1000 - 3600;
     endDate = date.toLocaleString();
     
     var sliderOptions = {
         startTime: "January 1, 2017 00:00:00",
-        endTime: endDate - 3600,
+        endTime: endDate,
         speed: 3600,
         tickLen: 1000*60*60  // Hour
     };
