@@ -108,9 +108,10 @@ def main(argv):
 
             start_time = end_time # move the window forward
 
-            print "Going to Sleep for ", WINDOW/60," minutes\n"
-            print "Will wake up at", time.time()+WINDOW
-            time.sleep(WINDOW) # 1800 seconds or 30 minutes
+            sleep = end_time - int(time.time())
+            print "Going to Sleep for ", sleep," minutes\n"
+            print "Will wake up at", datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S')
+            time.sleep(sleep) # 1800 seconds or 30 minutes
             print "Awakened\n"
 
             now = int(time.time())
