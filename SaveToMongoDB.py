@@ -85,7 +85,8 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                     try:
                         dbResult = db.probes.insert_one(probe_dict)
                     except Exception as e:
-                        print "error adding probe to DB", probe_id, e
+                        pass
+                        # print "error adding probe to DB", probe_id, e
                 except:
                     pass # ignore
 
