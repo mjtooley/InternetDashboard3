@@ -112,10 +112,10 @@ def main(argv):
             # Sleep the time left from now and start of the next window
             now = int(time.time())
             if end_time > now:
-                sleep = end_time - now
-            else:
                 # Sleep until the next window closes
                 sleep = end_time + getWindow() - now
+            else:
+                sleep = 0
             print "Going to Sleep for ", sleep," seconds\n"
             print "Will wake up at", datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S')
             time.sleep(sleep) # 1800 seconds or 30 minutes
