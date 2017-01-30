@@ -7,7 +7,7 @@ import threading
 from pymongo import MongoClient
 from ripe.atlas.cousteau import AtlasResultsRequest, ProbeRequest, Probe
 from socket import socket
-from configuration import getAsnList,getMongoServer,getmsm_ids,getCarbonServer
+from configuration import getAsnList,getMongoServer,getmsm_ids,getCarbonServer,getWindow
 import calendar
 import time
 import datetime
@@ -15,7 +15,7 @@ import ConfigParser
 import getopt,sys
 from NetworkOutage.NetworkOutage import networkOutage, networkOutage2, NetworkOutageThread
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
-from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2, PeformanceThread
+from NetworkPerformance.NetworkPerformance import PeformanceThread
 import geocoder
 
 # Define class myThread to spawn a thread and get results for each ASN from RIPE servers
@@ -49,82 +49,88 @@ def getASNResults(asn, start_time, stop_time, target_asn):
         print "Couldn't connect to %(server)s , is MongoDB running?" % {'server': getMongoServer()}
         sys.exit(1)
 
-    msm_ids = getmsm_ids()
+    dbResult = db.results.find({"timestamp": {"$gte": start_time, "$lte": stop_time}}, no_cursor_timeout=True)
+    count = dbResult.count()
+    if count > 0:
+        # Nothing to do as we already have results for this window
+        return
+    else:
+        msm_ids = getmsm_ids()
 
-    ## print("Getting Probes for ASN", asn)
-    for test_id in msm_ids:
-        filters = {"id": test_id, "asn": asn}
-        probe_list = []
-        probes = []
-        try:
-            probes = ProbeRequest(**filters)
-        except:
-            print "error getting probes", probes
-
-        try:
-            if probes:
-                for probe in probes:
-                    probe_list.append(probe["id"])  # add the probe ID to the list
-        except:
-            e = sys.exc_info()
-            print ("Probe error", str(e))
+        ## print("Getting Probes for ASN", asn)
+        for test_id in msm_ids:
+            filters = {"id": test_id, "asn": asn}
             probe_list = []
+            probes = []
+            try:
+                probes = ProbeRequest(**filters)
+            except:
+                print "error getting probes", probes
 
-        # Store the Probe Information in Database to speed up the other processing
-        #print "add probes to DB:", len(probe_list)
-        for probe_id in probe_list:
-            dbResult = db.probes.find({"id": probe_id})
-            if dbResult.count() == 0:
-                probe = Probe(id=probe_id)
-                try:
-                    latitude = probe.geometry["coordinates"][1]
-                    longitude = probe.geometry["coordinates"][0]
-                    location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
-                    state_name = location_from_coordinates.state
-                    probe_dict = {"id":probe.id,"ip_address":probe.address_v4,"asn": asn,"longitude":longitude,"latitude":latitude, "state":state_name}
+            try:
+                if probes:
+                    for probe in probes:
+                        probe_list.append(probe["id"])  # add the probe ID to the list
+            except:
+                e = sys.exc_info()
+                print ("Probe error", str(e))
+                probe_list = []
+
+            # Store the Probe Information in Database to speed up the other processing
+            #print "add probes to DB:", len(probe_list)
+            for probe_id in probe_list:
+                dbResult = db.probes.find({"id": probe_id})
+                if dbResult.count() == 0:
+                    probe = Probe(id=probe_id)
                     try:
-                        dbResult = db.probes.insert_one(probe_dict)
-                    except Exception as e:
-                        pass
-                        # print "error adding probe to DB", probe_id, e
-                except:
-                    pass # ignore
-
-
-        # Get the all the measurments of interest for these probes
-        if len(probe_list) > 0:
-            kwargs = {
-                "msm_id": test_id,
-                "start": start_time,
-                "stop": stop_time,
-                "probe_ids": probe_list
-            }
-
-            is_success, results = AtlasResultsRequest(**kwargs).create()
-            if is_success:
-                #print "ASN:", asn, " TestId:", test_id, " Probes:", len(probe_list), "Count:", len(results)
-                for res in results:
-                    if res != 'error':
+                        latitude = probe.geometry["coordinates"][1]
+                        longitude = probe.geometry["coordinates"][0]
+                        location_from_coordinates = geocoder.arcgis([latitude, longitude], method="reverse")
+                        state_name = location_from_coordinates.state
+                        probe_dict = {"id":probe.id,"ip_address":probe.address_v4,"asn": asn,"longitude":longitude,"latitude":latitude, "state":state_name}
                         try:
-                            res['asn'] = asn
-                            res['createdAt'] = datetime.datetime.now() # Get the time now in UTC format
-                            dbResult = db.results.insert_one(res)
-                            if dbResult:
-                                # Save Time-series Metrics to Carbon/Whisper
-                                message = "dashboard.mongodb.write" + "." + "success " + "1" + " " + str(
-                                    res["timestamp"]) + "\n"
-                                #print message
-                                sock.sendall(message)  # send the result to Carbon/Graphite
-                                db_writes = db_writes + 1
-                            else:
-                                message = "dashboard.mongodb.write" + "." + "fail " + "1" + " " + str(
-                                    res["timestamp"]) + "\n"
-                                #print message
-                                sock.sendall(message)  # send the result to Carbon/Graphite
-                        except Exception as e :
+                            dbResult = db.probes.insert_one(probe_dict)
+                        except Exception as e:
                             pass
+                            # print "error adding probe to DB", probe_id, e
+                    except:
+                        pass # ignore
 
-    print "Finished Updating MongoDB for ASN:", asn," with ",db_writes," records."
+
+            # Get the all the measurments of interest for these probes
+            if len(probe_list) > 0:
+                kwargs = {
+                    "msm_id": test_id,
+                    "start": start_time,
+                    "stop": stop_time,
+                    "probe_ids": probe_list
+                }
+
+                is_success, results = AtlasResultsRequest(**kwargs).create()
+                if is_success:
+                    #print "ASN:", asn, " TestId:", test_id, " Probes:", len(probe_list), "Count:", len(results)
+                    for res in results:
+                        if res != 'error':
+                            try:
+                                res['asn'] = asn
+                                res['createdAt'] = datetime.datetime.now() # Get the time now in UTC format
+                                dbResult = db.results.insert_one(res)
+                                if dbResult:
+                                    # Save Time-series Metrics to Carbon/Whisper
+                                    message = "dashboard.mongodb.write" + "." + "success " + "1" + " " + str(
+                                        res["timestamp"]) + "\n"
+                                    #print message
+                                    sock.sendall(message)  # send the result to Carbon/Graphite
+                                    db_writes = db_writes + 1
+                                else:
+                                    message = "dashboard.mongodb.write" + "." + "fail " + "1" + " " + str(
+                                        res["timestamp"]) + "\n"
+                                    #print message
+                                    sock.sendall(message)  # send the result to Carbon/Graphite
+                            except Exception as e :
+                                pass
+
+        print "Finished Updating MongoDB for ASN:", asn," with ",db_writes," records."
 
 def saveResultToMongDB(asn, result):
     try:
@@ -208,6 +214,7 @@ def saveToMongoDB(start_time, stop_time):
     # Created indexes and make them unique to ensure there aren't duplicate entries
     try:
         result = db.results.create_index([('prb_id', 1),('msm_id',1),('timestamp',1),('src_addr',1),('dst_addr',1)],unique=True)
+        result = db.results.create_index([('timestamp',1)])
     except Exception as e:
         print e
         pass
@@ -297,8 +304,8 @@ def RefreshDatabase(argv):
 
 
     # Update the datebase with the latest results on hourly basis
-    start = start_time - start_time % 3600 # Round it to the hour
-    end = start + 60*60 # Hour
+    start = start_time - start_time % getWindow() # Round it to the hour
+    end = start + getWindow() # Hour
     while ( start < end_time):
         print "Refreshing the database with test and computed results."
         print "Start:", datetime.datetime.fromtimestamp(start).strftime(
@@ -322,7 +329,7 @@ def RefreshDatabase(argv):
             t.join()
         # move ahead an hour
         start = end
-        end = start + 60*60 # Bump it up an hour
+        end = start + getWindow() # Bump it up an hour
 
     print "Done...."
 

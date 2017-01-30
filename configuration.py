@@ -18,4 +18,6 @@ def getMongoDB():
 def getCarbonServer():
     return(config.get('Options','carbonServer'))
 
-
+def getWindow():
+    window = config.get('Options', 'WINDOW')
+    return int(window)

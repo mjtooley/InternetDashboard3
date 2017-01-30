@@ -16,7 +16,7 @@ from configuration import getAsnList,getMongoServer,getmsm_ids,getCarbonServer
 from pymongo import MongoClient
 
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects,computeNetworkInterconnects
-from NetworkPerformance.NetworkPerformance import networkPerformance,computePerformance
+
 from SaveToMongoDB import saveToMongoDB,saveResultToMongDB
 
 

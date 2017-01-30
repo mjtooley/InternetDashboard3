@@ -15,7 +15,7 @@ from IPy import IP
 from ripe.atlas.sagan import PingResult
 from ripe.atlas.cousteau import Probe
 import geocoder
-from configuration import getAsnList,getMongoDB,getmsm_ids
+from configuration import getAsnList,getMongoDB,getmsm_ids, getWindow
 
 class NetworkOutageThread(threading.Thread):
     def __init__(self, start_time, stop_time, source_asn, thread_name):
@@ -109,33 +109,37 @@ def outages(start, end, list_of_source_asns):
         print "-->NetworkOutage:", asn
         current_result = 1
         measurements = Get()
-        current_measurement = measurements.getMeasurements(asn, start, end)
 
-        for this_result in current_measurement[0]:
-            try:
-                ip_address = this_result["from"]
-                client = IPWhois(ip_address)
-            except Exception as e:
-                print e
+        if not measurements.getOutages(start,end):
+            # No processed outages with the "date" == end, so go get the measurements and update the DB
+            current_measurement = measurements.getMeasurements(asn, start, end)
+
+            for this_result in current_measurement[0]:
+                try:
+                    ip_address = this_result["from"]
+                    client = IPWhois(ip_address)
+                except Exception as e:
+                    print e
+                    current_result += 1
+                    continue
+                result_info = Resolve(this_result,probe_list)
+                resolved_measurement = result_info.resolveMeasurements()
+                if resolved_measurement == None:
+                    continue
+                probe = resolved_measurement[3]
+                id = probe['id']
+                if id not in probe_list:
+                    probe_list[id] = probe # Add the probe to the cache
+
+                to_json = Creating(probe_dictionary, resolved_measurement)
+                to_json.checkNetworkName(probe_dictionary)
+
+                final_results = to_json.creatingJson()
+                final_results["Date"] = str(end - end % (getWindow())) # Put the endtime in as the date, and round it to a 15 minute boundary
+
                 current_result += 1
-                continue
-            result_info = Resolve(this_result,probe_list)
-            resolved_measurement = result_info.resolveMeasurements()
-            if resolved_measurement == None:
-                continue
-            probe = resolved_measurement[3]
-            id = probe['id']
-            if id not in probe_list:
-                probe_list[id] = probe # Add the probe to the cache
+                # sys.stdout.write('.')
 
-            to_json = Creating(probe_dictionary, resolved_measurement)
-            to_json.checkNetworkName(probe_dictionary)
-
-            final_results = to_json.creatingJson()
-            final_results["Date"] = str(end - end % (60*15)) # Put the endtime in as the date, and round it to a 15 minute boundary
-
-            current_result += 1
-            # sys.stdout.write('.')
 
     to_save = Save()
     to_save.saveMeasurements(probe_dictionary)

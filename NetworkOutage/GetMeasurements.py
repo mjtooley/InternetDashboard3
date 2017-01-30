@@ -30,6 +30,14 @@ class Get:
         total_number_of_results = all_results.count()
         return all_results, total_number_of_results
 
+    def getOutages(self, starttime, endtime):
+        end = str(endtime - endtime % (60 * 15))  # round it to a 15 minute boundary
+        dbResults = self.db.outages.find({"date": end})
+        if dbResults.count() > 0:
+            return True
+        else:
+            return False
+
     def getProbe(self,probeId):
         probe = self.db.probes.find_one({"id":probeId})
         return probe

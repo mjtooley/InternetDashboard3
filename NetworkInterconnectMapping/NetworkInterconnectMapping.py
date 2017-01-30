@@ -7,7 +7,7 @@ from CreatingJson import Creating
 from SaveMeasurements import Save
 from FindMedianRTT import FindMedianRTT
 from ResolveMeasurements import Resolve
-from configuration import getAsnList,getMongoDB,getmsm_ids
+from configuration import getAsnList,getMongoDB,getmsm_ids,getWindow
 import time
 import traceback
 import sys
@@ -108,7 +108,7 @@ def interconnects(start, end, list_of_source_asns):
                     # Add a Date key to find the json file from the database Internet_Dashboard/interconnects to
                     # display using d3
                     #final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
-                    final_results["Date"] = str(end - end % (60*15)) # round to 15 min
+                    final_results["Date"] = str(end - end % (getWindow())) # round to 15 min
                     # print "result:", current_result, " final_results ", final_results
                     # Increment the counter
                     current_result += 1

@@ -6,8 +6,8 @@ import getopt,sys
 import threading
 from NetworkOutage.NetworkOutage import networkOutage
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
-from NetworkPerformance.NetworkPerformance import networkPerformance, networkPerformance2, PeformanceThread
-from configuration import getAsnList
+from NetworkPerformance.NetworkPerformance import PeformanceThread
+from configuration import getAsnList, getWindow
 from SaveToMongoDB import saveToMongoDB
 from StreamingResults import getStreamResults
 
@@ -72,10 +72,11 @@ def main(argv):
 
         now = int(time.time())
 
-        WINDOW = 60*60
+
+        WINDOW = getWindow()
         now = int(time.time())
-        start_time = (now - (now % 3600)) - WINDOW  # Round it to the nearest hour and back up WINDOW minutes
-        end_time = now - (now % 3600)
+        start_time = (now - (now % WINDOW)) - WINDOW  # Round it to the nearest hour and back up WINDOW minutes
+        end_time = now - (now % WINDOW)
 
         while True:
             print "Start:",datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
@@ -108,14 +109,20 @@ def main(argv):
 
             start_time = end_time # move the window forward
 
-            sleep = end_time - int(time.time())
-            print "Going to Sleep for ", sleep," minutes\n"
+            # Sleep the time left from now and start of the next window
+            now = int(time.time())
+            if end_time > now:
+                sleep = end_time - now
+            else:
+                # Sleep until the next window closes
+                sleep = end_time + getWindow() - now
+            print "Going to Sleep for ", sleep," seconds\n"
             print "Will wake up at", datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S')
             time.sleep(sleep) # 1800 seconds or 30 minutes
             print "Awakened\n"
 
             now = int(time.time())
-            end_time = now - (now % 3600) # process from where we left off last time to now
+            end_time = start_time + getWindow() # process from where we left off last time to now
 
     else:
 
