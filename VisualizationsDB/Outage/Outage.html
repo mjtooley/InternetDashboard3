@@ -76,14 +76,15 @@
 <script src="bootstrap-timepicker.js"></script>
 
 <script>
-    var myVar = setInterval(myTimer, 1000*60*60) // Run every hour
+    const WINDOW = 900 // seconds
+    var myVar = setInterval(myTimer, 1000*WINDOW) // Run WINDOW
     
     function myTimer() {
         //var date = "January 13, 2017 12:30:00"
         var now = new Date().getTime()/1000; // Get the current time
         var d = Math.trunc(now) - 1; // back up 1 mS
-        d = d - (60*60); // Set the time for the data to display to be 3 minutes behind the wall clock
-        d = d - (d % (60*15)); // Round to 15 minute boundary
+        d = d - (WINDOW); // Set the time for the data to display to be WINDOW minutes behind the wall clock
+        d = d - (d % (WINDOW)); // Round to WINDOW boundary
         //d = 1485350100
         var date = d.toString()
         // Pass the date as a time stamp
@@ -105,7 +106,7 @@
     var slider = new Slider(sliderOptions, function(d){
         var when = new Date(d).getTime()/1000;
         var d = Math.trunc(when);
-        date = d - (d % (60*60)); // Round to the 60 minute boundary to align with DB stamps
+        date = d - (d % (WINDOW)); // Round to the 60 minute boundary to align with DB stamps
         visualize(date);
     });
 
@@ -114,8 +115,8 @@
     mapFunctions.createMap(function() { slider._tick(slider) });
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
-    var d = Math.trunc(now - (60*60)); // Set the time for the data to display to be 60 minutes behind the wall clock
-    d = d - (d % (60*60)); // Round to 60 minute boundary
+    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
+    d = d - (d % (WINDOW)); // Round to 60 minute boundary
     var date = d.toString();
     visualize(date);
 
