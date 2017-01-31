@@ -195,8 +195,7 @@ var mapFunctions = (function() {
                 var percentUp = Math.round((stateUp/stateTotal)*100);
 
                 var stateColor = isNaN(percentUp) ? "#F2EEE8" : color(percentUp);
-                d3.select("path#" + state.replace(/\W/g, ""))
-                    .style("fill", stateColor);
+                d3.select("path#" + state.replace(/\W/g, "")).style("fill", stateColor);
 
             }
             catch(e){
