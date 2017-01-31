@@ -34,7 +34,22 @@
 
     function myTimer() {
 
-        mapFunctions.createMap();
+         var sliderOptions = {
+            startTime: "January 1, 2017 00:00:00",
+            endTime: endDate,
+            speed: 3600,
+            tickLen: 1000*WINDOW  // Hour
+        };
+
+        var slider = new Slider(sliderOptions, function(d){
+            var when = new Date(d).getTime()/1000;
+            var d = Math.trunc(when);
+            date = d - (d % (WINDOW)); // Round to the 60 minute boundary to align with DB stamps
+            visualize(date);
+        });
+
+        new SliderControls(slider);
+        mapFunctions.createMap(function() { slider._tick(slider) });
 
         var now = new Date().getTime()/1000; // Get the current time
         var d = Math.trunc(now) - 1; // back up 1 mS
@@ -47,7 +62,22 @@
     }
 
     // Create the initial map
-    mapFunctions.createMap();
+    var sliderOptions = {
+        startTime: "January 1, 2017 00:00:00",
+        endTime: endDate,
+        speed: 3600,
+        tickLen: 1000*WINDOW  // Hour
+    };
+    var slider = new Slider(sliderOptions, function(d){
+        var when = new Date(d).getTime()/1000;
+        var d = Math.trunc(when);
+        date = d - (d % (WINDOW)); // Round to the 60 minute boundary to align with DB stamps
+        visualize(date);
+    });
+
+    new SliderControls(slider);
+
+    mapFunctions.createMap(function() { slider._tick(slider) });
     var now = new Date().getTime()/1000; // Get the current time
     var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
     d = d - (d % (WINDOW)); // Round to 60 minute boundary
