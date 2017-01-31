@@ -37,6 +37,7 @@ class myThread(threading.Thread):
 
 # While loop to find measurements for the whole time window
 def interconnects(start, end, list_of_source_asns):
+
     # Format the date and time for the filename
     date_and_time = str(datetime.utcfromtimestamp(start)).replace(" ", "_")
     # To create and store the final json file
@@ -51,7 +52,7 @@ def interconnects(start, end, list_of_source_asns):
     # date_and_time.replace(":", "-"), "w+")
     # file_save.read()
 
-    #print "Processing Interconnects...."
+
     # Iterate through all the source ASNs
     for asn in list_of_source_asns:
         # Counter to stop at the total number of measurements available within a time window for an ASN
@@ -144,7 +145,9 @@ def interconnects(start, end, list_of_source_asns):
     # print "Closing..."
     measurements.closeConnection()
 
+
 def networkInterconnects(start, end):
+    print "Processing Interconnects...."
     list_of_source_asns = getAsnList()
     interconnects(start,end,list_of_source_asns)
     print "-" * 20, "NetworkInterconnect Done", "-" * 100

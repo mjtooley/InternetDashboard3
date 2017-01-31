@@ -49,6 +49,7 @@ def switchNames(network_dictionary):
     return network_dictionary
 
 def perfomance_d(start, end, asn):
+    print "Processing network Peformance"
     Fin=[]
     Final = {}
     prev_name_net = 0
@@ -200,4 +201,5 @@ def perfomance_d(start, end, asn):
         to_save.saveMeasurements(Final_1)
         measurements.closeConnection()
         to_save.closeConnection()
+    print "Finished processing network Peformance"
 

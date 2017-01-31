@@ -268,7 +268,7 @@ def saveToMongoDB(start_time, stop_time):
     # Wait for all threads to finish
     for t in threads:
         t.join()
-    print "All threads finished, exiting saveToMongoDB."
+    print "MongoDB Results DB Updated."
     print "-------------------------------------------\n \n"
 
 
