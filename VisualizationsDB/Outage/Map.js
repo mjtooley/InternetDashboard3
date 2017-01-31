@@ -188,19 +188,20 @@ var mapFunctions = (function() {
             try{
                 stateData[state].total = stateData[state].total + ASN_Data[AS_Number][state].total;
                 var stateTotal =  stateData[state].total;
+
+                stateData[state].up += ASN_Data[AS_Number][state].up;
+                var stateUp =  stateData[state].up;
+
+                var percentUp = Math.round((stateUp/stateTotal)*100);
+
+                var stateColor = isNaN(percentUp) ? "#F2EEE8" : color(percentUp);
+                d3.select("path#" + state.replace(/\W/g, ""))
+                    .style("fill", stateColor);
+
             }
             catch(e){
             // catch the error, e
             }
-
-            stateData[state].up += ASN_Data[AS_Number][state].up;
-            var stateUp =  stateData[state].up;
-
-            var percentUp = Math.round((stateUp/stateTotal)*100);
-
-            var stateColor = isNaN(percentUp) ? "#F2EEE8" : color(percentUp);
-            d3.select("path#" + state.replace(/\W/g, ""))
-                .style("fill", stateColor);
         }
     }
 
