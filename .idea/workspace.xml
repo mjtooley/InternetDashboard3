@@ -50,8 +50,8 @@
       <file leaf-file-name="Map.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VisualizationsDB/Outage/Map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="252" column="40" selection-start-line="252" selection-start-column="40" selection-end-line="252" selection-end-column="40" />
+            <state relative-caret-position="814">
+              <caret line="333" column="10" selection-start-line="333" selection-start-column="10" selection-end-line="333" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -629,13 +629,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481142921908</updated>
     </task>
-    <task id="LOCAL-00023" summary="Added File">
-      <created>1485451338668</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1485451338669</updated>
-    </task>
     <task id="LOCAL-00024" summary="Added File">
       <created>1485453751813</created>
       <option name="number" value="00024" />
@@ -972,7 +965,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485894457766</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Added File">
+      <created>1485894544938</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1485894544938</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1449,8 +1449,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VisualizationsDB/Outage/Map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="252" column="40" selection-start-line="252" selection-start-column="40" selection-end-line="252" selection-end-column="40" />
+        <state relative-caret-position="814">
+          <caret line="333" column="10" selection-start-line="333" selection-start-column="10" selection-end-line="333" selection-end-column="10" />
           <folding />
         </state>
       </provider>
