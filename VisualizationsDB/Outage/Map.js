@@ -188,7 +188,9 @@ var mapFunctions = (function() {
             try{
                 stateData[state].total = stateData[state].total + ASN_Data[AS_Number][state].total;
             }
-
+            catch(e){
+            // catch the error, e
+            }
             var stateTotal =  stateData[state].total;
 
             stateData[state].up += ASN_Data[AS_Number][state].up;
