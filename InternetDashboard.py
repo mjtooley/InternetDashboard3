@@ -108,14 +108,17 @@ def main(argv):
             networkInterconnects(start_time, end_time)
 
             start_time = end_time # move the window forward
-
+            end_time = end_time + getWindow() # move the endtime forward a window
             # Sleep the time left from now and start of the next window
             now = int(time.time())
-            if end_time > now:
-                # Sleep until the next window closes
-                sleep = end_time + getWindow() - now
-            else:
-                sleep = 0
+
+            # Skip ahead to the next window
+            while end_time < now:
+                end_time = end_time + getWindow()
+
+            # Sleep until window
+            sleep = end_time - now;
+
             print "Going to Sleep for ", sleep," seconds\n"
             print "Will wake up at", datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S')
             time.sleep(sleep) # 1800 seconds or 30 minutes
