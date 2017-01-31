@@ -130,7 +130,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                             except Exception as e :
                                 pass
 
-        print "Finished Updating MongoDB for ASN:", asn," with ",db_writes," records."
+        # print "Finished Updating MongoDB for ASN:", asn," with ",db_writes," records."
 
 def saveResultToMongDB(asn, result):
     try:
