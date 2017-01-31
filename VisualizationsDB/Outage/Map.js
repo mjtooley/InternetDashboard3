@@ -185,7 +185,9 @@ var mapFunctions = (function() {
         for (var i=0;i<states.length;i++) {
             var state = states[i];
 
-            stateData[state].total = stateData[state].total + ASN_Data[AS_Number][state].total;
+            try{
+                stateData[state].total = stateData[state].total + ASN_Data[AS_Number][state].total;
+            }
 
             var stateTotal =  stateData[state].total;
 
