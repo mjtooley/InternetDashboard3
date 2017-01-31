@@ -323,17 +323,7 @@ var mapFunctions = (function() {
             marker.bindPopup("<b>Percentage of packets received: </b>" + Math.round(currProbe.Packets_received) + "%");
         }
 
-        // Add Time to Map
-        var timestamp = json.Date;
-        timestring = "<p>" + timestamp + "</p>"
-        var timeBox = new L.control({position: "bottomleft"});
-        timeBox.onAdd = function(){
-            var div = L.DomUtil.create("div", "time update");
-            div.innerHTML += timestring;
-            return div;
-        };
 
-        timeBox.addTo(map);
         // Creating button/dropdown for the network
         var networkBtns = L.DomUtil.get("network-btns");
         Object.keys(Network_Groups).forEach(function(networkName) {
