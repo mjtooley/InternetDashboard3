@@ -106,7 +106,7 @@ def outages(start, end, list_of_source_asns):
     print "Processing NetworkOutages:"
 
     for asn in list_of_source_asns:
-        print "-->NetworkOutage:", asn
+        #print "-->NetworkOutage:", asn
         current_result = 1
         measurements = Get()
 
