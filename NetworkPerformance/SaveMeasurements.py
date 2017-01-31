@@ -26,6 +26,7 @@ class Save:
         result['createdAt'] = datetime.datetime.now()  # Get the time now in UTC format
         try:
             self.db2.performance.insert_one(result)
+            print "Peformance DB update, Date=",result['Date']
         except:
             pass
 

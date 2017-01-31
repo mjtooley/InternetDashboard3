@@ -102,7 +102,7 @@ def main(argv):
             # Wait for all the threads to finish
             for t in threads:
                 t.join()
-            print "All threads finished..."
+            #print "All threads finished..."
 
             networkOutage(start_time, end_time)
             networkInterconnects(start_time, end_time)

@@ -28,7 +28,7 @@ class PeformanceThread(threading.Thread):
     def run(self):
         #print "Starting " + self.thread_name
         perfomance_d(self.start_time, self.stop_time, self.source_asns)
-        print "Exiting Peformance thread: " + self.source_asns
+        # print "Exiting Peformance thread: " + self.source_asns
 
 def getNetworkName(name_number):
     for hop in name_number:

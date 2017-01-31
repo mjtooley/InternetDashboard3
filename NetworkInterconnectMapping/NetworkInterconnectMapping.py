@@ -51,7 +51,7 @@ def interconnects(start, end, list_of_source_asns):
     # date_and_time.replace(":", "-"), "w+")
     # file_save.read()
 
-    print "Processing Interconnects...."
+    #print "Processing Interconnects...."
     # Iterate through all the source ASNs
     for asn in list_of_source_asns:
         # Counter to stop at the total number of measurements available within a time window for an ASN
@@ -64,7 +64,7 @@ def interconnects(start, end, list_of_source_asns):
         # Initialize an object from the class Creating() defined in CreatingJson.py and assign it to to_json
         to_json = Creating(neighbor_dictionary, asn, False, True)
 
-        print "--> Interconnects for ASN:",asn
+        #print "--> Interconnects for ASN:",asn
         # While loop to break after iterating through all the measurements in a time window
         while current_result < current_measurement[1]:
             try:
@@ -133,7 +133,6 @@ def interconnects(start, end, list_of_source_asns):
         # start = end + 1
         # Move the time window to calculate the Average RTT ahead by interval
         # start_historic = start_historic + interval + 1
-        print "Writing..."
         # print json.dumps(final_results, sort_keys=True, indent=4, separators=(",", ": "))
         # Initialize an object from the class Save() defined in SaveMeasurements.py and assign it to to_save
         to_save = Save()
