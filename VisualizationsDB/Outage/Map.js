@@ -244,6 +244,17 @@ var mapFunctions = (function() {
         networkControl = new L.Control.NetworkControl();
         networkControl.addTo(map);
 
+        // Add Time to Map
+        timestamp = json.Date;
+        timestring = "<p>" + timestamp + "</p>"
+        var timeBox = L.control({position: "bottomlef"});
+        timeBox.onAdd = function(){
+            var div = L.DomUtil.create("div", "time update");
+            div.innerHTML += timestring}
+            return div;
+        };
+        timeBox.addTo(map);
+
         // Reset state color
         d3.selectAll("path")
             .style("fill", "#F2EEE8");
