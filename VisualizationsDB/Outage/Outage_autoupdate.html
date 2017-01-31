@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Network Outage</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+
+    <META http-equiv="Pragma" content="no-cache">
+</head>
+
+<body>
+<div id="map"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="Slider.js"></script>
+<script src="Map.js"></script>
+<script src="bootstrap-timepicker.js"></script>
+
+<script>
+    const WINDOW = 900 // seconds
+    var myVar = setInterval(myTimer, 1000*WINDOW) // Run WINDOW
+
+    function myTimer() {
+
+        mapFunctions.createMap();
+
+        var now = new Date().getTime()/1000; // Get the current time
+        var d = Math.trunc(now) - 1; // back up 1 mS
+        d = d - (WINDOW); // Set the time for the data to display to be WINDOW minutes behind the wall clock
+        d = d - (d % (WINDOW)); // Round to WINDOW boundary
+
+        var date = d.toString()
+        // Pass the date as a time stamp
+        visualize(date);
+    }
+
+    // Create the initial map
+    var now = new Date().getTime()/1000; // Get the current time
+    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
+    d = d - (d % (WINDOW)); // Round to 60 minute boundary
+    var date = d.toString();
+    visualize(date);
+
+</script>
+</body>
+</html>
