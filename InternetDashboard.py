@@ -88,6 +88,7 @@ def main(argv):
             #networkOutage2(end_time - WINDOW*10, end_time)
             #networkPerformance2(end_time-WINDOW*10, end_time)
 
+            print "Started Peformance Processing..."
             list_of_source_asns = getAsnList()
             threads = []
             number_of_threads = 0
@@ -103,7 +104,7 @@ def main(argv):
             for t in threads:
                 t.join()
             #print "All threads finished..."
-
+            print "Finished Peformance Processing"
             networkOutage(start_time, end_time)
             networkInterconnects(start_time, end_time)
 
