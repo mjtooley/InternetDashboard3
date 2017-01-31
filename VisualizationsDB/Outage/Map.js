@@ -247,7 +247,7 @@ var mapFunctions = (function() {
         // Add Time to Map
         timestamp = json.Date;
         timestring = "<p>" + timestamp + "</p>"
-        var timeBox = L.control({position: "bottomlef"});
+        var timeBox = new L.control({position: "bottomleft"});
         timeBox.onAdd = function(){
             var div = L.DomUtil.create("div", "time update");
             div.innerHTML += timestring}
