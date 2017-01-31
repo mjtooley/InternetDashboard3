@@ -250,7 +250,7 @@ var mapFunctions = (function() {
         var timeBox = new L.control({position: "bottomleft"});
         timeBox.onAdd = function(){
             var div = L.DomUtil.create("div", "time update");
-            div.innerHTML += timestring}
+            div.innerHTML += timestring;
             return div;
         };
         timeBox.addTo(map);
