@@ -34,6 +34,8 @@
 
     function myTimer() {
 
+        var date = new Date();
+        endDate = date.toLocaleString();
          var sliderOptions = {
             startTime: "January 1, 2017 00:00:00",
             endTime: endDate,
@@ -60,6 +62,9 @@
         // Pass the date as a time stamp
         visualize(date);
     }
+
+    var date = new Date();
+    endDate = date.toLocaleString();
 
     // Create the initial map
     var sliderOptions = {
