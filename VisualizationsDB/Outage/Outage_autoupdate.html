@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<p id="UpdatedAt">UpdateTime</p>
 <div id="map"></div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
@@ -42,6 +43,7 @@
         var date = d.toString()
         // Pass the date as a time stamp
         visualize(date);
+        document.getElementById("UpdatedAt").innerHTML = date;
     }
 
     var date = new Date();
@@ -69,6 +71,7 @@
     d = d - (d % (WINDOW)); // Round to 60 minute boundary
     var date = d.toString();
     visualize(date);
+    document.getElementById("UpdatedAt").innerHTML = date;
 
 </script>
 </body>

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11ee3215-747a-4b88-8241-0532380e2306" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VisualizationsDB/Outage/Map.js" afterPath="$PROJECT_DIR$/VisualizationsDB/Outage/Map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VisualizationsDB/Outage/Outage_autoupdate.html" afterPath="$PROJECT_DIR$/VisualizationsDB/Outage/Outage_autoupdate.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,17 +37,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Outage_autoupdate.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Outage_autoupdate.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VisualizationsDB/Outage/Outage_autoupdate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+            <state relative-caret-position="510">
+              <caret line="45" column="62" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VisualizationsDB/Outage/Map.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -200,8 +200,8 @@
         <option value="$PROJECT_DIR$/NetworkPerformance/NetworkPerformance.py" />
         <option value="$PROJECT_DIR$/InternetDashboard.py" />
         <option value="$PROJECT_DIR$/VisualizationsDB/Outage/Outage.html" />
-        <option value="$PROJECT_DIR$/VisualizationsDB/Outage/Outage_autoupdate.html" />
         <option value="$PROJECT_DIR$/VisualizationsDB/Outage/Map.js" />
+        <option value="$PROJECT_DIR$/VisualizationsDB/Outage/Outage_autoupdate.html" />
       </list>
     </option>
   </component>
@@ -212,8 +212,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="738" />
-    <option name="y" value="167" />
+    <option name="x" value="1017" />
+    <option name="y" value="209" />
     <option name="width" value="1516" />
     <option name="height" value="1290" />
   </component>
@@ -629,13 +629,6 @@
       <option name="presentableId" value="Default" />
       <updated>1481142921908</updated>
     </task>
-    <task id="LOCAL-00025" summary="Added File">
-      <created>1485453975608</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1485453975608</updated>
-    </task>
     <task id="LOCAL-00026" summary="Added File">
       <created>1485454154501</created>
       <option name="number" value="00026" />
@@ -972,11 +965,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485894839563</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Added File">
+      <created>1485895467054</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1485895467054</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="738" y="167" width="1516" height="1290" extended-state="0" />
+    <frame x="1017" y="209" width="1516" height="1290" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20735785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1439,18 +1439,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VisualizationsDB/Outage/Outage_autoupdate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VisualizationsDB/Outage/Map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VisualizationsDB/Outage/Outage_autoupdate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="62" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
           <folding />
         </state>
       </provider>
