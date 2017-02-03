@@ -81,6 +81,8 @@ def main(argv):
         while True:
             print "Start:",datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
 
+            startedAt = time.time() # Record the time we start this pass
+
             # Update the datebase with the latest results
             saveToMongoDB(start_time,end_time)
 
@@ -120,6 +122,9 @@ def main(argv):
             # Sleep until window
             sleep = end_time - now;
 
+            endedAt = time.time()
+            loopTime = endedAt - startedAt
+            print "Processing time (secs):", loopTime
             print "Going to Sleep for ", sleep," seconds\n"
             print "Will wake up at", datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S')
             time.sleep(sleep) # 1800 seconds or 30 minutes
