@@ -25,8 +25,12 @@ class Save:
         :return:
         """
         result['createdAt'] = datetime.datetime.now()  # Get the time now in UTC format
-        self.db2.interconnects.insert_one(result)
-        print "-->Interconnect DB Write Result, Date=",result['Date']
+        try:
+            self.db2.interconnects.insert_one(result)
+            print "-->Interconnect DB Write Result, Date=",result['Date']
+        except:
+            pass
+
 
     def closeConnection(self):
         """
