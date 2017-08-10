@@ -20,3 +20,8 @@ Latest updates:
 
 Backfill database for the dates in the configuration.ini:
 - python Mongodbsave.py -c configuration.ini
+
+Configuration.ini Parameters
+- start: not used
+- end: not used
+- window = minutes for each sample period
