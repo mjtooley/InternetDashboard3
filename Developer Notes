@@ -1,0 +1,111 @@
+Launch VirtualBox
+    Web PHP Server - This machine runs the python to collect the data
+    MongoDB
+    Users/Password for both is admin/ncta1234
+
+On MongoDB in a terminal
+    Check the IP address with ifconfig
+    Verify MongoDB is running, typically needs to be stopped and started
+    sudo service mongodb stop | start
+
+On WebPHP in a terminal
+    cd /PycharmProjects/InternetDashboard3
+    check configuration.ini to make sure the IP addresses point to MongoDB
+    Verify that the ip address in data.php for each web page is pointed at the MongoDB server
+    Start the data collector --> python InternetDashboard.py -c configuration.ini
+
+To see the reports
+    InternetDashboards
+    Open a browser
+        URL http://<IP address of WebPHP>/<Interconnect/Interconnect.html | Outage/Outage.html |   Performance/Performance.html>
+    web pages are at /var/www/html/<Interconnect | Performance | Outage>
+
+Grafana/Carbon
+    URL http://<IP address of MongoDB>:3000   admin/admin
+
+Key Log files
+    MongoDB
+        var/log/mongodb/mongodb.log
+    Carbon
+        /var/log/carbon
+
+Capped Collection Size for MongoDB
+- https://docs.mongodb.com/manual/core/capped-collections/
+- db.createCollection("log", { capped : true, size : 5242880, max : 5000 } )
+-- Size is the maximum number of bytes of storage
+-- max is the max number of documents
+
+Convert to capped collection
+-- db.runCommand({"convertToCapped": "mycoll", size: 100000});
+db.runCommand({"convertToCapped": "performance", size: 100000000})
+
+Automatically Remove Data After a Specified Period of Time
+For additional flexibility when expiring data, consider MongoDB’s TTL indexes, as described in Expire Data from Collections by Setting TTL. These indexes allow you to expire and remove data from normal collections using a special type, based on the value of a date-typed field and a TTL value for the index.
+TTL Collections are not compatible with capped collections.
+
+--> db.results.createIndex({"createdAt": 1}, {expireAfterSeconds: 3600})
+
+db.collection.createIndex( { <field1>: <type>, <field2>: <type2>, ... } )
+
+UNIQUE INDEX
+db.members.createIndex( { groupNumber: 1, lastname: 1, firstname: 1 }, { unique: true } )
+
+Mongoldb Shell
+- mongo
+
+Show databases
+>show dbs
+
+Delete Database
+> use mydb;
+> db.dropDatabase();
+
+Display DB contents
+use <db name>
+show collections
+db.<collection name>.find()
+
+# Check Disk Space
+- du -sh  # shows disk used
+- df -h # shows disk free
+
+# Mong DB Configuration
+/etc/mongodb.conf
+Database Location
+- default:  dbpath=/var/lib/mongodb
+- folder on USB dbpath=/media/usb/mongodb
+
+# Mongo log file
+- Defined in mongodb.conf
+log path = /var/log/mongodb/mongodb.log
+
+# Mounting USB Drive #
+sudo mkdir /media/usb
+sudo mount -t ext4 /dev/sdb1 /media/usb
+cd /media/usb
+sudo mkdir mongodb
+sudo chmod 777 monogdb
+- edit mongo.cfg
+sudo service mongodb stop/start
+
+
+# Carbon
+Configuration file - /etc/carbon/carbon.conf
+Storage Schema - /etc/carbon/storage-schemas.conf
+Log Files - /var/log/carbon
+Default Storage Location - /var/lib/graphite  ## Note Edit carbon.conf to put it on the removable 4TB Hard Disk
+Sudo service carbon-cache start
+# Edit Graphite-Webapp config
+/etc/graphite/local_settings.py
+-- STORAGE_DIR = <path>
+-- WHISPER_DIR = <path>
+-- LOCAL_DATA_DIR = <path>
+sudo service apache2 reload
+
+
+______________________
+TO run the Python script to mirror the DB
+1. Activate the virtual envirornment
+cd pythonscripts
+source venv/bin/activate
+python Mirrorhistorical....py
