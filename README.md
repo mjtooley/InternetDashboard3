@@ -22,6 +22,13 @@ Backfill database for the dates in the configuration.ini:
 - python Mongodbsave.py -c configuration.ini
 
 Configuration.ini Parameters
-- start: not used
-- end: not used
 - window = minutes for each sample period
+
+Notes:
+- Make sure MongoDB is running.  It may need to be started after power up with "Sudo Service Mongodb start".  Tail the log file, /var/logs/mongodb/mongodb.log.
+- Verify that in data.php in /InternetDashboard3/VisualizationsDB/[Interconnect,Outage,Performance] points at the IP address of the MongoDB server.
+- The Slidercontrol dates can be updated by editing the HTML files for each page
+- The web pages are at:
+    http://<IP address of webserver>/Outage/Outage.hmtl
+    http://<IP address of webserver>/Performance/Performance.hmtl
+    http://<IP address of webserver>/Interconnect/Interconnect.hmtl
