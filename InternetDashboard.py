@@ -60,18 +60,17 @@ def main(argv):
         config = ConfigParser.RawConfigParser(allow_no_value=True)
         config.read(configfile)
 
-        start_string = config.get('Options', 'start')
-        date_time_string = start_string
-        time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
-        start_time = calendar.timegm(time_tuple)
+        #start_string = config.get('Options', 'start')
+        #date_time_string = start_string
+        #time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
+        #start_time = calendar.timegm(time_tuple)
 
-        end_string = config.get('Options','end')
-        date_time_string = end_string
-        time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
-        end_time = calendar.timegm(time_tuple)
+        #end_string = config.get('Options','end')
+        #date_time_string = end_string
+        #time_tuple = time.strptime(date_time_string, "%Y-%m-%d %H:%M:%S")
+        #end_time = calendar.timegm(time_tuple)
 
-        now = int(time.time())
-
+        #now = int(time.time())
 
         WINDOW = getWindow()
         now = int(time.time())
@@ -84,6 +83,7 @@ def main(argv):
             startedAt = time.time() # Record the time we start this pass
 
             # Update the datebase with the latest results
+            print "Updating the database..."
             saveToMongoDB(start_time,end_time)
 
             # Compute the results and store them in them DB for the web front-end to retrieve
