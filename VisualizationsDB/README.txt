@@ -1,5 +1,6 @@
 To set up an Apache2 web server with PHP and the MongoDB driver, open a terminal and run the following commands:
 
+Ubuntu 14
 sudo apt-get update
 sudo apt-get install apache2 
 sudo apt-get install libapache2-mod-php5
@@ -8,6 +9,19 @@ sudo apt-get install php5-dev
 sudo apt-get install libpcre3-dev
 pecl install mongodb
 nano /etc/php5/apache2/php.ini
+
+Ubuntu 16
+sudo apt-get update
+sudo apt-get install apache2
+sudo apt-get install php7.0
+sudo apt-get install php-pear
+sudo apt-get install php-dev
+sudo apt-get install libpcre3-dev
+sudo apt-get install -y autoconf g++ make openssl libssl-dev libcurl4-openssl-dev
+sudo apt-get install -y libcurl4-openssl-dev pkg-config
+sudo apt-get install -y libsasl2-dev
+pecl install mongodb
+sudo pecl config-set php_ini /etc/php/7.0/apache2/php.ini
 
 Once you are in the php.ini file paste the following (do NOT add a semicolon before this and do NOT put a space before or after the equal sign):
 
