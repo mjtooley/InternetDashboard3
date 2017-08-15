@@ -95,12 +95,12 @@ CARBON_SERVER = getCarbonServer()
 CARBON_PORT = 2003
 
 #Open Graphite/Carbon connection
-sock = socket()
-try:
-  sock.connect( (CARBON_SERVER,CARBON_PORT) )
-except:
-  print "Couldn't connect to %(server)s on port %(port)d, is carbon-agent.py running?" % { 'server':CARBON_SERVER, 'port':CARBON_PORT }
-  sys.exit(1)
+#sock = socket()
+#try:
+#  sock.connect( (CARBON_SERVER,CARBON_PORT) )
+#except:
+#  print "Couldn't connect to %(server)s on port %(port)d, is carbon-agent.py running?" % { 'server':CARBON_SERVER, 'port':CARBON_PORT }
+#  sys.exit(1)
 
 MONGODB_HOST = getMongoServer()
 MONGODB_PORT = 27017
