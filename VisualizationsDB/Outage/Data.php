@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
-$connection = new MongoDB\Driver\Manager("mongodb://172.25.11.94");
+$connection = MongoClient("mongodb://172.25.11.94");
 $db = $connection->InternetDashboard;
 $collection = $db->outages;
 $date = $_GET["date"]; // Get date from GET request
