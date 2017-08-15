@@ -208,7 +208,7 @@ def saveToMongoDB(start_time, stop_time):
 
     result = db.command('collstats', 'performance')
     if 'capped' not in result:
-        db.command('convertToCapped', 'performance', size=1000000000)
+        db.command('convertToCapped', 'performance', size=100000000)
 
 
     # Created indexes and make them unique to ensure there aren't duplicate entries
