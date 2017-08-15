@@ -43,6 +43,7 @@ class streamThread(threading.Thread):
 
 
 def main(argv):
+    print "Internet Dashboard Starting Up..."
     configfile = ""
     try:
         opts, args = getopt.getopt(argv,"hc:",["help","config="])
