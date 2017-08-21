@@ -32,3 +32,21 @@ Notes:
     http://<IP address of webserver>/Outage/Outage.hmtl
     http://<IP address of webserver>/Performance/Performance.hmtl
     http://<IP address of webserver>/Interconnect/Interconnect.hmtl
+
+sudo apt-get install python-pip
+sudo pip install requests[security]
+sudo pip install IPy
+sudo apt-get install libffi-dev
+sudo apt-get install python-numpy
+sudo apt-get install libpython2.7-dev
+sudo pip install ripe.atlas.sagan
+sudo pip install ripe.atlas.cousteau
+sudo pip install pygeoip
+sudo pip install pymongo
+sudo pip install geocoder
+sudo pip install geoip2
+sudo pip install cymruwhois
+sudo apt-get install libgeoip-dev
+sudo pip install python-geoip
+sudo pip install ujson
+

@@ -29,6 +29,79 @@ extension=mongodb.so
 
 tickLen is the time in ms between two ticks on the slider
 The speed in ms at which the slider moves between ticks is equivalent to tickLen/speed
+______________
+
+Firstly, install MongoDB. You can see it is so simple and one and only one command.
+
+1
+sudo apt-get install mongodb
+To make sure that MongDB is running, you can use command below
+
+thanhson1085@sonnst:~/projects$ ps -ef|grep mongo
+245:mongodb   2870     1  4 11:52 ?        00:00:21 /usr/bin/mongod --config /etc/mongodb.conf
+248:thanhso+  2905  1615  0 12:00 pts/0    00:00:00 grep --color=auto mongo
+To install Mongo PHP Driver, you use the command below.
+
+sudo pecl install mongo
+The command above use Pecl, so if you machine have not installed it yet. You can install easily by the command below
+
+sudo apt-get install php5-dev php5-cli php-pear
+And now, you have to enable Mongo PHP extension by way add “extension=mongo.so” to php.ini file or use the commands below
+
+sudo -s
+echo "extension=mongo.so" > /etc/php5/mods-available/mongo.ini
+php5enmod mongo
+exit
+Almost done, just need to check that your job is done or not.
+
+thanhson1085@sonnst:~$ php -i|grep mongo
+16:/etc/php5/cli/conf.d/20-mongo.ini,
+330:mongo
+343:mongo.allow_empty_keys => 0 => 0
+344:mongo.chunk_size => 261120 => 261120
+345:mongo.cmd => $ => $
+346:mongo.default_host => localhost => localhost
+347:mongo.default_port => 27017 => 27017
+348:mongo.is_master_interval => 15 => 15
+349:mongo.long_as_object => 0 => 0
+350:mongo.native_long => 1 => 1
+And writing a php script to create document, collection and insert data to mongodb.
+
+<?php
+
+// connect
+$m = new MongoClient();
+
+// select a database
+$db = $m->test1;
+
+// select a collection (analogous to a relational database's table)
+$collection = $db->colection_test;
+
+// add a record
+$document = array( "title" => "New One", "author" => "Nguyen Sy Thanh Son" );
+$collection->insert($document);
+
+// add another record, with a different "shape"
+$document = array( "title" => "The Second One", "online" => true );
+$collection->insert($document);
+
+// find everything in the collection
+$cursor = $collection->find();
+
+// iterate through the results
+foreach ($cursor as $document) {
+    echo $document["title"] . "\n";
+}
+
+?>
+If success, the output will be same as the below
+
+$ sudo php test.php
+New One
+The Second One
+
+____________
 
 Install PHP 5.6 on Ubuntu
 

@@ -1,5 +1,5 @@
 <?php
-$connection = new MongoClient("mongodb://172.25.11.94");
+$connection = new MongoClient("mongodb://localhost:27017");
 $db = $connection->InternetDashboard;
 $collection = $db->interconnects;
 $date = $_GET["date"]; // Get date from GET request
