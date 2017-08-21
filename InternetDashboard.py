@@ -57,6 +57,9 @@ def main(argv):
         elif opt in ("-c","--config"):
             configfile = arg
 
+    if configfile == "":
+        configfile = "configuration.ini"
+
     if configfile != "":
         config = ConfigParser.RawConfigParser(allow_no_value=True)
         config.read(configfile)
