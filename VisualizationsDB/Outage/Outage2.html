@@ -92,14 +92,14 @@
         speed: 3600,
         tickLen: 1000*WINDOW  // Hour
     };
-    var slider = new Slider(sliderOptions, function(d){
-        var when = new Date(d).getTime()/1000;
-        var d = Math.trunc(when);
-        date = d - (d % (WINDOW)); // Round to the WINDOW boundary to align with DB stamps
-        visualize(date);
-    });
+//    var slider = new Slider(sliderOptions, function(d){
+//        var when = new Date(d).getTime()/1000;
+//        var d = Math.trunc(when);
+//        date = d - (d % (WINDOW)); // Round to the WINDOW boundary to align with DB stamps
+//        visualize(date);
+//    });
 
-    new SliderControls(slider);
+//    new SliderControls(slider);
 
 //    mapFunctions.createMap(function() { slider._tick(slider) });
     mapFunctions.createMap();
