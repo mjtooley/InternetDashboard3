@@ -14,7 +14,7 @@
     <link href="Style.css" rel="stylesheet" type="text/css" />
 
     <META http-equiv="Pragma" content="no-cache">
-    <META http-equiv="refresh" content="30">
+    <META http-equiv="refresh" content="60">
 </head>
 
 <body>
@@ -96,7 +96,7 @@
         var slider = new Slider(sliderOptions, function(d){
             var when = new Date(d).getTime()/1000;
             var d = Math.trunc(when);
-            date = d - (d % (WINDOW) - 6900); // Round to the 60 minute boundary to align with DB stamps and UTC
+            date = d - (d % (WINDOW) - 2100); // Round to the 60 minute boundary to align with DB stamps and UTC
             visualize(date);
         });
 
@@ -104,9 +104,8 @@
         mapFunctions.createMap(function() { slider._tick(slider) });
 
         var now = new Date().getTime()/1000; // Get the current time
-        var d = Math.trunc(now) - 1; // back up 1 mS
-        d = d - (WINDOW); // Set the time for the data to display to be WINDOW minutes behind the wall clock
-        d = d - (d % (WINDOW)) - 6900; // Round to WINDOW boundary & UTC
+        var d = Math.trunc(now) ; //
+        d = d - (d % (WINDOW)) - 2100; // Round to WINDOW boundary & UTC
 
         var date = d.toString()
         // Pass the date as a time stamp
