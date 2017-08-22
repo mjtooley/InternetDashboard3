@@ -96,7 +96,7 @@
         var slider = new Slider(sliderOptions, function(d){
             var when = new Date(d).getTime()/1000;
             var d = Math.trunc(when);
-            date = d - (d % (WINDOW) - 2100); // Round to the 60 minute boundary to align with DB stamps and UTC
+            date = d - (d % (WINDOW) - WINDOW); // Round to the 60 minute boundary to align with DB stamps and UTC
             visualize(date);
         });
 
@@ -105,7 +105,7 @@
 
         var now = new Date().getTime()/1000; // Get the current time
         var d = Math.trunc(now) ; //
-        d = d - (d % (WINDOW)) - 2100; // Round to WINDOW boundary & UTC
+        d = d - (d % (WINDOW)) - WINDOW; // Round to WINDOW boundary
 
         var date = d.toString()
         // Pass the date as a time stamp
@@ -137,7 +137,7 @@
     var now = new Date().getTime()/1000; // Get the current time
 //    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
     d = Math.trunc(now);
-    d = d - (d % (WINDOW)) - 2100; // Round to 60 minute boundary
+    d = d - (d % (WINDOW)) - WINDOW; // Round to 60 minute boundary
     var date = d.toString();
     visualize(date);
 
