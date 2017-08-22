@@ -81,9 +81,12 @@
 
     var date = new Date();
     endDate = date.toLocaleString();
+    startDate = date - WINDOW
+    start = startDate.toLocalString();
 
     var sliderOptions = {
-        startTime: "August 1, 2017 00:00:00",
+//        startTime: "August 1, 2017 00:00:00",
+        startTime: start,
         endTime: endDate,
         speed: 3600,
         tickLen: 1000*WINDOW  // Hour
