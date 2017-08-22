@@ -80,8 +80,9 @@
     const WINDOW = 600 // seconds
 
     var date = new Date();
+    date = date - 6600; // Adjust for UTC
     endDate = date.toLocaleString();
-    startDate = date - WINDOW
+    startDate = date - WINDOW;
     start = startDate.toLocaleString();
 
     var sliderOptions = {
