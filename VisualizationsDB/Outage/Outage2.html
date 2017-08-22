@@ -78,36 +78,66 @@
 
 <script>
     const WINDOW = 600 // seconds
+    var myVar = setInterval(myTimer, 1000*5) // Run WINDOW
+
+    function myTimer() {
+
+        var date = new Date();
+        endDate = date.toLocaleString();
+        start = date - WINDOW;
+        startDate = start.toLocaleString();
+        var sliderOptions = {
+            startTime: startDate,
+            endTime: endDate,
+            speed: 3600,
+            tickLen: 1000*WINDOW  // Hour
+        };
+
+        var slider = new Slider(sliderOptions, function(d){
+            var when = new Date(d).getTime()/1000;
+            var d = Math.trunc(when);
+            date = d - (d % (WINDOW) - 6900); // Round to the 60 minute boundary to align with DB stamps and UTC
+            visualize(date);
+        });
+
+        new SliderControls(slider);
+        mapFunctions.createMap(function() { slider._tick(slider) });
+
+        var now = new Date().getTime()/1000; // Get the current time
+        var d = Math.trunc(now) - 1; // back up 1 mS
+        d = d - (WINDOW); // Set the time for the data to display to be WINDOW minutes behind the wall clock
+        d = d - (d % (WINDOW)) - 6900; // Round to WINDOW boundary & UTC
+
+        var date = d.toString()
+        // Pass the date as a time stamp
+        visualize(date);
+    }
 
     var date = new Date();
-    date = date - 6600; // Adjust for UTC
     endDate = date.toLocaleString();
-    startDate = date - WINDOW;
-    start = startDate.toLocaleString();
+    start = date - WINDOW;
+    startDate = start.toLocaleString();
 
     var sliderOptions = {
-//        startTime: "August 1, 2017 00:00:00",
-        startTime: start,
+        startTime: startDate,
         endTime: endDate,
         speed: 3600,
         tickLen: 1000*WINDOW  // Hour
     };
-//    var slider = new Slider(sliderOptions, function(d){
-//        var when = new Date(d).getTime()/1000;
-//        var d = Math.trunc(when);
-//        date = d - (d % (WINDOW)); // Round to the WINDOW boundary to align with DB stamps
-//        visualize(date);
-//    });
+    var slider = new Slider(sliderOptions, function(d){
+        var when = new Date(d).getTime()/1000;
+        var d = Math.trunc(when);
+        date = d - (d % (WINDOW)); // Round to the 60 minute boundary to align with DB stamps
+        visualize(date);
+    });
 
-//    new SliderControls(slider);
+    new SliderControls(slider);
 
-//    mapFunctions.createMap(function() { slider._tick(slider) });
-    mapFunctions.createMap();
+    mapFunctions.createMap(function() { slider._tick(slider) });
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
-    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock//
-//    d = d - (d % (WINDOW)- 6500; // Round to 60 minute boundary and adjust to UTC
-    d = d - (d % WINDOW) - 6600 - 300;
+    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
+    d = d - (d % (WINDOW))- 6900; // Round to 60 minute boundary
     var date = d.toString();
     visualize(date);
 
