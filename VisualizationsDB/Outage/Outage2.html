@@ -77,7 +77,7 @@
 <script src="bootstrap-timepicker.js"></script>
 
 <script>
-    const WINDOW = 900 // seconds
+    const WINDOW = 600 // seconds
 
     var date = new Date();
     endDate = date.toLocaleString();
@@ -94,7 +94,7 @@
     var slider = new Slider(sliderOptions, function(d){
         var when = new Date(d).getTime()/1000;
         var d = Math.trunc(when);
-        date = d - (d % (WINDOW)); // Round to the 60 minute boundary to align with DB stamps
+        date = d - (d % (WINDOW)); // Round to the WINDOW boundary to align with DB stamps
         visualize(date);
     });
 
