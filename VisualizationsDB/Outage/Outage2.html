@@ -104,8 +104,8 @@
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
     var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock//
-//    d = d - (d % (WINDOW)- 6500); // Round to 60 minute boundary and adjust to UTC
-    d = d - 6600;
+//    d = d - (d % (WINDOW)- 6500; // Round to 60 minute boundary and adjust to UTC
+    d = d - (d % WINDOW) - 6600;
     var date = d.toString();
     visualize(date);
 
