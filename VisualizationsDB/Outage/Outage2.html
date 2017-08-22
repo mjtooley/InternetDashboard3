@@ -136,8 +136,8 @@
     mapFunctions.createMap(function() { slider._tick(slider) });
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
-    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
-    d = d - (d % (WINDOW))- 6900; // Round to 60 minute boundary
+//    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
+    d = d - (d % (WINDOW)); // Round to 60 minute boundary
     var date = d.toString();
     visualize(date);
 
