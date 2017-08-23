@@ -138,7 +138,7 @@
 //    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
     var d = Math.trunc(now);
     d = d - (d % (WINDOW)); // Round to 60 minute boundary
-    d = d - WINDOW - 2*3600; // Adjust for timezone of AWS?
+    d = d - WINDOW ; //
     var date = d.toString();
     visualize(date);
 
