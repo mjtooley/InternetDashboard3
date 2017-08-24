@@ -144,7 +144,7 @@ function getLogoURL(AS_Name) {
     var url;
 
     if (AS_Name.indexOf("TIMEWARNER") != -1) {
-        url = "Images/Logos/TimeWarner.png";
+        url = "Images/Logos/Charter.png";
     }
     else if (AS_Name.indexOf("COX") != -1) {
         url = "Images/Logos/Cox.png";

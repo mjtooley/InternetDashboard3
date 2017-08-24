@@ -472,11 +472,11 @@ function getInnerHTML(networkName) {
     else if(networkName.indexOf("ATT") != -1) {
         html = "<img src= Images/Logos/ATT.png width = 20px>";
     }
-    else if(networkName.indexOf("TIMEWARNER") != -1) {
-        html = "<img src= Images/Logos/TimeWarner.png>";
+    else if(networkName.indexOf("Charter") != -1) {
+        html = "<img src= Images/Logos/Charter.png>";
     }
     else if(networkName.indexOf("LEVEL3") != -1) {
-        html = "<img src= Images/Logos/Level3.png>";
+        html = "<img src= Images/Logos/Centurylink.png>";
     }
     else if(networkName.indexOf("NCTA") != -1) {
         html = "<img src= Images/Logos/NCTA.png>";
