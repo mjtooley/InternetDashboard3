@@ -117,9 +117,7 @@
         visualize(date);
     });
 
-    new SliderControls(slider);
 
-    mapFunctions.createMap(function() { slider._tick(slider) });
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
     var d = Math.trunc(now);
@@ -127,6 +125,8 @@
     d = d - WINDOW ; //
     var date = d.toString();
     visualize(date);
+    new SliderControls(slider);
+    slider._tick(slider);
 </script>
 
 </body>
