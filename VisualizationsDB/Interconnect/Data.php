@@ -6,6 +6,9 @@ $date = $_GET["date"]; // Get date from GET request
 //$query = array("Date" => $date);
 //$document = $collection->findOne($query);
 $s=array('Date' => -1);
-$document = $collection->find()->sort($s)->limit(1); // Find the latest entry
-echo json_encode($document);
+$cursor = $collection->find()->sort($s)->limit(1); // Find the latest entry
+
+foreach ($cursor as $document) {
+   echo json_encode($document);
+}
 ?>
