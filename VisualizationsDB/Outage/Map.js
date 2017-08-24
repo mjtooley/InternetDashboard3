@@ -472,7 +472,7 @@ function getInnerHTML(networkName) {
     else if(networkName.indexOf("ATT") != -1) {
         html = "<img src= Images/Logos/ATT.png width = 20px>";
     }
-    else if(networkName.indexOf("Charter") != -1) {
+    else if(networkName.indexOf("CHARTERCOMMUNICATIONS") != -1) {
         html = "<img src= Images/Logos/Charter.png>";
     }
     else if(networkName.indexOf("LEVEL3") != -1) {
