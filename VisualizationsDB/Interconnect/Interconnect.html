@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.min.css"/>
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
     <link href="Style.css" rel="stylesheet" type="text/css" />
+    <META http-equiv="refresh" content="60">
 </head>
 <body>
 <div id='infoLegend' class="info"></div>
@@ -95,45 +96,37 @@
 <script src="Graph.js"></script>
 
 <script>
-    var myVar = setInterval(myTimer, 1000*60*60) // Run every 2 minutes
-    
-    function myTimer() {
-        var now = new Date().getTime()/1000; // Get the current time
-        var d = Math.trunc(now) - 1; // back up 1 mS
-        d = d - (60*3); // Set the time for the data to display to be 3 minutes behind the wall clock
-        d = d - (d % (60*15)); // Round to 15 minute boundary
-        //d = 1485350100
-        var date = d.toString()
-        visualize(date);
-    }
-    
-    var date = Date();
+    const WINDOW = 900 // seconds
+
+    var date = new Date();
     endDate = date.toLocaleString();
-    
-    
+    start = date - WINDOW;
+    startDate = start.toLocaleString();
+
     var sliderOptions = {
-        startTime: "August 1, 2017 00:00:00",
+        startTime: startDate,
         endTime: endDate,
         speed: 3600,
-        tickLen: 1000*60*60  // Hour
+        tickLen: 1000*WINDOW  // Hour
     };
+
     var slider = new Slider(sliderOptions, function(d){
         var when = new Date(d).getTime()/1000;
         var d = Math.trunc(when);
-        date = d - (d % (60*60)); // Round to the 60 minute boundary to align with DB stamps
+        date = d - (d % (WINDOW)); // Round to the 60 minute boundary to align with DB stamps
         visualize(date);
     });
 
-    // Create the initial map
-    var now = new Date().getTime()/1000; // Get the current time
-    var d = Math.trunc(now - (60*60)); // Set the time for the data to display to be 15 minutes behind the wall clock
-    d = d - (d % (60*60)); // Round to 60 minute boundary
-    var date = d.toString();
-    visualize(date);
-
     new SliderControls(slider);
 
-    slider._tick(slider);
+    mapFunctions.createMap(function() { slider._tick(slider) });
+    // Create the initial map
+    var now = new Date().getTime()/1000; // Get the current time
+    var d = Math.trunc(now);
+    d = d - (d % (WINDOW)); // Round to 60 minute boundary
+    d = d - WINDOW ; //
+    var date = d.toString();
+    visualize(date);
 </script>
 
 </body>

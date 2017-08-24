@@ -78,39 +78,6 @@
 
 <script>
     const WINDOW = 900 // seconds
-    var myVar = setInterval(myTimer, 1000*5) // Run WINDOW
-
-    function myTimer() {
-
-        var date = new Date();
-        endDate = date.toLocaleString();
-        start = date - WINDOW;
-        startDate = start.toLocaleString();
-        var sliderOptions = {
-            startTime: startDate,
-            endTime: endDate,
-            speed: 3600,
-            tickLen: 1000*WINDOW  // Hour
-        };
-
-        var slider = new Slider(sliderOptions, function(d){
-            var when = new Date(d).getTime()/1000;
-            var d = Math.trunc(when);
-            date = d - (d % (WINDOW) - WINDOW); // Round to the 60 minute boundary to align with DB stamps and UTC
-            visualize(date);
-        });
-
-        new SliderControls(slider);
-        mapFunctions.createMap(function() { slider._tick(slider) });
-
-        var now = new Date().getTime()/1000; // Get the current time
-        var d = Math.trunc(now) ; //
-        d = d - (d % (WINDOW)) - WINDOW; // Round to WINDOW boundary
-
-        var date = d.toString()
-        // Pass the date as a time stamp
-        visualize(date);
-    }
 
     var date = new Date();
     endDate = date.toLocaleString();
@@ -123,6 +90,7 @@
         speed: 3600,
         tickLen: 1000*WINDOW  // Hour
     };
+
     var slider = new Slider(sliderOptions, function(d){
         var when = new Date(d).getTime()/1000;
         var d = Math.trunc(when);
@@ -135,7 +103,6 @@
     mapFunctions.createMap(function() { slider._tick(slider) });
     // Create the initial map
     var now = new Date().getTime()/1000; // Get the current time
-//    var d = Math.trunc(now - (WINDOW)); // Set the time for the data to display to be 60 minutes behind the wall clock
     var d = Math.trunc(now);
     d = d - (d % (WINDOW)); // Round to 60 minute boundary
     d = d - WINDOW ; //
