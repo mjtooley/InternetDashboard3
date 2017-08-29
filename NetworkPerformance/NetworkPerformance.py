@@ -49,6 +49,8 @@ def switchNames(network_dictionary):
     return network_dictionary
 
 def perfomance_d(start, end, asn):
+
+    print "Network peformance for asn: %s" % asn
     Fin=[]
     Final = {}
     prev_name_net = 0
