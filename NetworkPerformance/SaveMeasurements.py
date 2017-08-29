@@ -28,7 +28,6 @@ class Save:
             r = self.db2.performance.insert_one(result)
             print "Peformance DB update, Date=",result['Date']
         except Exception as e:
-            print r
             print e
             pass
 
