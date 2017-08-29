@@ -6,7 +6,7 @@ import getopt,sys
 import threading
 from NetworkOutage.NetworkOutage import networkOutage
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
-from NetworkPerformance.NetworkPerformance import PeformanceThread
+from NetworkPerformance.NetworkPerformance import PeformanceThread,perfomance_d
 from configuration import getAsnList, getWindow
 from SaveToMongoDB import saveToMongoDB
 from StreamingResults import getStreamResults
@@ -99,18 +99,21 @@ def main(argv):
             threads = []
             number_of_threads = 0
 
-            for asn in list_of_source_asns:
-                thread_name = "Performance " + str(number_of_threads + 1)
-                thread = PeformanceThread(start_time, end_time, asn, thread_name)
-                thread.start()
-                threads.append(thread)
-                number_of_threads = number_of_threads + 1
+ #           for asn in list_of_source_asns:
+ #               thread_name = "Performance " + str(number_of_threads + 1)
+ #               thread = PeformanceThread(start_time, end_time, asn, thread_name)
+ #               thread.start()
+ #               threads.append(thread)
+ #               number_of_threads = number_of_threads + 1
 
             # Wait for all the threads to finish
-            for t in threads:
-                t.join()
+#            for t in threads:
+ #               t.join()
             #print "All threads finished..."
+            for asn in list_of_source_asns:
+                perfomance_d(start_time, end_time, asn)
             print "Finished Peformance Processing"
+
             networkOutage(start_time, end_time)
             networkInterconnects(start_time, end_time)
 
