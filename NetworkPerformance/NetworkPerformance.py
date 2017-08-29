@@ -52,19 +52,12 @@ def perfomance_d(start, end, asn):
 
     print "Network peformance for asn: %s" % asn
     Fin=[]
-    Final = {}
-    prev_name_net = 0
     description = ""
-    g = []
-    r = {}
-    fin = []
     Net = []
     Route_for_network = {}
 
     isp_dict = {}  # initialize the dict
     dest_name = ""
-    inter_network_name=""
-    prev_name_net=0
 
     measurements = Get()
     current_measurements = measurements.getMeasurements(asn, start, end)
@@ -191,7 +184,9 @@ def perfomance_d(start, end, asn):
         if a!=[]:
             Route_for_network = {"Name": name_net, "Aggregate_Routes": a}
             Net.append(Route_for_network)
-        Fin = filter(None, Net)
+        # Fin = filter(None, Net)
+        Fin = Net
+
     if Fin != []:
         # final_network_dictionary = switchNames(network_dictionary)
         prev_name_net = name_net

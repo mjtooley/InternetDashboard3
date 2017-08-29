@@ -129,7 +129,7 @@ def main(argv):
                 end_time = end_time + getWindow()
 
             # Sleep until window
-            sleep = end_time - now;
+            sleep = end_time - now
 
             endedAt = time.time()
             loopTime = endedAt - startedAt
