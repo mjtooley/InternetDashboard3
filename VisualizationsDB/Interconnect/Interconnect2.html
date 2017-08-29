@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interconnection</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <META http-equiv="refresh" content="60">
+</head>
+<body>
+<div id='infoLegend' class="info"></div>
+
+<div id='search' class='inner-addon left-addon'>
+    <i class="fa fa-search"></i>
+    <input type="text" class='search-box' id="search-box" placeholder="Enter an AS name, AS number, or a company name">
+</div>
+
+<div id='graphKey' class="info">
+    <svg width=100 height=30>
+        <circle cx=16 cy =12 r=12 fill=#66B266></circle>
+        <text font-size="12px" x="41" y="15" fill="black">Shared AS</text>
+    </svg>
+    <svg width=95 height=30>
+        <circle cx=16 cy =14 r=12 fill=#fff stroke=#cecece stroke-width=3px stroke-opacity=.8></circle>
+        <text font-size="12px" x="41" y="15" fill="black">Backbone</text>
+    </svg>
+    <svg width=100 height=30>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="cloud-group"
+             viewBox="0 0 1014 628" width="35" height="30" class="source-backbone">
+            <path id="cloud" vector-effect="non-scaling-stroke" d="M574.1,31.5c-86.8,0-164.8,37.9-218.3,98c-17.4-7.1-36.5-11-56.5-11
+            c-82.6,0-149.6,67-149.6,149.6c0,11.6,1.3,23,3.9,33.8c-69.5,12.8-122.1,73.8-122.1,147c0,82.6,67,149.6,149.6,149.6h610.4
+            c110.5,0,200-89.5,200-200c0-93.4-64-171.8-150.5-193.8C795.4,102.6,693.1,31.5,574.1,31.5z"></path>
+        </svg>
+        <text font-size="12px" x="41" y="18" fill="black">Source AS</text>
+    </svg>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="Logos.js"></script>
+<script src="Slider.js"></script>
+<script src="bootstrap-timepicker.js"></script>
+<script src="Graph.js"></script>
+
+<script>
+    const WINDOW = 900 // seconds
+
+    // Create the initial graph
+    var now = new Date().getTime()/1000; // Get the current time
+    var d = Math.trunc(now);
+    d = d - (d % (WINDOW)); // Round to 60 minute boundary
+    d = d - WINDOW ; //
+    var date = d.toString();
+    visualize(date);
+
+</script>
+
+</body>
+</html>
