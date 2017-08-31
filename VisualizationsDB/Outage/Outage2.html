@@ -55,7 +55,7 @@
     var now = new Date().getTime()/1000; // Get the current time
     var d = Math.trunc(now);
     d = d - (d % (WINDOW)); // Round to 60 minute boundary
-    d = d - (2*WINDOW) ; //
+    d = d - (1*WINDOW) ; //
     var date = d.toString();
     visualize(date);
 
