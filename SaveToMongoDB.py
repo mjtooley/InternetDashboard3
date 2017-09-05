@@ -179,36 +179,36 @@ def saveToMongoDB(start_time, stop_time):
     # Add db command to collections to the databases if they don't exist
     db_collections = db.collection_names()
     if 'results' not in db_collections:
-        db.create_collection('results', capped=True, size=2000000000, max=1000)
+        db.create_collection('results', capped=True, size=1000000000, max=1000)
     if 'probes' not in db_collections:
-        db.create_collection('probes', capped=True, size=200000000, max=10000)
+        db.create_collection('probes', capped=True, size=100000000, max=10000)
     if 'outages' not in db_collections:
-        db.create_collection('outages', capped=True, size=200000000, max=100)
+        db.create_collection('outages', capped=True, size=100000000, max=100)
     if 'interconnects' not in db_collections:
-        db.create_collection('interconnects', capped=True, size=200000000, max=100)
+        db.create_collection('interconnects', capped=True, size=100000000, max=100)
     if 'performance' not in db_collections:
-        db.create_collection('performance', capped=True, size=200000000)
+        db.create_collection('performance', capped=True, size=100000000)
 
     # Check if existing collections are capped
     result = db.command('collstats','results')
     if 'capped' not in result:
-        db.command('convertToCapped','results',size=2000000000, max=1000)
+        db.command('convertToCapped','results',size=1000000000, max=1000)
 
     result = db.command('collstats', 'probes')
     if 'capped' not in result:
-        db.command('convertToCapped', 'probes', size=200000000, max=10000)
+        db.command('convertToCapped', 'probes', size=100000000, max=10000)
 
     result = db.command('collstats', 'outages')
     if 'capped' not in result:
-        db.command('convertToCapped', 'outages', size=200000000, max=1000)
+        db.command('convertToCapped', 'outages', size=100000000, max=1000)
 
     result = db.command('collstats', 'interconnects')
     if 'capped' not in result:
-        db.command('convertToCapped', 'interconnects', size=200000000,max=1000)
+        db.command('convertToCapped', 'interconnects', size=100000000,max=1000)
 
     result = db.command('collstats', 'performance')
     if 'capped' not in result:
-        db.command('convertToCapped', 'performance', size=20000000,max=1000)
+        db.command('convertToCapped', 'performance', size=10000000,max=1000)
 
 
     # Created indexes and make them unique to ensure there aren't duplicate entries
