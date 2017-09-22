@@ -26,7 +26,9 @@ class Save:
         try:
             self.db2.outages.insert_one(result)
             print "Added Network Outage, Date=", result['Date']
-        except:
+        except Exception as e:
+            print e
+            print "Nothing saved - ", result['Date']
             pass
 
     def closeConnection(self):
