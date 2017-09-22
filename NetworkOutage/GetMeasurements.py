@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from configuration import getMongoServer
+from configuration import getMongoServer, getWindow
 
 class Get:
     """
@@ -31,7 +31,8 @@ class Get:
         return all_results, total_number_of_results
 
     def getOutages(self, starttime, endtime):
-        end = str(endtime - endtime % (60 * 15))  # round it to a 15 minute boundary
+        window = getWindow()
+        end = str(endtime - endtime % (60 * window))  # round it to a 15 minute boundary
         dbResults = self.db.outages.find({"date": end})
         if dbResults.count() > 0:
             return True
