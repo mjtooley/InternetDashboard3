@@ -187,7 +187,7 @@ def saveToMongoDB(start_time, stop_time):
     # Add db command to collections to the databases if they don't exist
     db_collections = db.collection_names()
     if 'results' not in db_collections:
-        db.create_collection('results', capped=True, size=1000000000, max=1000000)
+        db.create_collection('results', capped=True, size=1000000000, max=10000000)
     if 'probes' not in db_collections:
         db.create_collection('probes', capped=True, size=100000000, max=100000)
     if 'outages' not in db_collections:
