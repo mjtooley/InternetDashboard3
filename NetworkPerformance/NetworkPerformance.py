@@ -16,6 +16,7 @@ import traceback, sys
 from ipwhois import IPWhois
 from asnlookup import getAsn
 from getIpInfo import getLocation
+import logging
 
 class PeformanceThread(threading.Thread):
     def __init__(self, start_time, stop_time, source_asns, thread_name):
@@ -49,8 +50,8 @@ def switchNames(network_dictionary):
     return network_dictionary
 
 def perfomance_d(start, end, asn):
-
-    print "Network peformance for asn: %s" % asn
+    logger = logging.getLogger('simpleExample')
+    logger.debug('Network peformance for asn: %s',asn)
     Fin=[]
     description = ""
     Net = []
@@ -177,7 +178,7 @@ def perfomance_d(start, end, asn):
             except Exception:
                 exc_info = sys.exc_info()
                 traceback.print_exc()
-                print "Exception in NetworkPerformance:", exc_info
+                logger('Exception in NetworkPerformance: %s', exc_info)
 
 
 
