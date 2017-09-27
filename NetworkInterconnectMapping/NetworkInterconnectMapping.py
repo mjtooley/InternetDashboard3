@@ -73,6 +73,7 @@ def interconnects(start, end, list_of_source_asns):
                 # Iterate through all the measurements in a time window
                 for this_result in current_measurement[0]:
                     # measurement_index = current_measurement[0].cursor_id
+                    logger.debug('MeasurementID: %s  ProbeID: %s  Measurement: %s', this_result["msm_id"], this_result["prb_id"], current_result )
                     #print "Measurement ID: %s, Probe ID: %s, Current: %s" % \
                     #      (this_result["msm_id"], this_result["prb_id"], current_result)
                     # Initialize an object from the class Find() defined in FindIPPath.py and assign it to ip_path

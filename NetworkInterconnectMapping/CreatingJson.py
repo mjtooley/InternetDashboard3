@@ -2,6 +2,7 @@ import json
 import urllib2
 import traceback
 import sys
+import logging
 
 
 class Creating(object):
@@ -62,7 +63,7 @@ class Creating(object):
         :param source_asn:
         :return source_as_name:
         """
-
+        logger = logging.getLogger('simpleExample')
         asn = {}
         asn['7922'] = 'Comcast'
         asn['22773'] = 'Cox'
@@ -94,6 +95,7 @@ class Creating(object):
             name = asn[source_asn]
         else:
             name = 'unknown'
+        logger.debug('getASName %s', name)
         return name
 
         # Open the URL and get the AS Overview JSON file
@@ -126,11 +128,13 @@ class Creating(object):
         :param as_name:
         :return neighbor_dictionary:
         """
+        logger = logging.getLogger('simpleExample')
         # Append a new dictionary in the Backbone_AS_List and add the as_number and as_name to the newly appended
         # dictionary.
         neighbor_dictionary["Backbone_AS_List"].append({})
         neighbor_dictionary["Backbone_AS_List"][-1]["AS_Number"] = as_number
         neighbor_dictionary["Backbone_AS_List"][-1]["AS_Name"] = as_name
+        logger.debug('addBackbone')
         return neighbor_dictionary
 
     def addNodes(self, neighbor_dictionary, as_number, as_name, source_as_name, source_as_number, value, is_source,
@@ -161,6 +165,8 @@ class Creating(object):
         :param shared_by:
         :return neighbor_dictionary:
         """
+        logger = logging.getLogger('simpleExample')
+        logger.debug('addNodes ASN: %s', as_name)
         # Append a new dictionary to the Nodes list and add the as_number, as_name, source_as_name, source_as_number,
         # value, is_source, is_shared and shared_by to the newly appended dictionary
         neighbor_dictionary["Nodes"].append({})
@@ -198,6 +204,8 @@ class Creating(object):
         :param rtt:
         :return neighbor_dictionary:
         """
+        logger = logging.getLogger('simpleExample')
+        logger.debug('addLinks Source: %s  Destination: %s', source,target )
         neighbor_dictionary["Links"].append({})
         neighbor_dictionary["Links"][-1]["source"] = source
         neighbor_dictionary["Links"][-1]["Source_AS_Name"] = source_AS
