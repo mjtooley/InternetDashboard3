@@ -121,7 +121,7 @@ def outages(start, end, list_of_source_asns):
                     ip_address = this_result["from"]
                     client = IPWhois(ip_address)
                 except Exception as e:
-                    logger.debug(str(e))
+                    logger.debug('Exception: %s', str(e))
                     current_result += 1
                     continue
                 result_info = Resolve(this_result,probe_list)
