@@ -469,20 +469,35 @@ function getInnerHTML(networkName) {
     else if(networkName.indexOf("CENTURYLINK") != -1) {
         html = "<img src= Images/Logos/CenturyLink.png>";
     }
+    else if(networkName.indexOf("QWEST") != -1) {
+        html = "<img src= Images/Logos/CenturyLink.png>";
+    }
     else if(networkName.indexOf("ATT") != -1) {
         html = "<img src= Images/Logos/ATT.png width = 20px>";
     }
     else if(networkName.indexOf("CHARTERCOMMUNICATIONS") != -1) {
         html = "<img src= Images/Logos/Charter.png>";
     }
+    else if(networkName.indexOf("TIMEWARNER") != -1) {
+        html = "<img src= Images/Logos/Mediacom.png>";
+    }
     else if(networkName.indexOf("LEVEL3") != -1) {
         html = "<img src= Images/Logos/Centurylink.png>";
     }
-    else if(networkName.indexOf("NCTA") != -1) {
+    else if(networkName.indexOf("NATIONALCABLE") != -1) {
         html = "<img src= Images/Logos/NCTA.png>";
     }
     else if(networkName.indexOf("SUDDENLINK") != -1) {
         html = "<img src= Images/Logos/SuddenLink.png>";
+    }
+    else if(networkName.indexOf("CABLEVISION") != -1) {
+        html = "<img src= Images/Logos/altice-logo.png>";
+    }
+    else if(networkName.indexOf("MEDIACOM") != -1) {
+        html = "<img src= Images/Logos/mediacom_logo.png>";
+    }
+    else if(networkName.indexOf("CABLEONE") != -1) {
+        html = "<img src= Images/Logos/Cableone_logo.png>";
     }
 
     return html;

@@ -4,6 +4,10 @@ import datetime
 import ConfigParser
 import getopt,sys
 import threading
+import logging
+import logging.config
+from logging.handlers import RotatingFileHandler
+
 from NetworkOutage.NetworkOutage import networkOutage
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
 from NetworkPerformance.NetworkPerformance import PeformanceThread,perfomance_d
@@ -43,7 +47,7 @@ class streamThread(threading.Thread):
 
 
 def main(argv):
-    print "Internet Dashboard Starting Up..."
+    print('Internet Dashboard Starting Up...')
     configfile = ""
     try:
         opts, args = getopt.getopt(argv,"hc:",["help","config="])
@@ -76,17 +80,34 @@ def main(argv):
 
         #now = int(time.time())
 
+        # Configure the logging system
+        logging.config.fileConfig('logging.conf')
+
+        # create logger
+        logger = logging.getLogger('simpleExample')
+
+        hdlr = RotatingFileHandler('dashboard.log', maxBytes=1000000000,backupCount=2)
+        formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+        hdlr.setFormatter(formatter)
+        logger.addHandler(hdlr)
+        logger.setLevel(logging.DEBUG)
+
+        logger.info('Internet Dashboard Starting Up')
+
         WINDOW = getWindow()
         now = int(time.time())
+        logger.info('Started at %d',now)
         start_time = (now - (now % WINDOW)) - WINDOW  # Round it to the nearest hour and back up WINDOW minutes
         end_time = now - (now % WINDOW)
 
         while True:
+            logging.debug('Start: %s  End:%s',datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'),datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S'))
             print "Start:",datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
 
             startedAt = time.time() # Record the time we start this pass
 
             # Update the datebase with the latest results
+            logger.info('Updating the database')
             print "Updating the database..."
             saveToMongoDB(start_time,end_time)
 
@@ -94,8 +115,8 @@ def main(argv):
             #networkOutage2(end_time - WINDOW*10, end_time)
             #networkPerformance2(end_time-WINDOW*10, end_time)
 
-            print "<=========================================================================>"
-            print "Started Peformance Processing..."
+            logger.info('<=========================================================================>')
+            logger.info('Started Peformance Processing...')
             list_of_source_asns = getAsnList()
             threads = []
             number_of_threads = 0
@@ -113,8 +134,8 @@ def main(argv):
             #print "All threads finished..."
             for asn in list_of_source_asns:
                 perfomance_d(start_time, end_time, asn)
-            print "Finished Peformance Processing"
-            print "<=========================================================================>"
+            logger.info('Finished Peformance Processing')
+            logger.info('<=========================================================================>')
 
             networkOutage(start_time, end_time)
             networkInterconnects(start_time, end_time)
@@ -133,11 +154,11 @@ def main(argv):
 
             endedAt = time.time()
             loopTime = endedAt - startedAt
-            print "Processing time (secs):", loopTime
-            print "Going to Sleep for ", sleep," seconds\n"
-            print "Will wake up at", datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S')
+            logger.info('Processing time (secs): %s', loopTime)
+            logger.info('Going to Sleep for %s seconds', sleep)
+            logger.info('Will wake up at %s', datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S'))
             time.sleep(sleep) # 1800 seconds or 30 minutes
-            print "Awakened\n"
+            logger.info('Awakened')
 
             now = int(time.time())
             end_time = start_time + getWindow() # process from where we left off last time to now

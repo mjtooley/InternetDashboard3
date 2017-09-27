@@ -6,6 +6,7 @@ results in MongoDB.
 import threading
 from pymongo import MongoClient
 from ripe.atlas.cousteau import AtlasResultsRequest, ProbeRequest, MeasurementRequest
+import logging
 
 # Connect to the database using pymongo. No arguments to MongoClient() connects to the localhost at port 27017.
 # Else, connect to the database at the specified IP address and port number

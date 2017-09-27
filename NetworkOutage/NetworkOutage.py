@@ -16,6 +16,7 @@ from ripe.atlas.sagan import PingResult
 from ripe.atlas.cousteau import Probe
 import geocoder
 from configuration import getAsnList,getMongoDB,getmsm_ids, getWindow
+import logging
 
 class NetworkOutageThread(threading.Thread):
     def __init__(self, start_time, stop_time, source_asn, thread_name):
@@ -97,16 +98,17 @@ def networkOutage2(start, end):
 ##########################################################
 
 def outages(start, end, list_of_source_asns):
+    logger = logging.getLogger('simpleExample')
     date_and_time = str(datetime.utcfromtimestamp(start)).replace(" ", "_")
     probe_dictionary = {}
     probe_dictionary["Probes"] = []
     probe_dictionary["AS_List"] = []
     probe_list = {}
 
-    print "Processing NetworkOutages:"
+    logger.info('Processing NetworkOutages:')
 
     for asn in list_of_source_asns:
-        #print "-->NetworkOutage:", asn
+        logger.debug('-->NetworkOutage: %s', asn)
         current_result = 1
         measurements = Get()
 
@@ -119,7 +121,7 @@ def outages(start, end, list_of_source_asns):
                     ip_address = this_result["from"]
                     client = IPWhois(ip_address)
                 except Exception as e:
-                    print e
+                    logger.debug(str(e))
                     current_result += 1
                     continue
                 result_info = Resolve(this_result,probe_list)
@@ -146,8 +148,7 @@ def outages(start, end, list_of_source_asns):
 
     measurements.closeConnection()
     to_save.closeConnection()
-    print "\n"
-    print "-" * 20, "Network Outage Done", "-" * 100
+    logger.info('Network Outage Done')
 
 def networkOutage(start, end):
     list_of_source_asns = getAsnList()

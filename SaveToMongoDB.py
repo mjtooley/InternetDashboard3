@@ -17,6 +17,8 @@ from NetworkOutage.NetworkOutage import networkOutage, networkOutage2, NetworkOu
 from NetworkInterconnectMapping.NetworkInterconnectMapping import networkInterconnects
 from NetworkPerformance.NetworkPerformance import PeformanceThread
 import geocoder
+import logging
+
 
 # Define class myThread to spawn a thread and get results for each ASN from RIPE servers
 class myThread(threading.Thread):
@@ -37,7 +39,7 @@ class myThread(threading.Thread):
 # Define a function getASNResults() to get built-in traceroute measurements for each ASN in list of source asns
 # from RIPE servers
 def getASNResults(asn, start_time, stop_time, target_asn):
-
+    logger = logging.getLogger('simpleExample')
     db_writes = 0 # intialize db write counter
     #print "getASNResults for ",asn
     try:
@@ -46,6 +48,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
         # Specify the database name at that IP address. (Database Name = InternetDashboard)
         db = client.InternetDashboard
     except:
+        logger.error('Failed to connect to MongoDB server')
         print "Couldn't connect to %(server)s , is MongoDB running?" % {'server': getMongoServer()}
         sys.exit(1)
 
@@ -65,6 +68,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
             try:
                 probes = ProbeRequest(**filters)
             except:
+                logger.error('Error getting probes')
                 print "error getting probes", probes
 
             try:
@@ -74,6 +78,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
             except:
                 e = sys.exc_info()
                 print ("Probe error", str(e))
+                logger.error('Probe error %s', str(e))
                 probe_list = []
 
             # Store the Probe Information in Database to speed up the other processing
@@ -91,6 +96,7 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                         try:
                             dbResult = db.probes.insert_one(probe_dict)
                         except Exception as e:
+                            logger.error('Error adding probe to DB %s', str(e))
                             pass
                             # print "error adding probe to DB", probe_id, e
                     except:
@@ -120,13 +126,13 @@ def getASNResults(asn, start_time, stop_time, target_asn):
                                     message = "dashboard.mongodb.write" + "." + "success " + "1" + " " + str(
                                         res["timestamp"]) + "\n"
                                     #print message
-                                    sock.sendall(message)  # send the result to Carbon/Graphite
+                                    #sock.sendall(message)  # send the result to Carbon/Graphite
                                     db_writes = db_writes + 1
                                 else:
                                     message = "dashboard.mongodb.write" + "." + "fail " + "1" + " " + str(
                                         res["timestamp"]) + "\n"
                                     #print message
-                                    sock.sendall(message)  # send the result to Carbon/Graphite
+                                    #sock.sendall(message)  # send the result to Carbon/Graphite
                             except Exception as e :
                                 pass
 
@@ -165,6 +171,8 @@ CARBON_PORT = 2003
 
 def saveToMongoDB(start_time, stop_time):
     #print "Starting SaveToMongoDB"
+    logger = logging.getLogger('simpleExample')
+    logger.debug('Starting SaveToMongoDB')
 
     # Create the collection and Indexes
     try:
@@ -179,36 +187,36 @@ def saveToMongoDB(start_time, stop_time):
     # Add db command to collections to the databases if they don't exist
     db_collections = db.collection_names()
     if 'results' not in db_collections:
-        db.create_collection('results', capped=True, size=1000000000, max=1000)
+        db.create_collection('results', capped=True, size=1000000000, max=1000000)
     if 'probes' not in db_collections:
-        db.create_collection('probes', capped=True, size=100000000, max=10000)
+        db.create_collection('probes', capped=True, size=100000000, max=100000)
     if 'outages' not in db_collections:
-        db.create_collection('outages', capped=True, size=100000000, max=100)
+        db.create_collection('outages', capped=True, size=100000000, max=100000)
     if 'interconnects' not in db_collections:
-        db.create_collection('interconnects', capped=True, size=100000000, max=100)
+        db.create_collection('interconnects', capped=True, size=100000000, max=1000000)
     if 'performance' not in db_collections:
         db.create_collection('performance', capped=True, size=100000000)
 
     # Check if existing collections are capped
     result = db.command('collstats','results')
     if 'capped' not in result:
-        db.command('convertToCapped','results',size=1000000000, max=1000)
+        db.command('convertToCapped','results',size=1000000000, max=100000)
 
     result = db.command('collstats', 'probes')
     if 'capped' not in result:
-        db.command('convertToCapped', 'probes', size=100000000, max=10000)
+        db.command('convertToCapped', 'probes', size=100000000, max=1000000)
 
     result = db.command('collstats', 'outages')
     if 'capped' not in result:
-        db.command('convertToCapped', 'outages', size=100000000, max=1000)
+        db.command('convertToCapped', 'outages', size=100000000, max=100000)
 
     result = db.command('collstats', 'interconnects')
     if 'capped' not in result:
-        db.command('convertToCapped', 'interconnects', size=100000000,max=1000)
+        db.command('convertToCapped', 'interconnects', size=100000000,max=100000)
 
     result = db.command('collstats', 'performance')
     if 'capped' not in result:
-        db.command('convertToCapped', 'performance', size=10000000,max=1000)
+        db.command('convertToCapped', 'performance', size=10000000,max=100000)
 
 
     # Created indexes and make them unique to ensure there aren't duplicate entries
@@ -216,32 +224,32 @@ def saveToMongoDB(start_time, stop_time):
         result = db.results.create_index([('prb_id', 1),('msm_id',1),('timestamp',1),('src_addr',1),('dst_addr',1)],unique=True)
         result = db.results.create_index([('timestamp',1)])
     except Exception as e:
-        print e
+        logger.warning('Exception: %s',e)
         pass
 
     # Add a probe index and make them unique
     try:
         result = db.probes.create_index([('id',1)],unique = True)
     except Exception as e:
-        print e
+        logger.warning('Exception: %s', e)
         pass
 
     # For each output collection add an index by "Date' and make it unique
     try:
         result = db.outages.create_index([('Date',1)],unique = True)
     except Exception as e:
-        print e
+        logger.warning('Exception: %s', e)
         pass
     try:
         result = db.interconnects.create_index([('Date',1)],unique = True)
     except Exception as e:
-        print e
+        logger.warning('Exception: %s', e)
         pass
 
     try:
         result = db.performance.create_index([('Date',1)],unique = True)
     except Exception as e:
-        print e
+        logger.warning('Exception: %s', e)
         pass
 
     # Counter for number of threads
@@ -268,8 +276,8 @@ def saveToMongoDB(start_time, stop_time):
     # Wait for all threads to finish
     for t in threads:
         t.join()
-    print "MongoDB Results DB Updated."
-    print "-------------------------------------------\n \n"
+    logger.debug('MongoDB Results DB Updated.')
+    logger.debug('-------------------------------------------')
 
 
 def RefreshDatabase(argv):

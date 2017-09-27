@@ -11,6 +11,7 @@ from configuration import getAsnList,getMongoDB,getmsm_ids,getWindow
 import time
 import traceback
 import sys
+import logging
 
 
 # Start time to calculate the Average RTT for a time interval before the start time
@@ -37,7 +38,7 @@ class myThread(threading.Thread):
 
 # While loop to find measurements for the whole time window
 def interconnects(start, end, list_of_source_asns):
-
+    logger = logging.getLogger('simpleExample')
     # Format the date and time for the filename
     date_and_time = str(datetime.utcfromtimestamp(start)).replace(" ", "_")
     # To create and store the final json file
@@ -65,7 +66,7 @@ def interconnects(start, end, list_of_source_asns):
         # Initialize an object from the class Creating() defined in CreatingJson.py and assign it to to_json
         to_json = Creating(neighbor_dictionary, asn, False, True)
 
-        #print "--> Interconnects for ASN:",asn
+        logger.debug('--> Interconnects for ASN: %s',asn)
         # While loop to break after iterating through all the measurements in a time window
         while current_result < current_measurement[1]:
             try:
@@ -100,7 +101,7 @@ def interconnects(start, end, list_of_source_asns):
                         name_number = as_info.resolveMeasurements()
                     except:
                         exc_info = sys.exc_info()
-                        print "Exception in NetworkInterconnect1:", exc_info
+                        logger.warning('Exception in NetworkInterconnect1: %s', exc_info)
                         traceback.print_exc()
                         name_number = {} # Empty List
 
@@ -115,7 +116,7 @@ def interconnects(start, end, list_of_source_asns):
                     current_result += 1
             except Exception:
                 exc_info = sys.exc_info()
-                print "Exception in NetworkInterconnect", exc_info
+                logger.warning('Exception in NetworkInterconnect %s', exc_info)
                 traceback.print_exc()
                 # name_number = as_info.resolveMeasurements()
                 # print name_number
