@@ -172,7 +172,7 @@ CARBON_PORT = 2003
 def saveToMongoDB(start_time, stop_time):
     #print "Starting SaveToMongoDB"
     logger = logging.getLogger('simpleExample')
-    logger.debug('Starting SaveToMongoDB')
+    logger.info('Starting SaveToMongoDB')
 
     # Create the collection and Indexes
     try:
@@ -191,16 +191,16 @@ def saveToMongoDB(start_time, stop_time):
     if 'probes' not in db_collections:
         db.create_collection('probes', capped=True, size=100000000, max=100000)
     if 'outages' not in db_collections:
-        db.create_collection('outages', capped=True, size=100000000, max=100000)
+        db.create_collection('outages', capped=True, size=100000000, max=100)
     if 'interconnects' not in db_collections:
-        db.create_collection('interconnects', capped=True, size=100000000, max=1000000)
+        db.create_collection('interconnects', capped=True, size=100000000, max=100)
     if 'performance' not in db_collections:
-        db.create_collection('performance', capped=True, size=100000000)
+        db.create_collection('performance', capped=True, size=1000000000, max=100)
 
     # Check if existing collections are capped
     result = db.command('collstats','results')
     if 'capped' not in result:
-        db.command('convertToCapped','results',size=1000000000, max=100000)
+        db.command('convertToCapped','results',size=1000000000, max=1000000)
 
     result = db.command('collstats', 'probes')
     if 'capped' not in result:
@@ -208,15 +208,15 @@ def saveToMongoDB(start_time, stop_time):
 
     result = db.command('collstats', 'outages')
     if 'capped' not in result:
-        db.command('convertToCapped', 'outages', size=100000000, max=100000)
+        db.command('convertToCapped', 'outages', size=100000000, max=100)
 
     result = db.command('collstats', 'interconnects')
     if 'capped' not in result:
-        db.command('convertToCapped', 'interconnects', size=100000000,max=100000)
+        db.command('convertToCapped', 'interconnects', size=100000000,max=100)
 
     result = db.command('collstats', 'performance')
     if 'capped' not in result:
-        db.command('convertToCapped', 'performance', size=10000000,max=100000)
+        db.command('convertToCapped', 'performance', size=10000000,max=100)
 
 
     # Created indexes and make them unique to ensure there aren't duplicate entries
@@ -276,8 +276,8 @@ def saveToMongoDB(start_time, stop_time):
     # Wait for all threads to finish
     for t in threads:
         t.join()
-    logger.debug('MongoDB Results DB Updated.')
-    logger.debug('-------------------------------------------')
+    logger.info('MongoDB Results DB Updated.')
+    logger.info('-------------------------------------------')
 
 
 def RefreshDatabase(argv):
