@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 from configuration import getAsnList,getMongoServer,getmsm_ids
 import datetime
+import logging
 
 class Save:
     """
@@ -24,10 +25,11 @@ class Save:
         :param result:
         :return:
         """
+        logger = logging.getLogger('simpleExample')
         result['createdAt'] = datetime.datetime.now()  # Get the time now in UTC format
         try:
             self.db2.interconnects.insert_one(result)
-            print "-->Interconnect DB Write Result, Date=",result['Date']
+            logger.info('-->Interconnect DB Write Result, Date= %s',result['Date'])
         except:
             pass
 

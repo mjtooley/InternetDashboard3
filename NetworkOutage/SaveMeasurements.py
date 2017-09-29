@@ -29,7 +29,7 @@ class Save:
         try:
             self.db2.outages.insert_one(result)
             print "Added Network Outage, Date=", result['Date']
-            logger.debug('Updated DB with Network Outage %s', result['Date'])
+            logger.info('Updated DB with Network Outage %s', result['Date'])
 
         except Exception as e:
             logger.debug('str(e)')

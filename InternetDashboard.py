@@ -90,7 +90,7 @@ def main(argv):
         formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
         hdlr.setFormatter(formatter)
         logger.addHandler(hdlr)
-        logger.setLevel(logging.DEBUG)
+        logger.setLevel(logging.INFO)
 
         logger.info('Internet Dashboard Starting Up')
 
