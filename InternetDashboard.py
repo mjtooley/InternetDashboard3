@@ -86,7 +86,7 @@ def main(argv):
         # create logger
         logger = logging.getLogger('simpleExample')
 
-        hdlr = RotatingFileHandler('dashboard.log', maxBytes=1000000000,backupCount=2)
+        hdlr = RotatingFileHandler('dashboard.log', maxBytes=10000000,backupCount=2)
         formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
         hdlr.setFormatter(formatter)
         logger.addHandler(hdlr)
