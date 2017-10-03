@@ -103,7 +103,7 @@ def main(argv):
         while True:
             logging.debug('Start: %s  End:%s',datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'),datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S'))
             print "Start:",datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S'), " End:", datetime.datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')
-
+            logging.info("Processing for Date:",str(end_time - end_time % (getWindow())))
             startedAt = time.time() # Record the time we start this pass
 
             # Update the datebase with the latest results
