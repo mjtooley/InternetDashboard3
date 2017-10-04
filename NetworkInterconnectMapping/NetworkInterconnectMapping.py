@@ -103,11 +103,14 @@ def interconnects(start, end, list_of_source_asns):
                     except:
                         exc_info = sys.exc_info()
                         logger.warning('Exception in NetworkInterconnect1: %s', exc_info)
-                        traceback.print_exc()
                         name_number = {} # Empty List
 
                     # Create a json file and assign it to final_results
-                    final_results = to_json.creatingJson(name_number, median_rtts)
+                    try:
+                        final_results = to_json.creatingJson(name_number, median_rtts)
+                    except Exception as e:
+                        logger.warning("Exception %s",e)
+
                     # Add a Date key to find the json file from the database Internet_Dashboard/interconnects to
                     # display using d3
                     #final_results["Date"] = "%s" % (date_and_time.replace(":", "-"))
@@ -115,10 +118,9 @@ def interconnects(start, end, list_of_source_asns):
                     # print "result:", current_result, " final_results ", final_results
                     # Increment the counter
                     current_result += 1
-            except Exception:
+            except Exception as e:
                 exc_info = sys.exc_info()
                 logger.warning('Exception in NetworkInterconnect %s', exc_info)
-                traceback.print_exc()
                 # name_number = as_info.resolveMeasurements()
                 # print name_number
                 # # Create a json file and assign it to final_results
