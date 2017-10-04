@@ -270,8 +270,7 @@ class Creating(object):
                                    all_median_rtts[neighbor_details[0]["Hopnumber"] - 2]), 2)
             except:
                 exc_info = sys.exc_info()
-                print "Exception in NetworkInterconnect:creatingjson", exc_info
-                traceback.print_exc()
+                logging.warning('Exception in NetworkInterconnect:creatingjson %s', exc_info)
             # average_median_rtt = round(abs(all_average_median_rtts[neighbor_details[0]["Hopnumber"] - 1] -
             #                                all_average_median_rtts[neighbor_details[0]["Hopnumber"] - 2]), 2)
             # if median_rtt == 0:
