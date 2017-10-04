@@ -116,11 +116,11 @@ def main(argv):
             #networkOutage2(end_time - WINDOW*10, end_time)
             #networkPerformance2(end_time-WINDOW*10, end_time)
 
-            logger.info('<=========================================================================>')
-            logger.info('Started Peformance Processing...')
-            list_of_source_asns = getAsnList()
-            threads = []
-            number_of_threads = 0
+#            logger.info('<=========================================================================>')
+#            logger.info('Started Peformance Processing...')
+#            list_of_source_asns = getAsnList()
+#            threads = []
+#            number_of_threads = 0
 
  #           for asn in list_of_source_asns:
  #               thread_name = "Performance " + str(number_of_threads + 1)
@@ -133,10 +133,10 @@ def main(argv):
 #            for t in threads:
  #               t.join()
             #print "All threads finished..."
-            for asn in list_of_source_asns:
-                perfomance_d(start_time, end_time, asn)
-            logger.info('Finished Peformance Processing')
-            logger.info('<=========================================================================>')
+#            for asn in list_of_source_asns:
+#                perfomance_d(start_time, end_time, asn)
+#            logger.info('Finished Peformance Processing')
+#            logger.info('<=========================================================================>')
 
             networkOutage(start_time, end_time)
             networkInterconnects(start_time, end_time)
@@ -148,6 +148,7 @@ def main(argv):
 
             # Skip ahead to the next window
             while end_time < now:
+                logging.info("Catching up in time %s", end_time)
                 end_time = end_time + getWindow()
 
             # Sleep until window
