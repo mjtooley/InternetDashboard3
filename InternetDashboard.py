@@ -148,7 +148,7 @@ def main(argv):
 
             # Skip ahead to the next window
             while end_time < now:
-                logging.info("Catching up in time %s", end_time)
+                logger.info("Catching up in time %s", end_time)
                 end_time = end_time + getWindow()
 
             # Sleep until window
@@ -158,7 +158,7 @@ def main(argv):
             loopTime = endedAt - startedAt
             logger.info('Processing time (secs): %s', loopTime)
             logger.info('Going to Sleep for %s seconds', sleep)
-            logger.info('Will wake up at %s', datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S'))
+            logger.info('Will wake up at %s %s', end_time, datetime.datetime.fromtimestamp(time.time()+sleep).strftime('%Y-%m-%d %H:%M:%S'))
             time.sleep(sleep) # 1800 seconds or 30 minutes
             logger.info('Awakened')
 
