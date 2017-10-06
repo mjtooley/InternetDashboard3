@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from configuration import getMongoServer
+from configuration import getMongoServer,getWindow
 import datetime
 import logging
 
@@ -26,14 +26,33 @@ class Save:
         """
         logger = logging.getLogger('simpleExample')
         result['createdAt'] = datetime.datetime.now()  # Get the time now in UTC format
-        try:
-            self.db2.outages.insert_one(result)
-            print "Added Network Outage, Date=", result['Date']
-            logger.info('Updated DB with Network Outage %s', result['Date'])
+        # check the number of AS entries, if too few then discard this entry and duplicate the last entry and update the Date
+        length = len(result['AS_List'])
+        if len(result['AS_List']) < 10:
+            try:
+                date = int(result['Date']) - getWindow()
+                dbLasts = self.db2.outages.find({'Date': date}, no_cursor_timeout=True)
+                # dbLast = self.db2.outages.find().sort({'Date':-1}).limit(1);
+                count = dbLasts.count()
+                if count > 0:
+                    for entry in dbLasts:
+                        dbLast = entry
+                        dbLast['Date'] = result['Date']
 
-        except Exception as e:
-            logger.debug('str(e)')
-            pass
+                    self.db2.outages.insert_one(dbLast)
+                    logger.info('Results too short for %s, so duplicated last result', result['Date'])
+            except:
+                logger.warning('Exception trying to add a copy of the last outage to the DB')
+                pass
+        else:
+            try:
+                self.db2.outages.insert_one(result)
+                print "Added Network Outage, Date=", result['Date']
+                logger.info('Updated DB with Network Outage %s', result['Date'])
+
+            except Exception as e:
+                logger.debug('str(e)')
+                pass
 
     def closeConnection(self):
         """
